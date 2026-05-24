@@ -20,27 +20,6 @@ public class HaraExtension extends SFSExtension {
     @Override
     public void init() {
         trace("HaraExtension.init() -- starting");
-
-        addRequestHandler("config", ConfigHandler.class);
-        addRequestHandler("login",  LoginHandler.class);
-        addRequestHandler("init",   InitHandler.class);
-
-        addRequestHandler("buddylist",       ListHandler.class);
-        addRequestHandler("privatechatlist", ListHandler.class);
-        addRequestHandler("orderlist",       ListHandler.class);
-        addRequestHandler("questlist",       ListHandler.class);
-        addRequestHandler("baseclothes",     ListHandler.class);
-
-        addRequestHandler("savebaseclothes", AvatarSaveHandler.class);
-        addRequestHandler("avatarcreate",    AvatarSaveHandler.class);
-
-        addEventHandler(SFSEventType.USER_LOGIN,     UserLifecycleHandler.class);
-        addEventHandler(SFSEventType.USER_JOIN_ZONE, UserLifecycleHandler.class);
-
-        for (String cmd : STUBBED) addRequestHandler(cmd, OkHandler.class);
-
-        trace("HaraExtension.init() -- registered " + (3 + 5 + 2 + STUBBED.length)
-            + " handlers (3 boot, 5 list, 2 avatar, " + STUBBED.length + " stub)");
     }
 
     @Override
