@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="29" height="52" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+var imageObj211 = document.createElement("img");
+imageObj211.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA1CAYAAABWW1tXAAAD6ElEQVR4Xu2Uf0zUZRzHPwccPzM0R8RwKZOZBRQrK2aUkqGtsj+q22pic4PQdK00ESTpUmecmB4KeJwH3qlx6CHCJEBo2R8V/aFu9kfZmuaaG3NME/l13H0/9u7zjdrs+cuD47/va/vse89zz/P+/Hg+z0NkYGBgYGBgYGBgYGBgYBAWzlspfuhjekydn3Z8For2b6S84AZaZ11CUer/00HE3YPge7QluJXK7p6bLiL8Wyi/62WK0QfD6yiTP6NreunVhWFH20T7bpfQI/rv8VJaCTvhhoNS1XVhxUIUySX042AZpetjdkafYY/pr/5GSlLXhpXAp8mFvM085Cwm84gvMRtdaeAm8y96g+lBnX8tjCXXRfUu1o2r5vVzZXSvPq91zvaiJwOaM9L937pgERX/f/cUuP42JfuL6MWBj+JT0JAGzRFj05uJO1KH0J6O4D7arK8bW0+52lrape6fNH0WiuO1dNZfkbCMW7KCWnOCa7CW0tE2D/Clwm+j/D930lwupYGxD2ixun9KaOupia3mXm5d9BufTrnld1Iefzn/JpqSEfiC1rCDznElXdDXXiygBHV/yFx6nWbo38HNNF/u6xC7F46iOxPsoUvseugPNM4C2+l3uAiBvVQYsNIa/4e0QtUJmcAqeof+fa20KqpDfQpw+jngeCywPxKwR0C/x6gRx3Z6l210ebiUshSZ0AkU0CouonNj79OSgXJK4dr7RnHiBaA5CagVh5VieyZM208erqcbwzbKUHUmhVZMzdgkGZVIEPaoDnifBjzpQL0J+Fyc7qZ/vlxNY+ylO+NHaaWqMSn0d5nL6Wd5sfp5h+l7NGeI4yeBQ8nA3pliM8RxtGQtgXglgHZqVTUmjbaTqmE1gbdGjaNVzvjES4ArG6h7VALIlPOWq1UlQRyKxZ2TJvjbaJmqETIWi7zPNtNP2BMDfJIIdBYAX1kAx+PAQbGjEkiDlL9moQSSChyOA5+kC1eclKhqhURwO22D3QwcuB+oeBDoLgJ6VssZi9O6LGk0aTZ3DtC4CDj2lHT5AxJMJIJtU3g+r1ppJu+gW3DGAdUiWCHXqadYnK+eKHX9E8Cp5RNZexcDZ1ZIgHMkIDO0Fjqs6t0zt8toAXZL03ikgXbNBrbPBc5uALqk3G7JrkGs+w3JeinQngd886qUPE2uWiw0H1WrevdM30Z5p2tMl+FIAMpnSdbSSN+J4843JctnJKBngV457xZx2pkvTZcrpX4Y7I6/OeKjbFUvJEZqKVuzxR/g8qQOPra0j38o/JV7XrnKTTn93JR7nb9+6xqfyrvCvucv8sGsbzXXnCOjx+NyVB2VvwESsjlBsj7MtAAAAABJRU5ErkJggg==";
+function image211(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 1060 600 1060 600 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0333333333333334,0,0,1.0188679245283019,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj211);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+function shape212(ctx,ctrans,frame,ratio,time){
+	var pathData="M -299 -530 L 300 -530 300 529 -299 529 -299 -530";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(19.966659545898438,0,0,19.981124877929688,-299,-530);
+	ctx.transform(1.0333333333333334,0,0,1.0188679245283019,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj211);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=29;
+var originalHeight=52;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape212",canvas,ctx,[0.05,0.0,0.0,0.05,14.95,26.5],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

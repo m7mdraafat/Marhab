@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="11" height="7" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+var imageObj68 = document.createElement("img");
+imageObj68.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAA1UlEQVR4XmNgIAdwx0U58qWnLBDMy9zAHRdTyBDlLYiuBgxAimR7O/9rrVv933RWz/+wZLP/FVlmHybnaB9oT1A6kODI3BhlwyDIwBUbYQhTaDG58f+cEqP/n/dX/v97ohGOz86N+h9nx+wItl6mse2/+oKF/wMSzcCSv47U/v92oOr/h51F/8/NjfjfECt7AWwye0yoolBW9gf5hu7/jonu/49O8f9/a0ns/0Xlxv9zvHgWxNkzJaK4mScuOhCkQbK89r9+lNN/fzeRBTG2DIooioAAAFhLZe15NR5XAAAAAElFTkSuQmCC";
+function image68(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 140 220 140 220 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0909090909090908,0,0,1.1428571428571428,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj68);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+function shape69(ctx,ctrans,frame,ratio,time){
+	var pathData="M -110 -70 L 110 -70 110 70 -110 70 -110 -70";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,-110,-70);
+	ctx.transform(1.0909090909090908,0,0,1.1428571428571428,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj68);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=11;
+var originalHeight=7;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape69",canvas,ctx,[0.05,0.0,0.0,0.05,5.5,3.5],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

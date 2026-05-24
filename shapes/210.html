@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="45" height="19" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+var imageObj209 = document.createElement("img");
+imageObj209.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAATCAYAAAAEaoRHAAAFAUlEQVR4Xu1VS1BTZxR221XHRZkiMZdHO4KAgICAQxFU5FEegRBCHoRcAgESAkQI7+eETCJNoKnSCqFSRBBEaWGKo9NxpnaFnS5wYeuiG2ZcsHDBgkUWmfl6zzWXphnr2FJnWPTMfJP8/73/+b/zncc9cuR/+6tlMO8nBe8daitJYth2SQa6VenfPd/8IiL4+aGxzMzMo4WFhTmjLaqyxUHd7u0BLWoyQmDTZ22ZmjQ59Cw3N/fwBKDX60dcLhdmJ0axZjdiebgWm8sjaCs+wRO3KM9jefEWWlpbtwLPicXKoyKR7L3AvXdipBar05mJqAC73Y7vpxy4M1IPqyqVJ/3DbDuW3Tp0VybCYciBPi8WTTo1BgYGtjiAzmi1pk3KEPkVi1WhwXcd2BimOkkur73imZ7G+vo67m9swO12Y2x0BAvWZsx0KNFwIRL90jievMeqwu+/fMntMfhptR9zdiXYrOOYnXRi8to13Jybw7erq+ju7t6Ni1ZcIf9isToiitHkRDHVGcH3/yP705Emx2Do2CKypFRnZyfu3fRg1W7CsCYP1WfD0FEUhQn9BbgaSuHur8KLX29gerAc7o4C/v+6x8gHUV+Ri5aWFnR1daGxsRHnsxUPOf8jhI8YjflAqlO9RX+s7KmSNz92fub0jo2Noa2tDTqdDs6uJty1GdGhLoL09Ic8YYLnshSG/OR90ncmXjXk5n27j9Y/3utHdXoIagtT0NDQgO6eHrS39+7IZPrN2JMKt598j6A81X0wr9caRRrJaArOpGjcTqfL+/DBAxA8Hg9GR0fR02nBN716b15a7rbk9LF9wvJUkY8asSA+3CuQvutm0ZAdBlNZ+t5vP3/FE//awUKR+gEcNivvl8qEMjg8PAyTybybGF81ReQ5Doq3alQuwhiqKe4AK5Gon9NUWFxYwMzMDF/Dg4ODqKurQ/Kp4me50SE+c0EkT1ibKYL63NndKUvdXppYtBtI2lwYwavdZWraXrllg3t8GPVarY+bJhji/HHNjKnr13n/VHoBivMgLlSefxsApYN7qYxeTkmWPVKpqn1arRYsy/LOe/v6sLS0hAUuEOeYHZfZUtR9moSsGLHPpFC81JbIt4NJ81lIC98z1rM+UnX2Bre/ssI3NNU1+TYajXyfFBXWvBCFls9RbRMPEjGY475R/Qhk/QfYcFGVixwQGFHpWlpa8TZNjzmu811OJ0+eyoXSSqUzPj4Oel4tlfgcnZVYW7bjc6sRQxYjGjVKL2Xp9uIiV8PtPGjsNTc3Iz9f9vLSJdkOQXy8ZCNSrLZxHJqIUzDPfROmA0UlFD4doDXVtpCmhDjJI1JbwNWrV3l1SL35+XlYrVZeRUpzK5d6UpNAwdlsNlDGDAbD/nkClVpCfOkzRiTfLwkS742E32T+hiwj5SlyUj4upuTJJ5nl25WVKi9dqOMwNDTEkyQSpByNsTazGQ6HA31cOVksFpi5dUVFlbekWLEbiMSE0qeUyQDCBTQ5grn8a6NsUADknAKIPiHZuHhRuhOoHEGtrvHJq5S+4H1Kf3iYbJJUFRBIVsh28L0HNs5xj/8i/pc5JpuKPVn6WEBCXPlaJCOdo/1TsWUbtJd9Tvb0TGr5kwhx2TKdoawRQYJ/MvB9ROvg+/4TI+evBr8qlH4F+InQR4H6gKWapBElBCiQ8zd7Do3Vt/5wvCvzT5+C1+0LChLJgxL9AyNNIz7fD2MZAAAAAElFTkSuQmCC";
+function image209(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 380 900 380 900 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0222222222222221,0,0,1.0526315789473684,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj209);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+function shape210(ctx,ctrans,frame,ratio,time){
+	var pathData="M -465 -290 L 435 -290 435 90 -465 90 -465 -290";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,-465,-290);
+	ctx.transform(1.0222222222222221,0,0,1.0526315789473684,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj209);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=45;
+var originalHeight=19;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape210",canvas,ctx,[0.05,0.0,0.0,0.05,23.25,14.5],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

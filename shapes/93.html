@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="36" height="67" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+var imageObj92 = document.createElement("img");
+imageObj92.src="data:image/PNG;base64,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";
+function image92(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 1340 720 1340 720 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0277777777777777,0,0,1.0149253731343284,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj92);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+function shape93(ctx,ctrans,frame,ratio,time){
+	var pathData="M -240 -1260 L 480 -1260 480 80 -240 80 -240 -1260";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,-240,-1260);
+	ctx.transform(1.0277777777777777,0,0,1.0149253731343284,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj92);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=36;
+var originalHeight=67;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape93",canvas,ctx,[0.05,0.0,0.0,0.05,12.0,63.0],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

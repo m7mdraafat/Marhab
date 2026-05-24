@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="29" height="30" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+function shape240(ctx,ctrans,frame,ratio,time){
+	var pathData="M -290 -300 L 290 -300 290 300 -290 300 -290 -300";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,-290,-300);
+	ctx.transform(1.0344827586206897,0,0,1.0333333333333334,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj239);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var imageObj239 = document.createElement("img");
+imageObj239.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAFdklEQVR4Xu2WaUxUVxTH+dakiXGHWCtUKgoKBQwoZV8qi8gyUhQtjA64grTCKEShoyPMqExZBRzQQQRxpHVwEJGMxrKVGNRQa9VaF5xSbRUljtWmSb/8O+eSN8BjcCF+7En+mffevHt+95x77nnXwuJ/M2eLlswWZOSIJMoaqVrX2sbpSNM5LT1bKEwRWDh5T+YPG5cRqKG162r7nQfQPXyJ4psD2Hb5EdZ2PBwhehZ38hK88uu1VitSA/h+3sgI1tTRre98/LdZyKu0WncHviWn2ig7fL/mzZgiSlvP03/eGsaXj6rDMDEm3ZWPGGGR6Xtcz/Vc1x+6/WyUg/HIp+4aHAt0rwbT2kl6+pHQ9gChDbcQ09LLrvnOXqcvvu9DYP0NuFf1MNnnaAzmi8wt1LXpbr9pIMEiTt+BZ+1P8FdfR7j2NmJ198cUvUsTpeg4GKf52RpYr5EW8ZEWB0+eqabK5NJCMHISd/43JnJKcI/qH0c5NSe3yktwzG3GnGQVbNeWILCsZXS0ta3dBgJSRHwH3ASim++yCVD6KDq6p/dJ9D+9xwEX7G6Ec/4FpnniOize3QCbpCzREHFRcADtQS5KPtScKGKK/E2ip/Q6i2vhnqMaSrGi5rsiKiCC8ge8C3FQtnc5y6zWVHMFxKXoXYrWdRSUFnjZ8YsMSmv2unS9jVjlrspnUGqRQ1Cj2cs0SJJI8HnjNbZdhu+z8ci1uB22GyoYkIM67yyXDhGNe9ROcgwvL1Ygb2MwlqVuRdjBRlah44mai264vPY2YYpgo2AIaqxeR2ntvwS9pUzA4TULkOo1DTEhbhCkpMBbLAdlYqGyaxSAL3PAuRuU8C08PXKfTlkhFoVKCgcI2nMgHmd3+EO12hrHRHNQJ/4MRYme2OJthVgPa4T7OiFweTQC44VsMovECsyT1GNh2eCEZieWmWDzU1Vwl6rhsl3Ji9JoMzblSRMUZSzSu5VCnNjsjN4qES5nOsBwbg9L+5WSeJREz4A02BKZ/tOxyWMqxEGzIItzwfZYN9gmVzAowT6IlWGSh4hpml8qHLcUYwSQjCINkx9izgc0Kbid64p7Ch/8eTAIL9oL2fO/OkrQkjofXfKlUAut0Zw0C43rP0JrhhP2xDjASvC1CWop2AnPXScQVNmFlS33IGzt0/OZbE2diy/gZ00uDE3peFoVyjRQI2BA0ovOA2hNd0R5nA2uFMaiJ8cfnen2+FXuivxVDnCI2sx6LUFtxSrTGlOrDKk6P6xqOTMu8AJFM+RlChhOpzHgE1U4DKdSTFCDTorePHd0b7fHjbwQ9JYux025N/QFHqgQOcIlKmmoiNJKWeG55Z9BcIVOO6rRc2a367jeb18NDNpUBu0r9MEfR5MGoT+U4nlzBvoPL8EjZcCgKoPRf2jwvjLRCR9Hb4V9Zj0sI3digkss5gr3Y3FWNfyKNMOaPM9mZxzWUjoK927E76V+uF/ojUf1Wxj0eUuWKQNMR8LwTB1v/A3H/bIlSIjygk1CMavcmWv3mb5KK8/+oh8zSjJL0e40agSxJzqxo0AKtSwBz3S5ePxtCh5XRaL/SDTufePJojPBjar70gMu0etM3ccuu27wo6/u1tskZo59TGFmPLl9ItNiae0V1oPpRLepXIWjciGe1CWgTxmBvhK/EcCG7ACECcJh99VRBrSKysakoHWYEZdupnDGsCkR29q4DhJY3s56MH0AfHMqkSNLZhJKsrBCpmARzc2sY0BKLY2bEJCkffNjJ2fG/E8OT9d+uHI/c0Jr9GlxKyt97vhBp4DhXYf2J012QtD6NL67t7L3fFcHTF6aVj09coeBJjDTWInkfGpExlUCTAxJlr4fIBTR/uaPfZ39B/DtKc4LV4LCAAAAAElFTkSuQmCC";
+function image239(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 600 580 600 580 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0344827586206897,0,0,1.0333333333333334,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj239);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=29;
+var originalHeight=30;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape240",canvas,ctx,[0.05,0.0,0.0,0.05,14.5,15.0],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

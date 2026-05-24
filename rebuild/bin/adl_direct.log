@@ -1,0 +1,76 @@
+[BOOT] boot_338d.constructor
+
+[BOOT] boot_338d.init.start
+
+[BOOT] boot_338d.before ApplicationMain.main
+
+[REBUILD] ApplicationMain.main
+
+[REBUILD] ApplicationMain.create
+
+[PRELOAD] ManifestResources getLibrary(SanalikaAirUI) -> true
+
+[PRELOAD] ManifestResources getLibrary(default) -> true
+
+[PRELOAD] ApplicationMain about to call __preloader.load() libs=2 names=0
+
+[PRELOAD] lime Preloader.load() libraries=2 libraryNames=0
+
+[PRELOAD] loadedAssetLibrary (anon) [1/2]
+
+[PRELOAD] loadedAssetLibrary (anon) [2/2]
+
+[PRELOAD] ApplicationMain about to call exec()
+
+[PRELOAD] ApplicationMain exec() returned 0
+
+[PRELOAD] loadedStage=true bytesLoaded=1532464 bytesTotal=1532464
+
+[PRELOAD] lime Preloader.start() complete=false simulateProgress=false preloadComplete=true
+
+[PRELOAD] lime Preloader dispatching onComplete
+
+[PRELOAD] openfl Preloader.start() display=true complete=false
+
+[PRELOAD] openfl Preloader.display_onUnload ready=true complete=false
+
+[REBUILD] preloader complete
+
+[REBUILD] ApplicationMain.start
+
+[REBUILD] SanalikaClient.onAddedToStage start
+
+[NATIVE] Core.init() failed: Error: The native extension context could not be created
+
+[NATIVE] FacebookAuthenticationModel ctor failed: Error: The native extension context could not be created
+
+[REBUILD] SanalikaClient about to build SerialCommand chain
+
+[REBUILD] SanalikaClient.SerialCommand.execute()
+
+[REBUILD] config request app:/runtime/c.local.json
+
+[PRELOAD] lime Preloader.start() complete=true simulateProgress=false preloadComplete=true
+
+[REBUILD] config loaded loader=app:/runtime/ml.21.9 core=app:/runtime/snl.780.swf
+
+[REBUILD] local runtime auto-select instance=marhab
+
+[REBUILD] loader request app:/runtime/ml.21.9
+
+[REBUILD] SanalikaClient.initCommandsCompleted
+
+[REBUILD] loader complete bytes=360899 core=app:/runtime/snl.780.swf server=marhab
+
+[REBUILD] loader loadBytes addedToStage
+
+ReferenceError: Error #1065: Variable dya68_ is not defined.
+
+	at extensions::MainLoader/uqpsdr_3()
+
+	at flash.events::EventDispatcher/dispatchEventFunction()
+
+	at flash.events::EventDispatcher/dispatchEvent()
+
+	at flash.net::URLLoader/onComplete()
+

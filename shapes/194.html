@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="69" height="47" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+var imageObj193 = document.createElement("img");
+imageObj193.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAvCAYAAABUiRJEAAABW0lEQVR4Xu3UMYqDQBQG4ClTakBIJwtCsDJbpYtslVI2TUrZytLSMuQGnkByAtkjeARvYG4Qb/B2/pBJJlrubrD4P/gRg2PmvZlRKSIiIiIiIiKyvOt8WDlaOek0Oq3v+4LMZjO5/YbgmS+dNzVBnzrHzWbT7Ha7Zj6fN/q+1RHHcSSO42tBuDeJouheZJIkkqapFEUhh8NB9vu9rNfr61h7zC14b6km0AisyFkNiuq6TmxVVQ0LGAXj0CST5XJ5bxiagIagQVmWSZ7nst1uRTcZjcCOeCl0/bqydrCCl8vlqfC6rkeFIigMz5vVRlDccIeYYIegYPOsPcZ13bN6URNcnV6NJ9ibbY+rej7TOBbmrJvtimu5Wq16rKRdEFb5duZHWSwWfRiGDYLx6vE9wLsxt3+FSQ8L+Q1MuMQZD4KgRVGe532rR+P+8r+IiIiIiIiIiIiIiIho8n4AWvvY3rrsR1oAAAAASUVORK5CYII=";
+function image193(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 940 1260 940 1260 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0158730158730158,0,0,1.0212765957446808,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj193);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+function shape194(ctx,ctrans,frame,ratio,time){
+	var pathData="M 784 -18 L 178 -2";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([51,51,51,1]));
+	ctx.lineWidth=1.0;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawPath(ctx,pathData,true,scaleMode);
+
+	var pathData="M 784 -26 L 178 -10";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([153,153,153,1]));
+	ctx.lineWidth=1.0;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawPath(ctx,pathData,true,scaleMode);
+
+	var pathData="M 265 -168 L 250 92 50 81 65 -179 265 -168";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(-1.1163330078125,19.96795654296875,-19.96795654296875,-1.1163330078125,265,-168);
+	ctx.transform(1.0769230769230769,0,0,1.1,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj182);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+	var pathData="M 178 -398 L 1438 -398 1438 542 178 542 178 -398";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,178,-398);
+	ctx.transform(1.0158730158730158,0,0,1.0212765957446808,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj193);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var imageObj182 = document.createElement("img");
+imageObj182.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAYAAABv7tTEAAAAtUlEQVR4XmNgwAP89RkE8v34NnSlqHyIt2cwQJfHACANLfHyFx6sz/r/90TTf4IagZIOjbFyDz7vrwJrAGEQG2QIyDAMxVXh4gcOTwuCK0bWNCVX50O4PYMCVDFTAi7FIPxyexHYFrjzEh2ZJ2BTPK/c9API5A2tzv9BgYHirMPTQh6gO4Ogp38erT8A0wAKKZAz4O7GBS4vTjhwbVnS/zklxv8THRkbMEIHGwA5AxRqRCmGAgAvKJy8BqoIzgAAAABJRU5ErkJggg==";
+function image182(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 200 260 200 260 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0769230769230769,0,0,1.1,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj182);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=69;
+var originalHeight=47;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape194",canvas,ctx,[0.05,0.0,0.0,0.05,-2.5,19.9],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

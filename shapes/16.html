@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="103" height="90" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+function shape16(ctx,ctrans,frame,ratio,time){
+	var pathData="M -1148 -1802 L 912 -1802 912 -2 -1148 -2 -1148 -1802";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,-1148,-1802);
+	ctx.transform(1.0097087378640777,0,0,1.011111111111111,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj15);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var imageObj15 = document.createElement("img");
+imageObj15.src="data:image/PNG;base64,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";
+function image15(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 1800 2060 1800 2060 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0097087378640777,0,0,1.011111111111111,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj15);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=103;
+var originalHeight=90;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape16",canvas,ctx,[0.05,0.0,0.0,0.05,57.4,90.1],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

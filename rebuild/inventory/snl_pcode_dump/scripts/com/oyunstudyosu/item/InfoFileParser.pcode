@@ -1,0 +1,1024 @@
+package com.oyunstudyosu.item
+{
+   import com.hurlant.util.Base64;
+   import com.oyunstudyosu.cloth.ClothData;
+   import com.oyunstudyosu.cloth.InventoryItemData;
+   import com.oyunstudyosu.cloth.SmileyData;
+   import flash.events.Event;
+   import flash.net.URLLoader;
+   import flash.net.URLRequest;
+   import flash.system.ApplicationDomain;
+   
+   public class InfoFileParser
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      private var pack:ItemModel;
+      
+      private var filePath:String;
+      
+      private var firstLoad:Boolean;
+      
+      private var infoFileLoader:URLLoader;
+      
+      private var dataArray:Array;
+      
+      private var itemAccepted:int = 0;
+      
+      private var itemInserted:int = 0;
+      
+      private var itemUpdated:int = 0;
+      
+      private var clothAccepted:int = 0;
+      
+      private var clothInserted:int = 0;
+      
+      private var clothUpdated:int = 0;
+      
+      private var smileyUpdated:int = 0;
+      
+      private var smileyInserted:int = 0;
+      
+      private var rejectedCount:int = 0;
+      
+      public function InfoFileParser(param1:ItemModel, param2:String, param3:Boolean, param4:Boolean = true)
+      {
+         method
+            name "com.oyunstudyosu.item:InfoFileParser/InfoFileParser"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace("com.oyunstudyosu.item"),"ItemModel")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional True()
+            returns null
+            
+            body
+               maxstack 2
+               localcount 5
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  debug 1, "param1", 0, 0
+                  debug 1, "param2", 1, 0
+                  debug 1, "param3", 2, 0
+                  debug 1, "param4", 3, 0
+                  getlocal0
+                  constructsuper 0
+                  getlocal0
+                  getlocal1
+                  setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"pack")
+                  getlocal0
+                  getlocal2
+                  setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"filePath")
+                  getlocal0
+                  getlocal3
+                  setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"firstLoad")
+                  getlocal 4
+                  iffalse ofs003f
+                  findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"getInfoFile")
+                  callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"getInfoFile"), 0
+         ofs003f:
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private function getInfoFile() : void
+      {
+         trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"getInfoFile")
+            dispid 0
+            method
+               name "com.oyunstudyosu.item:InfoFileParser/private/getInfoFile"
+               flag NEED_ACTIVATION
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 3
+                  initscopedepth 5
+                  maxscopedepth 10
+                  trait slot QName(PackageInternalNs("com.oyunstudyosu.item"),"url")
+                     slotid 1
+                     type QName(PackageNamespace(""),"String")
+                  end ; trait
+                  trait slot QName(PackageInternalNs("com.oyunstudyosu.item"),"parentDomain")
+                     slotid 2
+                     type QName(PackageNamespace("flash.system"),"ApplicationDomain")
+                  end ; trait
+                  trait slot QName(PackageInternalNs("com.oyunstudyosu.item"),"proxy")
+                     slotid 3
+                     type QName(PackageNamespace(""),"Class")
+                  end ; trait
+                  trait slot QName(PackageInternalNs("com.oyunstudyosu.item"),"_loc2_")
+                     slotid 4
+                     type QName(PackageNamespace("flash.net"),"URLRequest")
+                  end ; trait
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     debug 1, "+$activation", 0, 0
+                     newactivation
+                     dup
+                     setlocal1
+                     pushscope
+                     getscopeobject 1
+                     getlex QName(PackageNamespace(""),"Sanalika")
+                     getproperty QName(PackageNamespace(""),"instance")
+                     getproperty QName(PackageNamespace(""),"gameModel")
+                     getproperty QName(PackageNamespace(""),"fileServer")
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"filePath")
+                     add
+                     coerce_s
+                     setslot 1
+            ofs0020:
+                     getscopeobject 1
+                     getlex QName(PackageNamespace("flash.system"),"ApplicationDomain")
+                     getproperty QName(PackageNamespace(""),"currentDomain")
+                     getproperty QName(PackageNamespace(""),"parentDomain")
+                     coerce QName(PackageNamespace("flash.system"),"ApplicationDomain")
+                     setslot 2
+                     getscopeobject 1
+                     getslot 2
+                     pushnull
+                     equals
+                     not
+                     dup
+                     iffalse ofs0049
+                     pop
+                     getscopeobject 1
+                     getslot 2
+                     pushstring "MyGameAssetProxy"
+                     callproperty QName(PackageNamespace(""),"hasDefinition"), 1
+            ofs0049:
+                     iffalse ofs008c
+                     getscopeobject 1
+                     getscopeobject 1
+                     getslot 2
+                     pushstring "MyGameAssetProxy"
+                     callproperty QName(PackageNamespace(""),"getDefinition"), 1
+                     getlex QName(PackageNamespace(""),"Class")
+                     astypelate
+                     coerce QName(PackageNamespace(""),"Class")
+                     setslot 3
+                     findpropstrict Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                     pushstring "[InfoFileParser] using AssetProxy for "
+                     getscopeobject 1
+                     getslot 1
+                     add
+                     callpropvoid Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                     getscopeobject 1
+                     getslot 3
+                     getscopeobject 1
+                     getslot 1
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"onProxyData")
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"onProxyError")
+                     callpropvoid Multiname("fetchText",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 3
+                     returnvoid
+            ofs008c:
+                     jump ofs00b6
+            ofs0090:
+                     getlocal0
+                     pushscope
+                     getlocal1
+                     pushscope
+                     newcatch 0
+                     dup
+                     setlocal2
+                     dup
+                     pushscope
+                     swap
+                     setslot 1
+                     findpropstrict Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                     pushstring "[InfoFileParser] proxy lookup failed: "
+                     getlex Multiname("proxyErr",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                     getproperty Multiname("message",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                     add
+                     callpropvoid Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                     popscope
+                     kill 2
+            ofs00b6:
+                     getscopeobject 1
+                     findpropstrict QName(PackageNamespace("flash.net"),"URLRequest")
+                     getscopeobject 1
+                     getslot 1
+                     constructprop QName(PackageNamespace("flash.net"),"URLRequest"), 1
+                     coerce QName(PackageNamespace("flash.net"),"URLRequest")
+                     setslot 4
+                     getscopeobject 1
+                     getslot 4
+                     pushstring "GET"
+                     setproperty QName(PackageNamespace(""),"method")
+                     findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                     findpropstrict QName(PackageNamespace("flash.net"),"URLLoader")
+                     constructprop QName(PackageNamespace("flash.net"),"URLLoader"), 0
+                     setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                     pushstring "complete"
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoCompleteEvent")
+                     callpropvoid QName(PackageNamespace(""),"addEventListener"), 2
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                     pushstring "ioError"
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoIoError")
+                     callpropvoid QName(PackageNamespace(""),"addEventListener"), 2
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                     pushstring "securityError"
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoSecurityError")
+                     callpropvoid QName(PackageNamespace(""),"addEventListener"), 2
+                     getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                     getscopeobject 1
+                     getslot 4
+                     callpropvoid QName(PackageNamespace(""),"load"), 1
+                     returnvoid
+                  end ; code
+                  try from ofs0020 to ofs008c target ofs0090 type QName(PackageNamespace(""),"Error") name QName(PackageNamespace(""),"proxyErr") end
+               end ; body
+            end ; method
+         }
+         
+         private function onProxyData(data:Object) : void
+         {
+            trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"onProxyData")
+               dispid 0
+               method
+                  name "com.oyunstudyosu.item:InfoFileParser/private/onProxyData"
+                  param QName(PackageNamespace(""),"Object")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 4
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        debug 1, "data", 0, 0
+                        debug 1, "text", 1, 84
+                        debug 1, "decoded", 2, 89
+                        getlocal1
+                        getlex QName(PackageNamespace(""),"String")
+                        astypelate
+                        coerce_s
+                        setlocal2
+                        getlocal2
+                        pushnull
+                        equals
+                        dup
+                        iftrue ofs002c
+                        pop
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"length")
+                        pushbyte 0
+                        equals
+               ofs002c:
+                        iffalse ofs003c
+                        findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                        pushbyte 108
+                        callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                        returnvoid
+               ofs003c:
+                        getlex QName(PackageNamespace("com.hurlant.util"),"Base64")
+                        getlocal2
+                        callproperty QName(PackageNamespace(""),"decode"), 1
+                        coerce_s
+                        setlocal3
+                        getlocal3
+                        pushnull
+                        ifne ofs0058
+                        findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                        pushbyte 109
+                        callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                        returnvoid
+               ofs0058:
+                        getlocal3
+                        getproperty QName(PackageNamespace(""),"length")
+                        pushbyte 0
+                        ifne ofs006e
+                        findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                        pushbyte 110
+                        callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                        returnvoid
+               ofs006e:
+                        findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                        getlocal3
+                        pushstring "\n"
+                        callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"split"), 1
+                        setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                        findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"process")
+                        callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"process"), 0
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private function onProxyError(msg:String) : void
+            {
+               trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"onProxyError")
+                  dispid 0
+                  method
+                     name "com.oyunstudyosu.item:InfoFileParser/private/onProxyError"
+                     param QName(PackageNamespace(""),"String")
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 3
+                        localcount 2
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           debug 1, "msg", 0, 0
+                           findpropstrict Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                           pushstring "[InfoFileParser] proxy error: "
+                           getlocal1
+                           add
+                           callpropvoid Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                           findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                           pushbyte 105
+                           callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               private function infoCompleteEvent(param1:Event) : void
+               {
+                  trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoCompleteEvent")
+                     dispid 0
+                     method
+                        name "com.oyunstudyosu.item:InfoFileParser/private/infoCompleteEvent"
+                        param QName(PackageNamespace("flash.events"),"Event")
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 4
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              debug 1, "param1", 0, 0
+                              debug 1, "_loc2_", 1, 115
+                              debug 1, "_loc3_", 2, 122
+                              getlocal1
+                              getproperty QName(PackageNamespace(""),"target")
+                              getproperty Multiname("data",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                              pushnull
+                              ifne ofs002f
+                              findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                              pushbyte 107
+                              callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                              returnvoid
+                     ofs002f:
+                              getlocal1
+                              getproperty QName(PackageNamespace(""),"target")
+                              getproperty Multiname("data",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                              coerce_s
+                              setlocal2
+                              getlocal2
+                              getproperty QName(PackageNamespace(""),"length")
+                              pushbyte 0
+                              ifne ofs004f
+                              findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                              pushbyte 108
+                              callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                              returnvoid
+                     ofs004f:
+                              findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"terminate")
+                              callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"terminate"), 0
+                              getlex QName(PackageNamespace("com.hurlant.util"),"Base64")
+                              getlocal2
+                              callproperty QName(PackageNamespace(""),"decode"), 1
+                              coerce_s
+                              setlocal3
+                              getlocal3
+                              pushnull
+                              ifne ofs0074
+                              findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                              pushbyte 109
+                              callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                              returnvoid
+                     ofs0074:
+                              getlocal3
+                              getproperty QName(PackageNamespace(""),"length")
+                              pushbyte 0
+                              ifne ofs008a
+                              findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                              pushbyte 110
+                              callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                              returnvoid
+                     ofs008a:
+                              findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                              getlocal3
+                              pushstring "\n"
+                              callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"split"), 1
+                              setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                              pushnull
+                              coerce_s
+                              setlocal3
+                              pushnull
+                              coerce_s
+                              setlocal2
+                              findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"process")
+                              callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"process"), 0
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private function infoIoError(param1:Event) : void
+                  {
+                     trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoIoError")
+                        dispid 0
+                        method
+                           name "com.oyunstudyosu.item:InfoFileParser/private/infoIoError"
+                           param QName(PackageNamespace("flash.events"),"Event")
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 2
+                              localcount 2
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "param1", 0, 0
+                                 findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                                 pushbyte 105
+                                 callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     private function infoSecurityError(param1:Event) : void
+                     {
+                        trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoSecurityError")
+                           dispid 0
+                           method
+                              name "com.oyunstudyosu.item:InfoFileParser/private/infoSecurityError"
+                              param QName(PackageNamespace("flash.events"),"Event")
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 2
+                                 localcount 2
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    getlocal0
+                                    pushscope
+                                    debug 1, "param1", 0, 0
+                                    findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                                    pushbyte 106
+                                    callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError"), 1
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        private function terminate() : void
+                        {
+                           trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"terminate")
+                              dispid 0
+                              method
+                                 name "com.oyunstudyosu.item:InfoFileParser/private/terminate"
+                                 returns QName(PackageNamespace(""),"void")
+                                 
+                                 body
+                                    maxstack 3
+                                    localcount 1
+                                    initscopedepth 4
+                                    maxscopedepth 5
+                                    
+                                    code
+                                       getlocal0
+                                       pushscope
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                                       pushnull
+                                       ifne ofs000c
+                                       returnvoid
+                              ofs000c:
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                                       pushstring "complete"
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoCompleteEvent")
+                                       callpropvoid QName(PackageNamespace(""),"removeEventListener"), 2
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                                       pushstring "ioError"
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoIoError")
+                                       callpropvoid QName(PackageNamespace(""),"removeEventListener"), 2
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                                       pushstring "securityError"
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoSecurityError")
+                                       callpropvoid QName(PackageNamespace(""),"removeEventListener"), 2
+                                       getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                                       callpropvoid QName(PackageNamespace(""),"close"), 0
+                                       findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                                       pushnull
+                                       setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileLoader")
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           private function infoFileError(param1:int) : void
+                           {
+                              trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"infoFileError")
+                                 dispid 0
+                                 method
+                                    name "com.oyunstudyosu.item:InfoFileParser/private/infoFileError"
+                                    param QName(PackageNamespace(""),"int")
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 2
+                                       localcount 2
+                                       initscopedepth 4
+                                       maxscopedepth 5
+                                       
+                                       code
+                                          getlocal0
+                                          pushscope
+                                          debug 1, "param1", 0, 0
+                                          findpropstrict QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"terminate")
+                                          callpropvoid QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"terminate"), 0
+                                          getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"firstLoad")
+                                          iffalse ofs002a
+                                          findpropstrict Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                          pushstring "info file yüklenemedi"
+                                          callpropvoid Multiname("trace",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                          jump ofs0033
+                                 ofs002a:
+                                          getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"pack")
+                                          callpropvoid QName(PackageNamespace(""),"getInfoFile_FAILED"), 0
+                                 ofs0033:
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              private function process() : void
+                              {
+                                 trait method QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"process")
+                                    dispid 0
+                                    method
+                                       name "com.oyunstudyosu.item:InfoFileParser/private/process"
+                                       returns QName(PackageNamespace(""),"void")
+                                       
+                                       body
+                                          maxstack 2
+                                          localcount 4
+                                          initscopedepth 4
+                                          maxscopedepth 5
+                                          
+                                          code
+                                             getlocal0
+                                             pushscope
+                                             debug 1, "_loc1_", 0, 179
+                                             debug 1, "_loc2_", 1, 178
+                                             debug 1, "_loc3_", 2, 177
+                                             pushbyte 0
+                                             convert_i
+                                             setlocal3
+                                             pushnull
+                                             coerce_s
+                                             setlocal2
+                                             getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                                             getproperty QName(PackageNamespace(""),"length")
+                                             convert_i
+                                             convert_i
+                                             setlocal1
+                                             pushbyte 0
+                                             convert_i
+                                             setlocal3
+                                             jump ofs0055
+                                    ofs0033:
+                                             label
+                                             getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                                             getlocal3
+                                             getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                             coerce_s
+                                             setlocal2
+                                             getlocal2
+                                             getproperty QName(PackageNamespace(""),"length")
+                                             pushbyte 0
+                                             ifeq ofs0053
+                                             findpropstrict QName(PackageNamespace(""),"processLine")
+                                             getlocal2
+                                             callpropvoid QName(PackageNamespace(""),"processLine"), 1
+                                    ofs0053:
+                                             inclocal_i 3
+                                    ofs0055:
+                                             getlocal3
+                                             getlocal1
+                                             iflt ofs0033
+                                             findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                                             newarray 0
+                                             setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"dataArray")
+                                             getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"pack")
+                                             getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"firstLoad")
+                                             callpropvoid QName(PackageNamespace(""),"getInfoFile_SUCCESS"), 1
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 public function processLine(param1:String) : void
+                                 {
+                                    trait method QName(PackageNamespace(""),"processLine")
+                                       dispid 0
+                                       method
+                                          name "com.oyunstudyosu.item:InfoFileParser/processLine"
+                                          param QName(PackageNamespace(""),"String")
+                                          returns QName(PackageNamespace(""),"void")
+                                          
+                                          body
+                                             maxstack 9
+                                             localcount 22
+                                             initscopedepth 4
+                                             maxscopedepth 5
+                                             
+                                             code
+                                                getlocal0
+                                                pushscope
+                                                debug 1, "param1", 0, 0
+                                                debug 1, "_loc2_", 1, 209
+                                                debug 1, "_loc3_", 2, 199
+                                                debug 1, "_loc4_", 3, 208
+                                                debug 1, "_loc5_", 4, 211
+                                                debug 1, "_loc6_", 5, 203
+                                                debug 1, "_loc7_", 6, 207
+                                                debug 1, "_loc8_", 7, 206
+                                                debug 1, "_loc9_", 8, 205
+                                                debug 1, "_loc10_", 9, 197
+                                                debug 1, "_loc11_", 10, 200
+                                                debug 1, "_loc12_", 11, 201
+                                                debug 1, "_loc13_", 12, 210
+                                                debug 1, "_loc14_", 13, 219
+                                                debug 1, "_loc15_", 14, 202
+                                                debug 1, "_loc16_", 15, 198
+                                                debug 1, "_loc17_", 16, 196
+                                                debug 1, "_loc18_", 17, 204
+                                                debug 1, "_loc19_", 18, 212
+                                                pushnull
+                                                coerce_s
+                                                setlocal 17
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 10
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 16
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal3
+                                                pushnull
+                                                coerce_s
+                                                setlocal 11
+                                                pushnull
+                                                coerce QName(PackageNamespace("com.oyunstudyosu.cloth"),"InventoryItemData")
+                                                setlocal 12
+                                                pushnull
+                                                coerce QName(PackageNamespace(""),"Array")
+                                                setlocal 15
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 6
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 18
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 9
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 8
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 7
+                                                pushnull
+                                                coerce_s
+                                                setlocal 4
+                                                pushnull
+                                                coerce QName(PackageNamespace("com.oyunstudyosu.cloth"),"ClothData")
+                                                setlocal2
+                                                pushnull
+                                                coerce QName(PackageNamespace("com.oyunstudyosu.cloth"),"SmileyData")
+                                                setlocal 13
+                                                pushstring "m"
+                                                pushstring "f"
+                                                newarray 2
+                                                coerce QName(PackageNamespace(""),"Array")
+                                                setlocal 5
+                                                getlocal1
+                                                pushstring "|"
+                                                callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"split"), 1
+                                                coerce QName(PackageNamespace(""),"Array")
+                                                setlocal 19
+                                                getlocal 19
+                                                getproperty QName(PackageNamespace(""),"length")
+                                                pushbyte 4
+                                                ifne ofs01e9
+                                                getlocal 19
+                                                pushbyte 0
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                coerce_s
+                                                setlocal 17
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 1
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal3
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 2
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal 16
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 3
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal 10
+                                                pushbyte 0
+                                                setlocal 20
+                                                getlocal 5
+                                                coerce_a
+                                                setlocal 21
+                                                jump ofs01da
+                                       ofs015a:
+                                                label
+                                                getlocal 21
+                                                getlocal 20
+                                                nextvalue
+                                                coerce_a
+                                                setlocal 14
+                                                findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemAccepted")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemAccepted")
+                                                pushbyte 1
+                                                add
+                                                setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemAccepted")
+                                                getlocal 14
+                                                pushstring "_"
+                                                add
+                                                getlocal 17
+                                                add
+                                                coerce_s
+                                                setlocal 11
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"pack")
+                                                getlocal 11
+                                                callproperty QName(PackageNamespace(""),"getItem"), 1
+                                                coerce QName(PackageNamespace("com.oyunstudyosu.cloth"),"InventoryItemData")
+                                                setlocal 12
+                                                getlocal 12
+                                                pushnull
+                                                ifne ofs01c0
+                                                findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemInserted")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemInserted")
+                                                pushbyte 1
+                                                add
+                                                setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemInserted")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"pack")
+                                                getlocal 11
+                                                findpropstrict QName(PackageNamespace("com.oyunstudyosu.cloth"),"InventoryItemData")
+                                                getlocal 11
+                                                getlocal3
+                                                getlocal 16
+                                                getlocal 10
+                                                constructprop QName(PackageNamespace("com.oyunstudyosu.cloth"),"InventoryItemData"), 4
+                                                callpropvoid QName(PackageNamespace(""),"setItemFileData"), 2
+                                                jump ofs01da
+                                       ofs01c0:
+                                                findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemUpdated")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemUpdated")
+                                                pushbyte 1
+                                                add
+                                                setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"itemUpdated")
+                                                getlocal 12
+                                                getlocal3
+                                                getlocal 16
+                                                getlocal 10
+                                                callpropvoid QName(PackageNamespace(""),"forceUpdate"), 3
+                                       ofs01da:
+                                                hasnext2 21, 20
+                                                iftrue ofs015a
+                                                kill 21
+                                                kill 20
+                                                jump ofs033b
+                                       ofs01e9:
+                                                getlocal 19
+                                                getproperty QName(PackageNamespace(""),"length")
+                                                pushbyte 7
+                                                ifne ofs033b
+                                                findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothAccepted")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothAccepted")
+                                                pushbyte 1
+                                                add
+                                                setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothAccepted")
+                                                getlocal 19
+                                                pushbyte 0
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                coerce_s
+                                                setlocal 17
+                                                getlocal 19
+                                                pushbyte 1
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                pushstring ","
+                                                callproperty Multiname("split",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                coerce QName(PackageNamespace(""),"Array")
+                                                setlocal 15
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 2
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal 6
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 3
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal 18
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 4
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal 9
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 5
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal 8
+                                                findpropstrict Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                getlocal 19
+                                                pushbyte 6
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                callproperty Multiname("parseInt",[PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")]), 1
+                                                convert_i
+                                                setlocal 10
+                                                pushbyte 0
+                                                setlocal 20
+                                                getlocal 5
+                                                coerce_a
+                                                setlocal 21
+                                                jump ofs0330
+                                       ofs0294:
+                                                label
+                                                getlocal 21
+                                                getlocal 20
+                                                nextvalue
+                                                coerce_a
+                                                setlocal 14
+                                                pushbyte 0
+                                                convert_i
+                                                setlocal 7
+                                                jump ofs0325
+                                       ofs02a6:
+                                                label
+                                                getlocal 14
+                                                pushstring "_"
+                                                add
+                                                getlocal 17
+                                                add
+                                                pushstring "_"
+                                                add
+                                                getlocal 15
+                                                getlocal 7
+                                                getproperty MultinameL([PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("com.oyunstudyosu.item"),PackageInternalNs("com.oyunstudyosu.item"),PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),ProtectedNamespace("com.oyunstudyosu.item:InfoFileParser"),StaticProtectedNs("com.oyunstudyosu.item:InfoFileParser"),PrivateNamespace("InfoFileParser.as$1446")])
+                                                add
+                                                coerce_s
+                                                setlocal 4
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"pack")
+                                                getlocal 4
+                                                callproperty QName(PackageNamespace(""),"getCloth"), 1
+                                                coerce QName(PackageNamespace("com.oyunstudyosu.cloth"),"ClothData")
+                                                setlocal2
+                                                getlocal2
+                                                pushnull
+                                                ifne ofs0305
+                                                findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothInserted")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothInserted")
+                                                pushbyte 1
+                                                add
+                                                setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothInserted")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"pack")
+                                                getlocal 4
+                                                findpropstrict QName(PackageNamespace("com.oyunstudyosu.cloth"),"ClothData")
+                                                getlocal 4
+                                                getlocal 6
+                                                getlocal 18
+                                                getlocal 9
+                                                getlocal 8
+                                                getlocal 10
+                                                constructprop QName(PackageNamespace("com.oyunstudyosu.cloth"),"ClothData"), 6
+                                                callpropvoid QName(PackageNamespace(""),"setItemFileData"), 2
+                                                jump ofs0323
+                                       ofs0305:
+                                                findproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothUpdated")
+                                                getlex QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothUpdated")
+                                                pushbyte 1
+                                                add
+                                                setproperty QName(PrivateNamespace("com.oyunstudyosu.item:InfoFileParser"),"clothUpdated")
+                                                getlocal2
+                                                getlocal 6
+                                                getlocal 18
+                                                getlocal 9
+                                                getlocal 8
+                                                getlocal 10
+                                                callpropvoid QName(PackageNamespace(""),"forceUpdate"), 5
+                                       ofs0323:
+                                                inclocal_i 7
+                                       ofs0325:
+                                                getlocal 7
+                                                getlocal 15
+                                                getproperty QName(PackageNamespace(""),"length")
+                                                iflt ofs02a6
+                                       ofs0330:
+                                                hasnext2 21, 20
+                                                iftrue ofs0294
+                                                kill 21
+                                                kill 20
+                                       ofs033b:
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                 }
+                              }
+                              
+                              method
+                                 name ""
+                                 returns null
+                                 
+                                 body
+                                    maxstack 2
+                                    localcount 1
+                                    initscopedepth 1
+                                    maxscopedepth 3
+                                    
+                                    code
+                                       getlocal0
+                                       pushscope
+                                       findpropstrict Multiname("InfoFileParser",[PackageNamespace("com.oyunstudyosu.item")])
+                                       getlex QName(PackageNamespace(""),"Object")
+                                       pushscope
+                                       getlex QName(PackageNamespace(""),"Object")
+                                       newclass 1482
+                                       popscope
+                                       initproperty QName(PackageNamespace("com.oyunstudyosu.item"),"InfoFileParser")
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                              

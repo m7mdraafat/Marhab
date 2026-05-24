@@ -1,0 +1,398 @@
+{
+  "commands": {
+    "addbuddy": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "addbuddyresponse": {
+      "count": 2,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "avatarsalescollect": {
+      "count": 4,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\FlatSponsorPanelProperty.as",
+        "scripts\\com\\oyunstudyosu\\property\\NickChangePanelProperty.as",
+        "scripts\\com\\oyunstudyosu\\property\\ShopPanelProperty.as",
+        "scripts\\com\\oyunstudyosu\\property\\SolariumPanelProperty.as"
+      ]
+    },
+    "bartercancel": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\barter\\BarterController.as"
+      ]
+    },
+    "barterrequest": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\barter\\BarterController.as"
+      ]
+    },
+    "barterresponse": {
+      "count": 2,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\barter\\BarterController.as"
+      ]
+    },
+    "buddyacceptinvitegame": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "buddyinvitelocation": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "buddylist": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "buddylocate": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "buddyrespondinvitelocation": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "campaignquest": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\GiftOnceProperty.as"
+      ]
+    },
+    "changebuddyrating": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "changemood": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "changeobjectframe": {
+      "count": 2,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\FrameProperty.as",
+        "scripts\\com\\oyunstudyosu\\property\\GridSealingProperty.as"
+      ]
+    },
+    "changeobjectlock": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\interactive\\EntryVo.as"
+      ]
+    },
+    "changestatusmessage": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "config": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\commands\\ConfigCommand.as"
+      ]
+    },
+    "debugcommand": {
+      "count": 2,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\debug\\DebugCommand.as",
+        "scripts\\com\\oyunstudyosu\\debug\\DebugModel.as"
+      ]
+    },
+    "diamondtransferrequest": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "diamondtransferresponse": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "drop": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\drop\\DropController.as"
+      ]
+    },
+    "dropthrowaction": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\game\\JoystickController.as"
+      ]
+    },
+    "emailActivation": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\avatar\\AvatarModel.as"
+      ]
+    },
+    "exchangediamond": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\ExchangeProperty.as"
+      ]
+    },
+    "farmclean": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\FarmProperty.as"
+      ]
+    },
+    "farmgather": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\FarmProperty.as"
+      ]
+    },
+    "farmimplantation": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\model\\FarmModel.as"
+      ]
+    },
+    "flatpurchase": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\controller\\PurchaseController.as"
+      ]
+    },
+    "fortunewheel": {
+      "count": 3,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\fortunewheel\\FortuneWheelPanel.as"
+      ]
+    },
+    "gatheritemcollect": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\GatheringProperty.as"
+      ]
+    },
+    "gatheritemsearch": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\GatheringProperty.as"
+      ]
+    },
+    "giftcheckexchange": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\transfer\\TransferController.as"
+      ]
+    },
+    "groupwhisper": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\chat\\ChatController.as"
+      ]
+    },
+    "init": {
+      "count": 1,
+      "files": [
+        "scripts\\Sanalika.as"
+      ]
+    },
+    "matchmakingCancel": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\model\\MatchmakingModel.as"
+      ]
+    },
+    "messagedetails": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\privatechat\\PrivateChatController.as"
+      ]
+    },
+    "orderlist": {
+      "count": 1,
+      "files": [
+        "scripts\\org\\oyunstudyosu\\business\\BusinessMenu.as"
+      ]
+    },
+    "partyIsland.leave": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\game\\partyisland\\components\\IslandServiceComponent.as"
+      ]
+    },
+    "partyIsland.rollDice": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\game\\partyisland\\components\\IslandSceneHudComponent.as"
+      ]
+    },
+    "ping": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\avatar\\AvatarController.as"
+      ]
+    },
+    "privatechatdeletegroup": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\privatechat\\PrivateChatModel.as"
+      ]
+    },
+    "privatechatlist": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\privatechat\\PrivateChatController.as"
+      ]
+    },
+    "purchase": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\controller\\PurchaseController.as"
+      ]
+    },
+    "questaction": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\quest\\QuestController.as"
+      ]
+    },
+    "questlist": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\quest\\QuestController.as"
+      ]
+    },
+    "randomwheel": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\displayAd\\AdAirship.as"
+      ]
+    },
+    "removeavatarrestriction": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\restricted\\RestrictedController.as"
+      ]
+    },
+    "removebuddy": {
+      "count": 2,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\buddy\\BuddyController.as"
+      ]
+    },
+    "roomjoincomplete": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\engine\\scene\\components\\SceneProcessDataComponent.as"
+      ]
+    },
+    "startroomvideo": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\map\\property\\YoutubeScreenProperty.as"
+      ]
+    },
+    "stickerlist": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\avatar\\AvatarController.as"
+      ]
+    },
+    "teleport": {
+      "count": 3,
+      "files": [
+        "scripts\\Sanalika.as",
+        "scripts\\com\\oyunstudyosu\\property\\TeleportProperty.as",
+        "scripts\\extensions\\admin\\Teleportation.as"
+      ]
+    },
+    "transferrequest": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\transfer\\TransferController.as"
+      ]
+    },
+    "transferresponse": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\transfer\\TransferController.as"
+      ]
+    },
+    "usechatballoon": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\model\\HudModel.as"
+      ]
+    },
+    "usedoor": {
+      "count": 2,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\FlatExitProperty.as",
+        "scripts\\com\\oyunstudyosu\\property\\PassageProperty.as"
+      ]
+    },
+    "usehanditem": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\transfer\\TransferController.as"
+      ]
+    },
+    "usehousedoor": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\door\\DoorModel.as"
+      ]
+    },
+    "useobjectdoor": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\property\\FlatEnterProperty.as"
+      ]
+    },
+    "usesticker": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\avatar\\AvatarController.as"
+      ]
+    },
+    "walkfinalrequest": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\model\\WalkModel.as"
+      ]
+    },
+    "walkrequest": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\engine\\character\\Character.as"
+      ]
+    },
+    "whisper": {
+      "count": 1,
+      "files": [
+        "scripts\\com\\oyunstudyosu\\chat\\ChatController.as"
+      ]
+    }
+  },
+  "total_calls": 77,
+  "unique_commands": 64
+}

@@ -1,0 +1,170 @@
+[BOOT] boot_338d.constructor
+
+[BOOT] boot_338d.init.start
+
+[BOOT] boot_338d.before ApplicationMain.main
+
+[REBUILD] ApplicationMain.main
+
+[REBUILD] ApplicationMain.create
+
+[PRELOAD] ManifestResources getLibrary(SanalikaAirUI) -> true
+
+[PRELOAD] ManifestResources getLibrary(default) -> true
+
+[PRELOAD] ApplicationMain about to call __preloader.load() libs=2 names=0
+
+[PRELOAD] lime Preloader.load() libraries=2 libraryNames=0
+
+[PRELOAD] loadedAssetLibrary (anon) [1/2]
+
+[PRELOAD] loadedAssetLibrary (anon) [2/2]
+
+[PRELOAD] ApplicationMain about to call exec()
+
+[PRELOAD] ApplicationMain exec() returned 0
+
+[PRELOAD] loadedStage=true bytesLoaded=1532381 bytesTotal=1532381
+
+[PRELOAD] lime Preloader.start() complete=false simulateProgress=false preloadComplete=true
+
+[PRELOAD] lime Preloader dispatching onComplete
+
+[PRELOAD] openfl Preloader.start() display=true complete=false
+
+[PRELOAD] openfl Preloader.display_onUnload ready=true complete=false
+
+[REBUILD] preloader complete
+
+[REBUILD] ApplicationMain.start
+
+[REBUILD] SanalikaClient.onAddedToStage start
+
+[NATIVE] Core.init() failed: Error: The native extension context could not be created
+
+[NATIVE] FacebookAuthenticationModel ctor failed: Error: The native extension context could not be created
+
+[REBUILD] SanalikaClient about to build SerialCommand chain
+
+[REBUILD] SanalikaClient.SerialCommand.execute()
+
+[REBUILD] config request app:/runtime/c.local.json
+
+[PRELOAD] lime Preloader.start() complete=true simulateProgress=false preloadComplete=true
+
+[REBUILD] config loaded loader=app:/runtime/ml.21.9 core=app:/runtime/snl.780.swf
+
+[REBUILD] local runtime auto-select instance=marhab
+
+[REBUILD] loader request app:/runtime/ml.21.9
+
+[REBUILD] SanalikaClient.initCommandsCompleted
+
+[REBUILD] loader complete bytes=360899 core=app:/runtime/snl.780.swf server=marhab
+
+[REBUILD] loader loadBytes addedToStage
+
+ReferenceError: Error #1065: Variable dya68_ is not defined.
+
+	at extensions::MainLoader/uqpsdr_3()
+
+	at flash.events::EventDispatcher/dispatchEventFunction()
+
+	at flash.events::EventDispatcher/dispatchEvent()
+
+	at flash.net::URLLoader/onComplete()
+
+canvasHeigt 515
+
+canvasHeigt 300
+
+DropGiftModel Loaded
+
+RELEASE
+
+ws://marhab-sfs.rage-world.net:8080/BlueBox/websocket
+
+SmartWebSocket
+
+ArgumentError: Error #2015: Invalid BitmapData.
+
+	at flash.display::BitmapData/ctor()
+
+	at flash.display::BitmapData()
+
+	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
+
+sfs connected
+
+ts: 1779514283964
+
+sfs logged in
+
+## ServiceModel ## -> requestData : config sent. (type : requestData) ## ->{}
+
+data: [object Object]
+
+string: {"language":"ar","fileServer":["xo.newmarhab.net"],"webServer":"play.ragegames.net/ar","moods":[{"label":"Cheerful","id":0},{"label":"Peaceful","id":1},{"label":"Crazy","id":2},{"label":"Run Down","id":3},{"label":"Unhappy","id":4},{"label":"Nervous","id":5},{"label":"Broken Heart","id":6},{"label":"Pessimistic","id":7},{"label":"Pensive","id":8},{"label":"Energetic","id":9},{"label":"Romantical","id":10},{"label":"Sensitive","id":11},{"label":"Excited","id":12},{"label":"Curious","id":13},{"label":"Depressed","id":14},{"label":"Unstable","id":15},{"label":"Worried","id":16},{"label":"Thoughtful","id":17},{"label":"Mysterious","id":18},{"label":"Mixed","id":19},{"label":"Optimistic","id":20},{"label":"Confused","id":21},{"label":"Sucks","id":22},{"label":"Resents","id":23},{"label":"Desperate","id":24},{"label":"Regret","id":25},{"label":"Alone","id":26},{"label":"Questionable","id":27},{"label":"Lethargic","id":28},{"label":"Approachable","id":29},{"label":"Stressful","id":30}],"rid":0,"langFile":"locale/ar_AR.702","roomTheme":["fest","ramadan"],"itemFile":"data/ifile.2013","order":{"maxOrder":10,"customerGainMin":10,"avatarOrderLifeTime":14400,"customerGainMax":100,"orderLifeTime":240,"prepareLifeTime":30},"versionFile":"data/vf.19910","masterRoles":[{"name":"TRANSFER","index":2},{"name":"BARTER","index":3},{"name":"VIP","index":4},{"name":"VIP_GOLD","index":5},{"name":"WHISPER","index":6},{"name":"VIP_DIAMOND","index":7},{"name":"VIP_SILVER","index":8},{"name":"AGE_18PLUS","index":9},{"name":"AGE_13MINUS","index":10},{"name":"VERIFIED_EMAIL","index":11},{"name":"VERIFIED_PHONE","index":12},{"name":"HOLIDAY_VISA_TURKEY","index":13},{"name":"DIAMOND_CLUB","index":14},{"name":"HOLIDAY_VISA_ABUDABI","index":15},{"name":"CARD_SECURITY","index":16},{"name":"HOLIDAY_VISA_SPAIN","index":17},{"name":"CARD_JOURNALIST","index":18},{"name":"CARD_DIRECTOR","index":19},{"name":"MODERATOR","index":20},{"name":"CARD_PHOTOGRAPHER","index":21},{"name":"EDITOR_SECURITY","index":22},{"name":"CARD_PAINTER","index":23},{"name":"PARTY","index":24},{"name":"SPACE_COSTUME","index":25},{"name":"KEY","index":26},{"name":"CARD_ACTOR","index":27},{"name":"CARD_GUARD","index":28},{"name":"CARD_GUIDE","index":29},{"name":"PLATO","index":30},{"name":"FORUM","index":31},{"name":"CARD_SANALIKAX","index":32},{"name":"CafeSmiley","index":33},{"name":"KIDO","index":34},{"name":"AIRPASS","index":35},{"name":"RUNWIN","index":36},{"name":"SNOWBALL","index":37},{"name":"HOLIDAY_VISA_JAPON","index":38},{"name":"HOLIDAY_VISA_TR_JPN","index":39},{"name":"VISITOR","index":40},{"name":"SECURITY","index":41},{"name":"SWIM","index":42},{"name":"SKATE","index":43},{"name":"CARD_MUSIC","index":44},{"name":"BONUS_X2","index":45},{"name":"SHORTCUT","index":46},{"name":"SHIP_LICENSE","index":47},{"name":"CARD_CAPITAN","index":48},{"name":"EVENT","index":49},{"name":"NPC","index":50},{"name":"STAGE","index":51},{"name":"NOT_VISITOR","index":52}],"diamondExchangeRate":30,"farmCleaningCost":10,"farmMaxPlantedItemSize":12,"version":92,"chatBaloons":[{"name":"Default","id":1,"requirements":"AA=="},{"name":"Silver","id":2,"requirements":"gA=="},{"name":"Yellow","id":3,"requirements":"EA=="},{"name":"Grey","id":4,"requirements":"QA=="},{"name":"Black","id":23,"requirements":"QA=="},{"name":"Red","id":24,"requirements":"EA=="},{"name":"Pink","id":25,"requirements":"EA=="},{"name":"DiamondClub","id":26,"requirements":"ACA="},{"name":"SanalikaX","id":30,"requirements":"AAAAgA=="}]}
+
+0
+
+1
+
+2
+
+3
+
+4
+
+devam 1
+
+devam 2
+
+ArgumentError: Error #2015: Invalid BitmapData.
+
+	at flash.display::BitmapData/ctor()
+
+	at flash.display::BitmapData()
+
+	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
+
+ArgumentError: Error #2015: Invalid BitmapData.
+
+	at flash.display::BitmapData/ctor()
+
+	at flash.display::BitmapData()
+
+	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
+
+ArgumentError: Error #2015: Invalid BitmapData.
+
+	at flash.display::BitmapData/ctor()
+
+	at flash.display::BitmapData()
+
+	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
+
+ArgumentError: Error #2015: Invalid BitmapData.
+
+	at flash.display::BitmapData/ctor()
+
+	at flash.display::BitmapData()
+
+	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
+
+ArgumentError: Error #2015: Invalid BitmapData.
+
+	at flash.display::BitmapData/ctor()
+
+	at flash.display::BitmapData()
+
+	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
+
+ArgumentError: Error #2015: Invalid BitmapData.
+
+	at flash.display::BitmapData/ctor()
+
+	at flash.display::BitmapData()
+
+	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
+

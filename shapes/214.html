@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="29" height="52" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+var imageObj213 = document.createElement("img");
+imageObj213.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA1CAYAAABWW1tXAAAEGElEQVR4Xu2UfUxVZRzHv1wJRAnKxfijLU17M3qRkaVSoK6UP8yXSrtQw4Gsianh1hvTupgjU5yB6EWYhXB5v9d7QRIjbJmVTduIBVv24spqSFvlDblc7j1P+/Y7KBs7f8Xt8t/5bGf7nXOe5/t9fi/nACYmJiYmJiYmJiYmJiaTgi0dkf4NyOhLR6zx3aQzvA5pWhYcElqM7yaFjgxEj8XKCpdmxc7x7yeNYB5euJSFm/U4kIkclQnftytxo3Fd2FEb0RnIRo4ejxRgFfPB4VwsNK4LK32bEKsK8LeWh3r9PlCO9SwD/W9jmXFtWBnZgZV8C1Svolu/1+pgZzPosyPl+pLwDdqAFYlnFyBGj7VdeI9VYlyJcy02RCkX/lS1+K1jC6KDuXj5++cQZ9wfMtrzKB7MxD16rMrRSSeouVEScEuZWyW243DgJWSqXPQZ9/4vRPCEthGlo3GTpZVt4IgHq1UbenRj6fNa9QpOBl68NnBhQ9uGPdwhk1uB1KAnZpNqjPD6avDQP3KA68bWQCGyjPtCZux3ePUdJNEufW2wXBxsjJ2rKixtw5VYpGdODxg8gNf1n4rfiqVGjZDwP4vFY7HWgiYet1BriS/z7sKcq6W4T7mh8ZgcaD/OagU45M/C4+O2h46Wjdorm3G7HntdmC099amGOOW1Rc8eKESi8sScpnsKWSrm2/FXfw4SjBohIVmUqd24POzAY6P3bRE76YrnyBtT1mhvRlWr9jvb2Rozasy94JAN84waIdFfjARVg59GPxkPyoacSGZbHINFlu2qcOrvPLGAbL+JLBfjd2XNwWuTHxa8tbhDSvwz22V63VinXNFfq2Jc4GuR5LFU8sOZZKUY75OrRj4zO1YYNULG58Qj+gQHnGLssPzA3RFkkYWsnkd2iXndDVJqefa+9LoRg75DmG/UCJlgM7YG6pFNu5iUTCePJJAVd5MnnyE/mCt9niYl16sQQeVAb08Jphs1QsJ7FHNUbeQA98aSVbPIU5JprWTsfIo8YyUdcoj90u8W/YqiVoOiK9WYZdSZEBcrEa+aI/p4RDLdkyh/q0fJ7iwZrMXk0aXkZ5sl6yckazlQi2TvSaSqQ2+wEflGrQmhNaKCriiybAZ58C7yCzHt20J2Zkj2D5OfSty1hjwgWTsXyiGS9F7/oTVjn1HrP/OJDVOVJ7qfzbdIKW8V4SXkN1vJnlzpZxp5eD75ZQHZ8aR8UmLskcw/SqNyRv4adMFm1JsQqvO2C2xMkmF6QPqZQ/bmS3lXS7YPkg3Lya+2SY8XyXDdK6ZPk6dXUR2f0e73TFtu1JoQ/lMpSzRHSpWqX9ahzuWdV+et3yl3+iVlT+5XXRsuq87MX5T9/h9VU2q3+nz9x9qZtfVDHTOTbTZEGrXG8y9VVl/EHYA6+gAAAABJRU5ErkJggg==";
+function image213(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 1060 600 1060 600 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0333333333333334,0,0,1.0188679245283019,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj213);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+function shape214(ctx,ctrans,frame,ratio,time){
+	var pathData="M -299 -529 L 300 -529 300 530 -299 530 -299 -529";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(19.966659545898438,0,0,19.981124877929688,-299,-529);
+	ctx.transform(1.0333333333333334,0,0,1.0188679245283019,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj213);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=29;
+var originalHeight=52;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape214",canvas,ctx,[0.05,0.0,0.0,0.05,14.95,26.45],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>

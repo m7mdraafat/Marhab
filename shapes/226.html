@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="29" height="52" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+var scalingGrids = {};
+var boundRects = {};
+var imageObj225 = document.createElement("img");
+imageObj225.src="data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA1CAYAAABWW1tXAAAEPUlEQVR4Xu2Xf0xVZRjHvwMFQStk0Q8Ypotas83pcs7ZH7S0ZcViZZeLjMsPJdjsol4qlW7rNEGSGonzhl5uDEfCtSu/yqbW3KitYWu01caWqznCDQpIQOFy7jnvu53Oy+3KuW/3l3Bw/XE//5z3/T7PuXvf5z3v8zwXiBIlSpQoUfTEY0SW+ojh9UVlxogt1Ih2Xl901N1mkxy08PpdYSYHT/dlIZHXo+iOAYjltbuCaMTW/kys4HXdYD/+68u4R6sNHsJKuhcXew1I8Gm9m5Eg5mGb1m9BSEbsFndgq28+6UAGbcMV2Y59fn4mmGguxnU5gn4BK2glrooVeN6n9dmRONSK+7V+DHIQtaQYTl6fF5ITeaQFbT0ClvE2HukkcqSPsJvX50vEuVjIxJJJGzJ4/Y5gGUmPrNSTORupiBfPPpQ8WoBuTw5e5G2RMpaLVGrCjwPZSOJtQfk5H8tlM8z0dXzP2yJFLoeVluAqr4fEYECseALPSTUo5m0+2E5uZCOd133I9dgnf4hDvB4SQcASdm0Q4nwubEc83YmOCSNW8zYGu4qjdjzM67ogF8BMSnW6u3eCXIUD5AA+ZuPfynGvLlkrHDdb8Rj9FOdG3/GGU34XwoVyxLNxX+nCr2Iobp8/MeMMPYxf2HhAQBI5gmNzbguE7YJlJ16fKMNqasGIW8DG2XkL1iifQZk+jg2877yQrGqVsmA7rw+XI0W0+pdD2oWfPC68pNXmDW1ED6mDg9cDMexCSr9NhybhugPJSjcU+Sz287ZF5a82PKiGzz3pxKO8LRAs8/Va5rqTBUFcqB5pxkNabdyEVZN7ApdCWcDea0dxH69HxJ/5eMD+FJaycW8dEv5No7dxGRBHLHDINagcPoIUrc1Tgyz1u/hhojlwSg0J2YVj7hJs5nUtrJKRU2ihpzE62ICVWhtx4Ci1Y2jahvVaPSSsEaCFmJKLcJDtWnuHpwqwzpOL17TdJ+1El8eJF3xzBqnCCWrFV0MV/+3RAsJCKFUiV3kDiqcIr0qFMLl3eRPErH2tGuIiNNC38MdYLVKZRppQf7MRj/t85PdQRipwasKMNcPF/scQlFtNWEua0URrQXsKsUwyo4i8iXrejzTEVhPX0pMsGjNV2MK06wYks6fHglek/SghVjSNve1dXFjY5Zfb1ZJ3FqfZnNhQT+0xlzk3TH2Rto5+mexiY1aZWKtETN4yOVCIJOWDFIXY4qv93wrD+Bk8InZ4U6R6flfkrvg9vA+5lH5Y6k4svvEJ0tWwX1PKoIj53nemj2dsUD7fqBDn8ve518Iz2Or9SqVO5Adq4m+1xz3BnrQrtZM2xs1MV8wVBvf5ZzcpX69XpI7g7VNY7KWzdzlYGxRDv930u3g+7RmtSL7bVkcvpl12CYjT6rrBFiVfWiVotb9dSBO/eZL97Qm2WH0YcfmnUpartfP/Hf8AicGIc9z6ruQAAAAASUVORK5CYII=";
+function image225(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 0 L 0 1060 600 1060 600 0 0 0";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(20,0,0,20,0,0);
+	ctx.transform(1.0333333333333334,0,0,1.0188679245283019,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj225);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+function shape226(ctx,ctrans,frame,ratio,time){
+	var pathData="M -299 -530 L 300 -530 300 529 -299 529 -299 -530";
+	drawPath(ctx,pathData,false);
+	ctx.save();
+	ctx.clip();
+	ctx.transform(19.966659545898438,0,0,19.981124877929688,-299,-530);
+	ctx.transform(1.0333333333333334,0,0,1.0188679245283019,-0.5,-0.5);
+	var fimg = ctrans.applyToImage(imageObj225);
+	var pat=ctx.createPattern(fimg,"repeat");
+	ctx.fillStyle = pat;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+}
+
+var originalWidth=29;
+var originalHeight=52;
+ function drawFrame(){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("shape226",canvas,ctx,[0.05,0.0,0.0,0.05,14.95,26.5],ctrans,1,0,0,0);
+	ctx.restore();
+}
+	drawFrame();
+</script>
+</body>
+</html>
