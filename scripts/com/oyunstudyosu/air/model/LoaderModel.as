@@ -87,9 +87,6 @@ package com.oyunstudyosu.air.model
          // Force inner game's GameModel.fileServer getter to use http:// instead
          // of its default https:// (our local Tomcat serves plain HTTP).
          _loc3_.protocol = "http://";
-         // Hint flag the inner SWF reads to know that a launcher-side asset
-         // proxy ("MyGameAssetProxy") is available in the parent ApplicationDomain.
-         _loc3_.assetProxy = "MyGameAssetProxy";
          RebuildLog.write("loader complete bytes=" + binaryLoader.data.length + " core=" + Std.string(_loc3_.cs) + " server=" + Std.string(_loc3_.serverName));
          var _loc4_:int = 0;
          var _loc5_:Array = Reflect.fields(_loc3_);

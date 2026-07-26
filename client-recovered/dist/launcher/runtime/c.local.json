@@ -1,0 +1,21 @@
+{
+  "loader": "app:/runtime/ml.21.9",
+  "core": "app:/runtime/snl.780.swf",
+  "background": "app:/runtime/loader-bg.jpg",
+  "serverName": "local",
+  "protocol": "http://",
+  "policyFile": "http://127.0.0.1:8080/crossdomain.xml",
+  "token": "dev-token",
+  "versionData": [
+    {
+      "platform": "windows",
+      "version": "1.0.1.2",
+      "url": ""
+    },
+    {
+      "platform": "mac",
+      "version": "1.0.1.1",
+      "url": ""
+    }
+  ]
+}
