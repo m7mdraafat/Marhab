@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-05-26T04:10:47.3508113+03:00",
+  "outRoot": "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\server\\www",
+  "sources": [
+    {
+      "strip": "",
+      "root": "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\rebuild\\inventory\\room-assets\\files",
+      "name": "rooms"
+    },
+    {
+      "strip": "",
+      "root": "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\rebuild\\inventory\\vf-assets\\files",
+      "name": "vf-assets"
+    },
+    {
+      "strip": "xo.newmarhab.net\\",
+      "root": "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\rebuild\\inventory\\item-assets-ifile1366\\files",
+      "name": "items-bulk"
+    },
+    {
+      "strip": "xo.newmarhab.net\\",
+      "root": "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\rebuild\\inventory\\item-assets\\files",
+      "name": "items-curated"
+    },
+    {
+      "strip": "",
+      "root": "C:\\Users\\t-malgharib\\AppData\\Roaming\\com.mygame.standalone\\Local Store\\asset-cache\\xo.newmarhab.net",
+      "name": "live-static-assets"
+    }
+  ],
+  "summary": {
+    "scanned": 14654,
+    "copied": 14581,
+    "overwritten": 73,
+    "skippedEmpty": 0,
+    "suspectSignature": 4,
+    "skippedNoGlobal": 0,
+    "bytes": 552760423
+  },
+  "bySource": {
+    "rooms": {
+      "scanned": 254,
+      "copied": 254,
+      "overwritten": 0,
+      "skippedEmpty": 0,
+      "suspectSignature": 0,
+      "skippedNoGlobal": 0,
+      "bytes": 159058144
+    },
+    "vf-assets": {
+      "scanned": 88,
+      "copied": 88,
+      "overwritten": 0,
+      "skippedEmpty": 0,
+      "suspectSignature": 2,
+      "skippedNoGlobal": 0,
+      "bytes": 24808629
+    },
+    "items-bulk": {
+      "scanned": 14232,
+      "copied": 14232,
+      "overwritten": 0,
+      "skippedEmpty": 0,
+      "suspectSignature": 0,
+      "skippedNoGlobal": 0,
+      "bytes": 364875001
+    },
+    "items-curated": {
+      "scanned": 78,
+      "copied": 5,
+      "overwritten": 73,
+      "skippedEmpty": 0,
+      "suspectSignature": 0,
+      "skippedNoGlobal": 0,
+      "bytes": 2289587
+    },
+    "live-static-assets": {
+      "scanned": 2,
+      "copied": 2,
+      "overwritten": 0,
+      "skippedEmpty": 0,
+      "suspectSignature": 2,
+      "skippedNoGlobal": 0,
+      "bytes": 1729062
+    }
+  },
+  "bySection": {
+    "global/dynamic/rooms": {
+      "files": 254,
+      "bytes": 159058144
+    },
+    "global/dynamic/core": {
+      "files": 1,
+      "bytes": 360280
+    },
+    "global/dynamic/extensions": {
+      "files": 17,
+      "bytes": 5885953
+    },
+    "global/dynamic/panels": {
+      "files": 68,
+      "bytes": 18273012
+    },
+    "global/static/data": {
+      "files": 2,
+      "bytes": 289384
+    },
+    "global/static/items": {
+      "files": 14310,
+      "bytes": 367164588
+    },
+    "global/static/assets": {
+      "files": 2,
+      "bytes": 1729062
+    }
+  },
+  "suspectFiles": [
+    "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\rebuild\\inventory\\vf-assets\\files\\global\\dynamic\\panels\\CAHPNL.10.swf",
+    "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\rebuild\\inventory\\vf-assets\\files\\global\\dynamic\\panels\\PNCPP.34.swf",
+    "C:\\Users\\t-malgharib\\AppData\\Roaming\\com.mygame.standalone\\Local Store\\asset-cache\\xo.newmarhab.net\\global\\static\\assets\\mainBackGround.png",
+    "C:\\Users\\t-malgharib\\AppData\\Roaming\\com.mygame.standalone\\Local Store\\asset-cache\\xo.newmarhab.net\\global\\static\\assets\\mainBackGroundN.png"
+  ]
+}
