@@ -11,6 +11,10 @@ $env:AIR_SDK_HOME = $SdkHome
 $logStore = "$env:APPDATA\com.mygame.standalone\Local Store\rebuild.log"
 $errFile  = Join-Path $root 'rebuild\bin\adl.err'
 
+Write-Host "--- PATCH INNER SWF ---" -ForegroundColor Cyan
+& (Join-Path $PSScriptRoot 'patch-swf.ps1')
+if ($LASTEXITCODE -ne 0) { throw "patch-swf failed ($LASTEXITCODE)" }
+
 Write-Host "--- BUILD ---" -ForegroundColor Cyan
 $build = & (Join-Path $PSScriptRoot 'compile.ps1') -SdkHome $SdkHome 2>&1
 $errors = $build | Select-String -Pattern 'Error:' | Select-Object -Last 8
@@ -18,23 +22,16 @@ if ($errors) { $errors; throw "Build failed" }
 $build | Select-String -Pattern 'bytes\)' | Select-Object -Last 1
 
 Write-Host "--- WARM CACHE ---" -ForegroundColor Cyan
-# Pre-seed avatar-editor SWFs into the proxy disk cache so the editor opens
-# offline. No-op once everything's cached; silent skip on first ever run
-# (ifile.2013 not yet present).
 & (Join-Path $PSScriptRoot 'warm-cache.ps1')
 
 Write-Host "--- LAUNCH ---" -ForegroundColor Cyan
 Remove-Item -ErrorAction SilentlyContinue $logStore, $errFile
 $adl = Join-Path $SdkHome 'bin\adl.exe'
 $outFile = Join-Path $root 'rebuild\bin\adl.out'
-# -nodebug suppresses the uncaught-error popup so the game proceeds past the
-# benign `dya68_` ReferenceError in decompiled extensions::MainLoader. The
-# in-app uncaughtError handler still logs it.
 $proc = Start-Process -FilePath $adl -ArgumentList '-nodebug','.\rebuild\application.xml','.\rebuild' -PassThru -RedirectStandardError $errFile -RedirectStandardOutput $outFile
 Start-Sleep -Seconds $WaitSeconds
 if (-not $proc.HasExited) { Stop-Process -Id $proc.Id -Force; Write-Host "(adl killed after $WaitSeconds s)" -ForegroundColor Green } else { Write-Host "(adl exited code $($proc.ExitCode))" -ForegroundColor Yellow }
 Start-Sleep -Milliseconds 500
-# Merge stderr + stdout for diagnostic readout
 if (Test-Path $outFile) {
     $extra = Get-Content $outFile -ErrorAction SilentlyContinue
     if ($extra) { Add-Content -Path $errFile -Value '--- stdout ---'; Add-Content -Path $errFile -Value $extra }

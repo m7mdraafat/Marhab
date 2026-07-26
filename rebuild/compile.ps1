@@ -66,9 +66,8 @@ New-Item -ItemType Directory -Force -Path $outputDir | Out-Null
 
 # Classes that are only referenced dynamically (Type.resolveClass / getDefinitionByName)
 # must be force-linked or the AVM2 linker strips them and the preloader silently stalls.
-# Currently this covers swf.SWFLibrary, MyGameAssetProxy (looked up by the inner
-# game SWF), and every generated __ASSET__* asset class.
-$forceInclude = @("swf.SWFLibrary", "MyGameAssetProxy")
+# Currently this covers swf.SWFLibrary and every generated __ASSET__* asset class.
+$forceInclude = @("swf.SWFLibrary")
 $forceInclude += Get-ChildItem -Path $sourcePath -File -Filter '__ASSET__*.as' |
     ForEach-Object { $_.BaseName }
 Write-Host "Force-include: $($forceInclude.Count) classes"

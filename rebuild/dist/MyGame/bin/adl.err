@@ -1,170 +1,1063 @@
-[BOOT] boot_338d.constructor
-
-[BOOT] boot_338d.init.start
-
-[BOOT] boot_338d.before ApplicationMain.main
-
-[REBUILD] ApplicationMain.main
-
-[REBUILD] ApplicationMain.create
-
-[PRELOAD] ManifestResources getLibrary(SanalikaAirUI) -> true
-
-[PRELOAD] ManifestResources getLibrary(default) -> true
-
-[PRELOAD] ApplicationMain about to call __preloader.load() libs=2 names=0
-
-[PRELOAD] lime Preloader.load() libraries=2 libraryNames=0
-
-[PRELOAD] loadedAssetLibrary (anon) [1/2]
-
-[PRELOAD] loadedAssetLibrary (anon) [2/2]
-
-[PRELOAD] ApplicationMain about to call exec()
-
-[PRELOAD] ApplicationMain exec() returned 0
-
-[PRELOAD] loadedStage=true bytesLoaded=1532381 bytesTotal=1532381
-
-[PRELOAD] lime Preloader.start() complete=false simulateProgress=false preloadComplete=true
-
-[PRELOAD] lime Preloader dispatching onComplete
-
-[PRELOAD] openfl Preloader.start() display=true complete=false
-
-[PRELOAD] openfl Preloader.display_onUnload ready=true complete=false
-
-[REBUILD] preloader complete
-
-[REBUILD] ApplicationMain.start
-
-[REBUILD] SanalikaClient.onAddedToStage start
-
-[NATIVE] Core.init() failed: Error: The native extension context could not be created
-
-[NATIVE] FacebookAuthenticationModel ctor failed: Error: The native extension context could not be created
-
-[REBUILD] SanalikaClient about to build SerialCommand chain
-
-[REBUILD] SanalikaClient.SerialCommand.execute()
-
-[REBUILD] config request app:/runtime/c.local.json
-
-[PRELOAD] lime Preloader.start() complete=true simulateProgress=false preloadComplete=true
-
-[REBUILD] config loaded loader=app:/runtime/ml.21.9 core=app:/runtime/snl.780.swf
-
-[REBUILD] local runtime auto-select instance=marhab
-
-[REBUILD] loader request app:/runtime/ml.21.9
-
-[REBUILD] SanalikaClient.initCommandsCompleted
-
-[REBUILD] loader complete bytes=360899 core=app:/runtime/snl.780.swf server=marhab
-
-[REBUILD] loader loadBytes addedToStage
-
-ReferenceError: Error #1065: Variable dya68_ is not defined.
-
-	at extensions::MainLoader/uqpsdr_3()
-
-	at flash.events::EventDispatcher/dispatchEventFunction()
-
-	at flash.events::EventDispatcher/dispatchEvent()
-
-	at flash.net::URLLoader/onComplete()
-
-canvasHeigt 515
-
-canvasHeigt 300
-
-DropGiftModel Loaded
-
-RELEASE
-
-ws://marhab-sfs.rage-world.net:8080/BlueBox/websocket
-
-SmartWebSocket
-
-ArgumentError: Error #2015: Invalid BitmapData.
-
-	at flash.display::BitmapData/ctor()
-
-	at flash.display::BitmapData()
-
-	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
-
-sfs connected
-
-ts: 1779514283964
-
-sfs logged in
-
-## ServiceModel ## -> requestData : config sent. (type : requestData) ## ->{}
-
-data: [object Object]
-
-string: {"language":"ar","fileServer":["xo.newmarhab.net"],"webServer":"play.ragegames.net/ar","moods":[{"label":"Cheerful","id":0},{"label":"Peaceful","id":1},{"label":"Crazy","id":2},{"label":"Run Down","id":3},{"label":"Unhappy","id":4},{"label":"Nervous","id":5},{"label":"Broken Heart","id":6},{"label":"Pessimistic","id":7},{"label":"Pensive","id":8},{"label":"Energetic","id":9},{"label":"Romantical","id":10},{"label":"Sensitive","id":11},{"label":"Excited","id":12},{"label":"Curious","id":13},{"label":"Depressed","id":14},{"label":"Unstable","id":15},{"label":"Worried","id":16},{"label":"Thoughtful","id":17},{"label":"Mysterious","id":18},{"label":"Mixed","id":19},{"label":"Optimistic","id":20},{"label":"Confused","id":21},{"label":"Sucks","id":22},{"label":"Resents","id":23},{"label":"Desperate","id":24},{"label":"Regret","id":25},{"label":"Alone","id":26},{"label":"Questionable","id":27},{"label":"Lethargic","id":28},{"label":"Approachable","id":29},{"label":"Stressful","id":30}],"rid":0,"langFile":"locale/ar_AR.702","roomTheme":["fest","ramadan"],"itemFile":"data/ifile.2013","order":{"maxOrder":10,"customerGainMin":10,"avatarOrderLifeTime":14400,"customerGainMax":100,"orderLifeTime":240,"prepareLifeTime":30},"versionFile":"data/vf.19910","masterRoles":[{"name":"TRANSFER","index":2},{"name":"BARTER","index":3},{"name":"VIP","index":4},{"name":"VIP_GOLD","index":5},{"name":"WHISPER","index":6},{"name":"VIP_DIAMOND","index":7},{"name":"VIP_SILVER","index":8},{"name":"AGE_18PLUS","index":9},{"name":"AGE_13MINUS","index":10},{"name":"VERIFIED_EMAIL","index":11},{"name":"VERIFIED_PHONE","index":12},{"name":"HOLIDAY_VISA_TURKEY","index":13},{"name":"DIAMOND_CLUB","index":14},{"name":"HOLIDAY_VISA_ABUDABI","index":15},{"name":"CARD_SECURITY","index":16},{"name":"HOLIDAY_VISA_SPAIN","index":17},{"name":"CARD_JOURNALIST","index":18},{"name":"CARD_DIRECTOR","index":19},{"name":"MODERATOR","index":20},{"name":"CARD_PHOTOGRAPHER","index":21},{"name":"EDITOR_SECURITY","index":22},{"name":"CARD_PAINTER","index":23},{"name":"PARTY","index":24},{"name":"SPACE_COSTUME","index":25},{"name":"KEY","index":26},{"name":"CARD_ACTOR","index":27},{"name":"CARD_GUARD","index":28},{"name":"CARD_GUIDE","index":29},{"name":"PLATO","index":30},{"name":"FORUM","index":31},{"name":"CARD_SANALIKAX","index":32},{"name":"CafeSmiley","index":33},{"name":"KIDO","index":34},{"name":"AIRPASS","index":35},{"name":"RUNWIN","index":36},{"name":"SNOWBALL","index":37},{"name":"HOLIDAY_VISA_JAPON","index":38},{"name":"HOLIDAY_VISA_TR_JPN","index":39},{"name":"VISITOR","index":40},{"name":"SECURITY","index":41},{"name":"SWIM","index":42},{"name":"SKATE","index":43},{"name":"CARD_MUSIC","index":44},{"name":"BONUS_X2","index":45},{"name":"SHORTCUT","index":46},{"name":"SHIP_LICENSE","index":47},{"name":"CARD_CAPITAN","index":48},{"name":"EVENT","index":49},{"name":"NPC","index":50},{"name":"STAGE","index":51},{"name":"NOT_VISITOR","index":52}],"diamondExchangeRate":30,"farmCleaningCost":10,"farmMaxPlantedItemSize":12,"version":92,"chatBaloons":[{"name":"Default","id":1,"requirements":"AA=="},{"name":"Silver","id":2,"requirements":"gA=="},{"name":"Yellow","id":3,"requirements":"EA=="},{"name":"Grey","id":4,"requirements":"QA=="},{"name":"Black","id":23,"requirements":"QA=="},{"name":"Red","id":24,"requirements":"EA=="},{"name":"Pink","id":25,"requirements":"EA=="},{"name":"DiamondClub","id":26,"requirements":"ACA="},{"name":"SanalikaX","id":30,"requirements":"AAAAgA=="}]}
-
-0
-
-1
-
-2
-
-3
-
-4
-
-devam 1
-
-devam 2
-
-ArgumentError: Error #2015: Invalid BitmapData.
-
-	at flash.display::BitmapData/ctor()
-
-	at flash.display::BitmapData()
-
-	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
-
-ArgumentError: Error #2015: Invalid BitmapData.
-
-	at flash.display::BitmapData/ctor()
-
-	at flash.display::BitmapData()
-
-	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
-
-ArgumentError: Error #2015: Invalid BitmapData.
-
-	at flash.display::BitmapData/ctor()
-
-	at flash.display::BitmapData()
-
-	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
-
-ArgumentError: Error #2015: Invalid BitmapData.
-
-	at flash.display::BitmapData/ctor()
-
-	at flash.display::BitmapData()
-
-	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
-
-ArgumentError: Error #2015: Invalid BitmapData.
-
-	at flash.display::BitmapData/ctor()
-
-	at flash.display::BitmapData()
-
-	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
-
-ArgumentError: Error #2015: Invalid BitmapData.
-
-	at flash.display::BitmapData/ctor()
-
-	at flash.display::BitmapData()
-
-	at com.oyunstudyosu.video.youtube::YoutubePlayer/onEnterFrame()
-
+[BOOT] boot_338d.constructor
+[BOOT] boot_338d.init.start
+[BOOT] boot_338d.before ApplicationMain.main
+[REBUILD] ApplicationMain.main
+[REBUILD] ApplicationMain.create
+[PRELOAD] ManifestResources getLibrary(SanalikaAirUI) -> true
+[PRELOAD] ManifestResources getLibrary(default) -> true
+[PRELOAD] ApplicationMain about to call __preloader.load() libs=2 names=0
+[PRELOAD] lime Preloader.load() libraries=2 libraryNames=0
+[PRELOAD] loadedAssetLibrary (anon) [1/2]
+[PRELOAD] loadedAssetLibrary (anon) [2/2]
+[PRELOAD] ApplicationMain about to call exec()
+[PRELOAD] ApplicationMain exec() returned 0
+[PRELOAD] loadedStage=true bytesLoaded=1535086 bytesTotal=1535086
+[PRELOAD] lime Preloader.start() complete=false simulateProgress=false preloadComplete=true
+[PRELOAD] lime Preloader dispatching onComplete
+[PRELOAD] openfl Preloader.start() display=true complete=false
+[PRELOAD] openfl Preloader.display_onUnload ready=true complete=false
+[REBUILD] preloader complete
+[REBUILD] ApplicationMain.start
+[REBUILD] SanalikaClient.onAddedToStage start
+[REBUILD] [POLICY] loadPolicyFile done
+[NATIVE] Core.init() failed: Error: The native extension context could not be created
+[NATIVE] FacebookAuthenticationModel ctor failed: Error: The native extension context could not be created
+[REBUILD] SanalikaClient about to build SerialCommand chain
+[REBUILD] SanalikaClient.SerialCommand.execute()
+[REBUILD] config request app:/runtime/c.local.json
+[PRELOAD] lime Preloader.start() complete=true simulateProgress=false preloadComplete=true
+[REBUILD] config loaded loader=app:/runtime/ml.21.9 core=app:/runtime/snl.780.swf
+[REBUILD] stored instance selected instance=marhab
+[REBUILD] loader request app:/runtime/ml.21.9
+[REBUILD] SanalikaClient.initCommandsCompleted
+[REBUILD] loader complete bytes=360899 core=app:/runtime/snl.780.swf server=marhab
+[REBUILD] loader loadBytes addedToStage
+ReferenceError: Error #1065
+canvasHeigt 515
+canvasHeigt 300
+DropGiftModel Loaded
+RELEASE
+ws://marhab-sfs.mygame-test.cc:8080/BlueBox/websocket
+SmartWebSocket
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+sfs connected
+ts: 1779657436278
+ArgumentError: Error #2015
+sfs logged in
+## ServiceModel ## -> requestData : config sent. (type : requestData) ## ->{}
+data: [object Object]
+string: {"farmCleaningCost":10,"versionFile":"data/vf.403","itemFile":"data/ifile.1366","order":{"orderLifeTime":240,"prepareLifeTime":30,"maxOrder":10,"customerGainMax":100,"customerGainMin":10,"avatarOrderLifeTime":14400},"moods":[{"id":0,"label":"Cheerful"},{"id":1,"label":"Peaceful"},{"id":2,"label":"Crazy"},{"id":3,"label":"Run Down"},{"id":4,"label":"Unhappy"},{"id":5,"label":"Nervous"},{"id":6,"label":"Broken Heart"},{"id":7,"label":"Pessimistic"},{"id":8,"label":"Pensive"},{"id":9,"label":"Energetic"},{"id":10,"label":"Romantical"},{"id":11,"label":"Sensitive"},{"id":12,"label":"Excited"},{"id":13,"label":"Curious"},{"id":14,"label":"Depressed"},{"id":15,"label":"Unstable"},{"id":16,"label":"Worried"},{"id":17,"label":"Thoughtful"},{"id":18,"label":"Mysterious"},{"id":19,"label":"Mixed"},{"id":20,"label":"Optimistic"},{"id":21,"label":"Confused"},{"id":22,"label":"Sucks"},{"id":23,"label":"Resents"},{"id":24,"label":"Desperate"},{"id":25,"label":"Regret"},{"id":26,"label":"Alone"},{"id":27,"label":"Questionable"},{"id":28,"label":"Lethargic"},{"id":29,"label":"Approachable"},{"id":30,"label":"Stressful"}],"roomTheme":["fest","ramadan"],"rid":0,"ok":true,"sn":"config","version":92,"masterRoles":[{"name":"TRANSFER","index":2},{"name":"BARTER","index":3},{"name":"VIP","index":4},{"name":"VIP_GOLD","index":5},{"name":"WHISPER","index":6},{"name":"VIP_DIAMOND","index":7},{"name":"VIP_SILVER","index":8},{"name":"MODERATOR","index":20},{"name":"VISITOR","index":40},{"name":"NOT_VISITOR","index":52}],"fileServer":["127.0.0.1:8081"],"language":"ar","chatBaloons":[{"requirements":"AA==","name":"Default","id":1},{"requirements":"gA==","name":"Silver","id":2},{"requirements":"EA==","name":"Yellow","id":3},{"requirements":"QA==","name":"Grey","id":4},{"requirements":"QA==","name":"Black","id":23},{"requirements":"EA==","name":"Red","id":24},{"requirements":"EA==","name":"Pink","id":25},{"requirements":"ACA=","name":"DiamondClub","id":26},{"requirements":"AAAAgA==","name":"SanalikaX","id":30}],"ts":0,"farmMaxPlantedItemSize":12,"webServer":"http://127.0.0.1:3000","langFile":"locale/ar"}
+0
+1
+2
+3
+4
+devam 1
+devam 2
+ArgumentError: Error #2015
+[AssetModel] proxy BG http://127.0.0.1:8081/global/static/assets/mainBackGround.png?v=3
+[REBUILD] [PROXY] cache-hit binary http://127.0.0.1:8081/global/static/assets/mainBackGround.png?v=3 (207633B)
+getInfoFile() : firstLoad[true]
+[InfoFileParser] proxy lookup start for http://127.0.0.1:8081/global/static/data/ifile.1366
+[InfoFileParser]   domain depth=0 hasProxy=true
+[InfoFileParser] using AssetProxy at depth 0
+[REBUILD] [PROXY] cache-hit text http://127.0.0.1:8081/global/static/data/ifile.1366 (273232B)
+getInfoFile_SUCCESS
+hello world
+ArgumentError: Error #2015
+loadingVersionFile
+## ServiceModel ## -> requestData : init sent. (type : requestData) ## ->{}
+ArgumentError: Error #2015
+INIT_RESP: {"settings":{"verifySession":0,"incomingMessages":1,"wideMode":1,"tradeRequests":1,"whisperMessage":1,"showInvitations":1,"flatNotifications":1,"onlyBuddyWhisper":0,"transferRequests":1},"ok":true,"createAvatar":true,"email":"guest@local.invalid","rid":1,"sn":"init","guest":true,"gender":"m","selectedAvatarID":"1","completedAchievementsCount":0,"extensionInfo":[],"ts":1779657436640,"checkAvatar":0}
+0
+[PATCH] pre-register EXTENSIONS_LOADED listener
+onInited
+[PROCESS] enter checkAvatar=0 createAvatar=true guest=true
+[PROCESS] -> AvatarCreatePanel (BaseCloth) panelModel=[object PanelModel]
+[AssetModel] proxy ModuleType.PANEL http://127.0.0.1:8081/global/dynamic/panels/7530800THw.2.swf
+[REBUILD] [PROXY] cache-hit binary http://127.0.0.1:8081/global/dynamic/panels/7530800THw.2.swf (180921B)
+canvasHeigt 300
+ArgumentError: Error #2015
+## ServiceModel ## -> requestData : baseclothes sent. (type : requestData) ## ->{}
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_2.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_2.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_C_8.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_C_8.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_B_8.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_B_8.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_A_1.1.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_A_1.1.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_5.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_5.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1026_5.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1026_5.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1_7.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1_7.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_2.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_2.swf (6100B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_2.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_C_8.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_C_8.swf (23501B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_C_8.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_B_8.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_B_8.swf (42814B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_B_8.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_5.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_5.swf (29868B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_abv74yn4_5.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_A_1.1.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_A_1.1.swf (4424B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_A_1.1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1026_5.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1026_5.swf (37378B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1026_5.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1_7.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1_7.swf (15328B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1_7.swf
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_A_8.1.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_A_8.1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_A_8.1.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_A_8.1.swf (4343B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_A_8.1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_C_12.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_C_12.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_C_12.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_C_12.swf (23026B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_C_12.swf
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_B_12.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_B_12.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_B_12.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_B_12.swf (43287B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_B_12.swf
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_A_12.1.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_A_12.1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_A_12.1.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_A_12.1.swf (4181B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_A_12.1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_C_1.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_C_1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_C_1.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_C_1.swf (23929B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_C_1.swf
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_B_1.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_B_1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_B_1.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_B_1.swf (43438B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_B_1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_C_2.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_C_2.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_C_2.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_C_2.swf (25264B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_C_2.swf
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_B_2.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_B_2.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_B_2.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_B_2.swf (46892B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_B_2.swf
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_A_2.1.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_A_2.1.swf
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_A_2.1.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_A_2.1.swf (4978B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_A_2.1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_3.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_3.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_3.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_3.swf (4712B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_3.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_5.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_5.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_5.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_5.swf (6129B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_5.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_9.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_9.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_9.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_9.swf (5720B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_9.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_9.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_9.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1026_7.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1026_7.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1_5.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1_5.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_9.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_9.swf (25761B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_abv74yn4_9.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1026_7.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1026_7.swf (37120B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1026_7.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1_5.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1_5.swf (15634B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1_5.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_8.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_8.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_1.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_1.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1026_4.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1026_4.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1_3.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1_3.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_8.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_8.swf (4311B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_8.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1026_4.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1026_4.swf (36520B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1026_4.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_1.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_1.swf (28914B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_abv74yn4_1.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1_3.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1_3.swf (15930B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1_3.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_11.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_11.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1026_10.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1026_10.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_11.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_11.swf (5721B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_11.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1026_10.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1026_10.swf (43283B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1026_10.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_7.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_7.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_7.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_7.swf
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_1_4.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_1_4.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_7.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_7.swf (5671B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_7.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_7.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_abv74yn4_7.swf (28010B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_abv74yn4_7.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_1_4.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_1_4.swf (16073B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_1_4.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[AssetModel] proxy ModuleType.CLOTH http://127.0.0.1:8081/global/static/items/clothes/m_84_4.swf
+[REBUILD] [PROXY] fetch binary http://127.0.0.1:8081/global/static/items/clothes/m_84_4.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+[REBUILD] [PROXY] ok  http://127.0.0.1:8081/global/static/items/clothes/m_84_4.swf
+[REBUILD] [PROXY] cached http://127.0.0.1:8081/global/static/items/clothes/m_84_4.swf (6372B) -> C:\Users\t-malgharib\AppData\Roaming\com.mygame.standalone\Local Store\asset-cache\127.0.0.1_8081\global\static\items\clothes\m_84_4.swf
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015
+ArgumentError: Error #2015

@@ -16,6 +16,7 @@ memories/repo/mygame-clothes.md for why.
 from __future__ import annotations
 
 import base64
+import argparse
 import os
 import sys
 from pathlib import Path
@@ -110,11 +111,26 @@ def url_to_cache_path(url: str) -> Path:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Emit asset URLs from an ifile catalog.")
+    parser.add_argument(
+        "--ifile",
+        type=Path,
+        default=ifile_path(),
+        help="Base64-encoded ifile catalog. Defaults to the AIR asset cache ifile.2013.",
+    )
+    parser.add_argument(
+        "--out-dir",
+        type=Path,
+        default=None,
+        help="Output directory for URL catalogs. Defaults to rebuild/inventory/url-catalog.",
+    )
+    args = parser.parse_args()
+
     repo = Path(__file__).resolve().parent.parent
-    out_dir = repo / "rebuild" / "inventory" / "url-catalog"
+    out_dir = args.out_dir or repo / "rebuild" / "inventory" / "url-catalog"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    lines = decode_ifile(ifile_path())
+    lines = decode_ifile(args.ifile)
     by_kind: dict[str, list[str]] = {"cloth": [], "inv": [], "smiley": []}
     counts = {"cloth": 0, "inv": 0, "smiley": 0, "skip": 0}
 

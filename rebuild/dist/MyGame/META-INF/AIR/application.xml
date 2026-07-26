@@ -3,12 +3,14 @@
   <id>com.mygame.standalone</id>
   <filename>MyGame</filename>
   <name>MyGame</name>
+  <description>MyGame -- personal virtual-world client</description>
+  <copyright>(c) you, 2026</copyright>
   <versionNumber>0.1.0</versionNumber>
   <versionLabel>0.1.0-dev</versionLabel>
   <supportedProfiles>extendedDesktop desktop</supportedProfiles>
   <initialWindow>
     <content>bin/MyGame.swf</content>
-    <title>MyGame</title>
+    <title>MyGame (dev)</title>
     <visible>true</visible>
     <width>1024</width>
     <height>768</height>
