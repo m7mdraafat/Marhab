@@ -1,0 +1,1267 @@
+[
+  {
+    "category": "vf.19910",
+    "roomKey": "academy",
+    "swfPath": "rooms/1447849759355-13.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "academyCanteen",
+    "swfPath": "rooms/1448462286554-26.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "academyClass",
+    "swfPath": "rooms/1424879301444-31.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "academyLab",
+    "swfPath": "rooms/1424879301444-32"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "airplane",
+    "swfPath": "rooms/90720206SWV.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "airport",
+    "swfPath": "rooms/89074661nsi.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "albus01",
+    "swfPath": "rooms/1422640346856-43"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "albus02",
+    "swfPath": "rooms/1422640346856-44"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "albus03",
+    "swfPath": "rooms/1422640346856-45"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "albus04",
+    "swfPath": "rooms/1422640346856-46"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "albusLobby",
+    "swfPath": "rooms/1441799246907-9"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "albusSpa",
+    "swfPath": "rooms/56630883ZMz"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "amfiTheater",
+    "swfPath": "rooms/1435053227796-1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "anemon",
+    "swfPath": "rooms/1450201288584-3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "anemon01",
+    "swfPath": "rooms/1422640346856-49"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "artifika",
+    "swfPath": "rooms/2171407IXG"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "artStudio",
+    "swfPath": "rooms/1435251865710-2.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "bank",
+    "swfPath": "rooms/1424879301444-35.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "basfExhibition",
+    "swfPath": "rooms/1448645588032-37"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "basfHome",
+    "swfPath": "rooms/1446735197873-12"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "billiards",
+    "swfPath": "rooms/1424879301444-36.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "blueCafe",
+    "swfPath": "rooms/1424879301444-37"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "botanika",
+    "swfPath": "rooms/1424879301444-38"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "bowling",
+    "swfPath": "rooms/1424879301444-39"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "bungalow",
+    "swfPath": "rooms/6150493jUW"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "bungalow01",
+    "swfPath": "rooms/1424879301444-40"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "burgerika",
+    "swfPath": "rooms/1424879301444-41.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "burgerikaTerrace",
+    "swfPath": "rooms/43800265bET.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe01",
+    "swfPath": "rooms/1422640346856-57"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe02",
+    "swfPath": "rooms/1422640346856-58"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe03",
+    "swfPath": "rooms/1422640346856-59"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe04",
+    "swfPath": "rooms/1422640346856-60"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe05",
+    "swfPath": "rooms/1427729731891-28"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe06",
+    "swfPath": "rooms/1435825017264-8"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe07",
+    "swfPath": "rooms/204591073CPN.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe08",
+    "swfPath": "rooms/204672716RK3.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafe09",
+    "swfPath": "rooms/2047458368v5.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafeFaruk",
+    "swfPath": "rooms/2755628e9e.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafeGarage01",
+    "swfPath": "rooms/116477454rlm"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafeGarage02",
+    "swfPath": "rooms/118092830n0J"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafeGarage03",
+    "swfPath": "rooms/118092838zLK"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafeGradrey",
+    "swfPath": "rooms/146108142iMQ"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafeMarina",
+    "swfPath": "rooms/1444433226024-1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafeRestoran",
+    "swfPath": "rooms/18999429yyr"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafetoria",
+    "swfPath": "rooms/1424879301444-43"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cafetoriaWc",
+    "swfPath": "rooms/1424879301444-44"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "calleComercio",
+    "swfPath": "rooms/1444733920794-6"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "calledelSol",
+    "swfPath": "rooms/1444433226024-4"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "calleMarina01",
+    "swfPath": "rooms/1445066113374-19.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "calleMarina02",
+    "swfPath": "rooms/1445066113374-20"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "candyShop",
+    "swfPath": "rooms/1448462286554-27.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "carpeModo",
+    "swfPath": "rooms/1435825017264-9.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "carShop",
+    "swfPath": "rooms/1422640346856-72"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cave",
+    "swfPath": "rooms/6148785m9M"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cinema",
+    "swfPath": "rooms/RMCNM.5"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cinemaCafe",
+    "swfPath": "rooms/RMCNCAFE.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cinemaHouse",
+    "swfPath": "rooms/RMCH01.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cinemaSaloon01",
+    "swfPath": "rooms/RMCNS01.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cinemaSaloon02",
+    "swfPath": "rooms/RMCNS02.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cinemaSaloon03",
+    "swfPath": "rooms/RMCNS03.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "cinemaSaloon04",
+    "swfPath": "rooms/RMCNS04.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "class01",
+    "swfPath": "rooms/3642804bcZ"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "clubBuilding",
+    "swfPath": "rooms/1450464085721-12"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "comedy",
+    "swfPath": "rooms/1424879301444-54"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "culturalCenter",
+    "swfPath": "rooms/1450888222663-1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "diamondHairdresser",
+    "swfPath": "rooms/1438350033774-16.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "districtOne",
+    "swfPath": "rooms/1424879301444-56.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "dresser",
+    "swfPath": "rooms/1424879301444-57.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "engineRoom",
+    "swfPath": "rooms/1424879301444-58"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "exhibition",
+    "swfPath": "rooms/RMEXH.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "farEast01",
+    "swfPath": "rooms/1424879301444-60"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "farEast02",
+    "swfPath": "rooms/1424879301444-61.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "farEast03",
+    "swfPath": "rooms/1424879301444-62.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "farEast04",
+    "swfPath": "rooms/1424879301444-63"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "fashionHouse",
+    "swfPath": "rooms/1424879301444-64"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "ferryboat",
+    "swfPath": "rooms/1448645588032-38.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "fitness",
+    "swfPath": "rooms/1435825017264-11"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "fortuneTeller",
+    "swfPath": "rooms/1448462286554-29"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "galata",
+    "swfPath": "rooms/96508174P8V"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "gamerRoom",
+    "swfPath": "rooms/48466226RP6"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "garage01",
+    "swfPath": "rooms/1422640346856-90"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "ghhotel01",
+    "swfPath": "rooms/1422640346856-91"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "giftShop",
+    "swfPath": "rooms/963133w3l.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "global01",
+    "swfPath": "rooms/1435825017264-12.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "global02",
+    "swfPath": "rooms/1435825017264-13.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "global03",
+    "swfPath": "rooms/1434028784069-7.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "global05",
+    "swfPath": "rooms/1435931621089-10"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "global06",
+    "swfPath": "rooms/1435825017264-15"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "global07",
+    "swfPath": "rooms/1435825017264-16.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "goldenHorseHotelLobby",
+    "swfPath": "rooms/1433262697297-17.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "goldenHorseHotelPool",
+    "swfPath": "rooms/1424879301444-69.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "gourmetPark",
+    "swfPath": "rooms/15129042s6l"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "greenStudio",
+    "swfPath": "rooms/148520466hQA.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "hairdresser",
+    "swfPath": "rooms/1429082296572-9"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "hairFair",
+    "swfPath": "rooms/1435251865710-9.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "hallofFame",
+    "swfPath": "rooms/1424879301444-72"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "hatShop",
+    "swfPath": "rooms/1424879301444-73"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "hospital01",
+    "swfPath": "rooms/1434701423225-13.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "hotelLobby",
+    "swfPath": "rooms/1424879301444-74.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "iceAge01",
+    "swfPath": "rooms/1424879301444-75"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "iceAge02",
+    "swfPath": "rooms/1424879301444-76"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "iceRink",
+    "swfPath": "rooms/1424879301444-77"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "juguete",
+    "swfPath": "rooms/1444433226024-5"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "kido20180901",
+    "swfPath": "rooms/kido20180901"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "kido20180902",
+    "swfPath": "rooms/kido20180902"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "kido20180903",
+    "swfPath": "rooms/kido20180903"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "kido20180904",
+    "swfPath": "rooms/kido20180904"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "kido20180905",
+    "swfPath": "rooms/kido20180905"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "kido20180906",
+    "swfPath": "rooms/kido20180906"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "kido20180907",
+    "swfPath": "rooms/kido20180907"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "klakk",
+    "swfPath": "rooms/1424879301444-79"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "klinika",
+    "swfPath": "rooms/1424879301444-80"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "landelike01",
+    "swfPath": "rooms/16050595ykg"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "landelike02",
+    "swfPath": "rooms/160506235dg"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "lazBakkalFarm",
+    "swfPath": "rooms/1424879301444-81.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "legendRon",
+    "swfPath": "rooms/43192928Gto"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "library",
+    "swfPath": "rooms/1424879301444-82"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "littlestPetShop",
+    "swfPath": "rooms/28507919ULU"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "lootALot",
+    "swfPath": "rooms/1424879301444-83.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "lubnanRestaurant",
+    "swfPath": "rooms/1424879301444-84.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "market",
+    "swfPath": "rooms/1449914882703-4"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "mediaCenterLobby",
+    "swfPath": "rooms/1424879301444-86"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "mediaCenterMeetingRoom",
+    "swfPath": "rooms/1424879301444-87"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "mediaCenterRadio",
+    "swfPath": "rooms/1424879301444-88"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "modShop",
+    "swfPath": "rooms/rmmodShop"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "monitte",
+    "swfPath": "rooms/1424879301444-90"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "monitteLounge",
+    "swfPath": "rooms/1424879301444-91"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "municipality",
+    "swfPath": "rooms/1445503891697-16.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "mushRoom",
+    "swfPath": "rooms/42076139d4Q"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "musicMarket",
+    "swfPath": "rooms/1424879301444-93.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "mySpace01",
+    "swfPath": "rooms/6408985DlT"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "mySpace02",
+    "swfPath": "rooms/6408995yif"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "mySpace03",
+    "swfPath": "rooms/64090087sB"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "nautilusPier",
+    "swfPath": "rooms/1424879301444-94"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "nautilusShip",
+    "swfPath": "rooms/1424879301444-95"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "newStreet01",
+    "swfPath": "rooms/1433420983535-13"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "nriettaLobby",
+    "swfPath": "rooms/1435931621089-11.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "office01",
+    "swfPath": "rooms/1428507449551-13"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "office02",
+    "swfPath": "rooms/1422640346856-121"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos01",
+    "swfPath": "rooms/olimpos01-dark"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos02",
+    "swfPath": "rooms/1424879301444-97.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos03",
+    "swfPath": "rooms/1448462286554-30.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos04",
+    "swfPath": "rooms/1424879301444-99"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos05",
+    "swfPath": "rooms/1424879301444-100"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos06",
+    "swfPath": "rooms/1424879301444-101"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos07",
+    "swfPath": "rooms/1424879301444-102"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos08",
+    "swfPath": "rooms/1424879301444-103.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos09",
+    "swfPath": "rooms/1424879301444-104"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos10",
+    "swfPath": "rooms/1442327249446-18.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos10Carnival",
+    "swfPath": "rooms/1442595346954-3.8"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimpos10Ramadan",
+    "swfPath": "rooms/1435825017264-18.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimposMetro",
+    "swfPath": "rooms/1424879301444-107.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimposPier",
+    "swfPath": "rooms/1424879301444-108.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "olimposPirate",
+    "swfPath": "rooms/1424879301444-109"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "optika",
+    "swfPath": "rooms/1424879301444-110"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "ottomanHairdresser",
+    "swfPath": "rooms/1424879301444-111"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "ottomanTent",
+    "swfPath": "rooms/1424879301444-112"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "oyunika",
+    "swfPath": "rooms/204500386ODl.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "painterStudio",
+    "swfPath": "rooms/1435251865710-3.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "partyIsland",
+    "swfPath": "rooms/RMPI01.6"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "partyIsland02",
+    "swfPath": "rooms/RMPI02.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "partyIsland03",
+    "swfPath": "rooms/RMPI03.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "petshop",
+    "swfPath": "rooms/1424879301444-113"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "pharmacy",
+    "swfPath": "rooms/1424879301444-114.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "pier",
+    "swfPath": "rooms/1448467597058-13.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "pierBeach",
+    "swfPath": "rooms/RMPBE.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "plazaMayor",
+    "swfPath": "rooms/1424879301444-116"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "plazaMayorNorte",
+    "swfPath": "rooms/1424879301444-117"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "plazaMayorSur",
+    "swfPath": "rooms/1424879301444-118.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "presidency",
+    "swfPath": "rooms/1424879301444-119.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "realEstate",
+    "swfPath": "rooms/1424879301444-120.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "restaurant",
+    "swfPath": "rooms/1424879301444-121.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "retroCafe",
+    "swfPath": "rooms/1424879301444-122"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "robins",
+    "swfPath": "rooms/6380229cyf"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaTr",
+    "swfPath": "rooms/1435073559200-12.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaTrCafe",
+    "swfPath": "rooms/1435053227796-4"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaTrHavuz",
+    "swfPath": "rooms/1435053227796-5.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaTrKuafor",
+    "swfPath": "rooms/1435251865710-10"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaXHouse",
+    "swfPath": "rooms/686805442ui"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaXMars",
+    "swfPath": "rooms/1442327249446-22"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaXMarsTransfer",
+    "swfPath": "rooms/1442327249446-21"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaXRocket",
+    "swfPath": "rooms/1442327249446-20"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sanalikaXTransfer",
+    "swfPath": "rooms/1442327249446-19"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sculptureClub",
+    "swfPath": "rooms/1435251865710-4"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "secondHandShop",
+    "swfPath": "rooms/1450801716958-14.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sevgi01",
+    "swfPath": "rooms/1433420983535-14"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sevgi02",
+    "swfPath": "rooms/1433420983535-15"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sevgi03",
+    "swfPath": "rooms/1433420983535-16"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sevgi04",
+    "swfPath": "rooms/1433420983535-17"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "ship01",
+    "swfPath": "rooms/1422640346856-154.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "snowWorld01",
+    "swfPath": "rooms/1424879301444-124"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "snowWorld02",
+    "swfPath": "rooms/1451063824238-1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "space",
+    "swfPath": "rooms/1424879301444-126"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "space01",
+    "swfPath": "rooms/1442562053675-1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "spaceShip",
+    "swfPath": "rooms/1424879301444-127"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "speedy",
+    "swfPath": "rooms/RM106260401sfI"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "sportika",
+    "swfPath": "rooms/1424879301444-128"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "startpoint",
+    "swfPath": "rooms/1424879301444-129"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "stockMarket",
+    "swfPath": "rooms/1424879301444-130"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street01",
+    "swfPath": "rooms/st01-dark3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street02",
+    "swfPath": "rooms/st2-dark2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street03",
+    "swfPath": "rooms/st3-dark3-3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street04",
+    "swfPath": "rooms/1427991399383-15.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street05",
+    "swfPath": "rooms/1438350033774-20.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street05Metro",
+    "swfPath": "rooms/1424879301444-136.3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street06",
+    "swfPath": "rooms/st06.2"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street07",
+    "swfPath": "rooms/1438350033774-21.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street08",
+    "swfPath": "rooms/st8-dark"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street09",
+    "swfPath": "rooms/1438350033774-22"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street10",
+    "swfPath": "rooms/st10-dark3"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street11",
+    "swfPath": "rooms/1450888222663-14.5"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street12",
+    "swfPath": "rooms/1438350033774-25.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "street13",
+    "swfPath": "rooms/1451060883136-4"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "strippedRoom",
+    "swfPath": "rooms/8889189Xga"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "studio",
+    "swfPath": "rooms/1424879301444-145.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "style",
+    "swfPath": "rooms/1435251865710-5"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "styleDome",
+    "swfPath": "rooms/1424879301444-146"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "styleRoom",
+    "swfPath": "rooms/42079662hWb"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "summerCafe",
+    "swfPath": "rooms/80171259ToC"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "summerCamp",
+    "swfPath": "rooms/80171224fFI.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "summerTent01",
+    "swfPath": "rooms/80171234Agn"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "summerTent02",
+    "swfPath": "rooms/80171247RFN"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "swamp",
+    "swfPath": "rooms/1424879301444-147"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "testRoom",
+    "swfPath": "rooms/1438350033774-26"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "testStreet",
+    "swfPath": "rooms/testStreet"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "titanicaPier",
+    "swfPath": "rooms/1446130055221-6"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "tortuga",
+    "swfPath": "rooms/2755771bVT"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "toyStore",
+    "swfPath": "rooms/1424879301444-149"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "travertine",
+    "swfPath": "rooms/1435251865710-11"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "tronTerrace",
+    "swfPath": "rooms/51498059Vk1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "tropika",
+    "swfPath": "rooms/2072055w0N"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "vipPool",
+    "swfPath": "rooms/1424879301444-150.1"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun01_a",
+    "swfPath": "rooms/1422640346856-182"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun01_b",
+    "swfPath": "rooms/1422640346856-183"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun01_c",
+    "swfPath": "rooms/1422640346856-184"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun01_d",
+    "swfPath": "rooms/1422640346856-185"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun01_e",
+    "swfPath": "rooms/1422640346856-186"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun02_a",
+    "swfPath": "rooms/1422640346856-187"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun02_b",
+    "swfPath": "rooms/1422640346856-188"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun02_c",
+    "swfPath": "rooms/1422640346856-189"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun02_d",
+    "swfPath": "rooms/1422640346856-190"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun02_e",
+    "swfPath": "rooms/1422640346856-191"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun02_f",
+    "swfPath": "rooms/1422640346856-192"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_a",
+    "swfPath": "rooms/1424879301444-151"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_b",
+    "swfPath": "rooms/1422640346856-194"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_c",
+    "swfPath": "rooms/1422640346856-195"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_d",
+    "swfPath": "rooms/1422640346856-196"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_e",
+    "swfPath": "rooms/1422640346856-197"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_f",
+    "swfPath": "rooms/1422640346856-198"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_g",
+    "swfPath": "rooms/1422640346856-199"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosun03_h",
+    "swfPath": "rooms/1422640346856-200"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "yosunLobby",
+    "swfPath": "rooms/1424879301444-152"
+  },
+  {
+    "category": "vf.19910",
+    "roomKey": "youtuberRoom",
+    "swfPath": "rooms/48466247TCm"
+  }
+]

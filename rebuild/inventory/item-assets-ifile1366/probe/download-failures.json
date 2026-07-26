@@ -1,0 +1,20 @@
+[
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/m_4fBElQPb_9.swf",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets-ifile1366\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\m_4fBElQPb_9.swf",
+    "attempts": 3,
+    "elapsed_ms": 1385,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/r_m_4fBElQPb_9.png",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets-ifile1366\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\r_m_4fBElQPb_9.png",
+    "attempts": 3,
+    "elapsed_ms": 1385,
+    "error": "HTTP Error 404: Not Found"
+  }
+]

@@ -144,12 +144,214 @@ package
    import flash.system.SecurityDomain;
    import flash.ui.Mouse;
    import flash.utils.Dictionary;
+   import flash.utils.Timer;
+   import flash.utils.getDefinitionByName;
    import org.oyunstudyosu.assets.clips.DoorIcon;
    
    public class Sanalika extends Sprite
    {
       
       public static var instance:Sanalika;
+
+      // PATCH: bridge to the outer launcher's RebuildLog.write (which appends
+      // to rebuild.log). Inner SWF lives in a child ApplicationDomain so the
+      // class is visible by name. Wrapped so a missing class can't break the
+      // host call site. PUBLIC so the patched ServiceModel can emit [SNIFF->]
+      // lines into the same stream as the inbound sniffer.
+      public static function rlog(msg:String, _unused:Boolean = false) : void {
+         try {
+            var cls:Class = getDefinitionByName("com.oyunstudyosu.air::RebuildLog") as Class;
+            if (cls != null) { cls.write(msg); return; }
+         } catch (e:Error) {}
+         trace(msg);
+      }
+
+      // PATCH: keep a static reference to diagnostic Timers so they aren't GC'd before firing.
+      private static var _probeTimer:Timer;
+
+      // PATCH: raw SFS event sniffer — wires one listener per interesting
+      // SFSEvent and emits a single rlog line per event. No truncation: we
+      // want the full payload (including base64 room maps and grid blobs)
+      // so summarize-sniff.py can reconstruct exact wire shapes. A line cap
+      // exists only as a safety valve for pathological cases.
+      private static const SNIFF_MAX:int = 200000;
+      private static function attachSniffer(sfs:Object) : void {
+         if (sfs == null) { rlog("[SNIFF] no sfs"); return; }
+         try {
+            sfs.addEventListener("connection", function(e:Object):void {
+               rlog("[SNIFF<-] connection " + sniffStr(e.params));
+            });
+            sfs.addEventListener("connectionLost", function(e:Object):void {
+               rlog("[SNIFF<-] connectionLost " + sniffStr(e.params));
+            });
+            sfs.addEventListener("login", function(e:Object):void {
+               rlog("[SNIFF<-] login " + sniffStr(e.params));
+            });
+            sfs.addEventListener("loginError", function(e:Object):void {
+               rlog("[SNIFF<-] loginError " + sniffStr(e.params));
+            });
+            sfs.addEventListener("roomJoin", function(e:Object):void {
+               var r:Object = e.params.room;
+               rlog("[SNIFF<-] roomJoin name=" + (r ? r.name : "?") + " id=" + (r ? r.id : "?")
+                  + " users=" + (r ? r.userCount : "?") + " group=" + (r ? r.groupId : "?"));
+               // Dump full room vars on join so we can capture the
+               // server-authored `grid` blob, `bots`, `doors`, etc.
+               if (r != null) {
+                  try {
+                     var vars:Object = {};
+                     for each (var v:* in r.getVariables()) {
+                        try { vars[v.getName()] = sniffUnwrap(v.getValue(), 0); } catch (eV:Error) { vars[v.getName()] = "<err:" + eV.message + ">"; }
+                     }
+                     rlog("[SNIFF<-] roomVars room=" + r.name + " vars=" + sniffStr(vars));
+                  } catch (eRJ:Error) { rlog("[SNIFF] roomJoin vars dump failed: " + eRJ.message); }
+               }
+            });
+            sfs.addEventListener("roomJoinError", function(e:Object):void {
+               rlog("[SNIFF<-] roomJoinError " + sniffStr(e.params));
+            });
+            sfs.addEventListener("userEnterRoom", function(e:Object):void {
+               var u:Object = e.params.user;
+               rlog("[SNIFF<-] userEnterRoom user=" + (u ? u.name : "?") + " id=" + (u ? u.id : "?"));
+            });
+            sfs.addEventListener("userExitRoom", function(e:Object):void {
+               var u:Object = e.params.user;
+               rlog("[SNIFF<-] userExitRoom user=" + (u ? u.name : "?"));
+            });
+            sfs.addEventListener("userVariablesUpdate", function(e:Object):void {
+               var u:Object = e.params.user;
+               var changed:Array = e.params.changedVars as Array;
+               var snap:Object = {};
+               if (u != null && changed != null) {
+                  for (var i:int = 0; i < changed.length; i++) {
+                     var k:String = String(changed[i]);
+                     try {
+                        var v:Object = u.getVariable(k);
+                        if (v != null) snap[k] = v.getValue();
+                     } catch (ev:Error) { snap[k] = "<err:" + ev.message + ">"; }
+                  }
+               }
+               rlog("[SNIFF<-] userVarUpd user=" + (u ? u.name : "?")
+                  + " keys=" + (changed ? changed.join(",") : "[]")
+                  + " vals=" + sniffStr(snap));
+            });
+            sfs.addEventListener("roomVariablesUpdate", function(e:Object):void {
+               var r:Object = e.params.room;
+               var changed:Array = e.params.changedVars as Array;
+               var snap:Object = {};
+               if (r != null && changed != null) {
+                  for (var i:int = 0; i < changed.length; i++) {
+                     var k:String = String(changed[i]);
+                     try {
+                        var v:Object = r.getVariable(k);
+                        if (v != null) snap[k] = v.getValue();
+                     } catch (er:Error) { snap[k] = "<err:" + er.message + ">"; }
+                  }
+               }
+               rlog("[SNIFF<-] roomVarUpd room=" + (r ? r.name : "?")
+                  + " keys=" + (changed ? changed.join(",") : "[]")
+                  + " vals=" + sniffStr(snap));
+            });
+            sfs.addEventListener("extensionResponse", function(e:Object):void {
+               var cmd:String = String(e.params.cmd);
+               var raw:Object = null;
+               try { raw = e.params.params != null ? e.params.params.toObject() : null; }
+               catch (ex:Error) { raw = { _err: ex.message }; }
+               rlog("[SNIFF<-] ext cmd=" + cmd + " params=" + sniffStr(raw));
+            });
+            sfs.addEventListener("publicMessage", function(e:Object):void {
+               rlog("[SNIFF<-] publicMsg from=" + (e.params.sender ? e.params.sender.name : "?")
+                  + " text=" + sniffStr(e.params.message));
+            });
+            sfs.addEventListener("privateMessage", function(e:Object):void {
+               rlog("[SNIFF<-] privateMsg from=" + (e.params.sender ? e.params.sender.name : "?")
+                  + " text=" + sniffStr(e.params.message));
+            });
+            sfs.addEventListener("objectMessage", function(e:Object):void {
+               var raw:Object = null;
+               try { raw = e.params.message != null ? e.params.message.toObject() : null; }
+               catch (ex:Error) { raw = { _err: ex.message }; }
+               rlog("[SNIFF<-] objMsg from=" + (e.params.sender ? e.params.sender.name : "?")
+                  + " payload=" + sniffStr(raw));
+            });
+            sfs.addEventListener("moderatorMessage", function(e:Object):void {
+               rlog("[SNIFF<-] modMsg " + sniffStr(e.params));
+            });
+            sfs.addEventListener("adminMessage", function(e:Object):void {
+               rlog("[SNIFF<-] adminMsg " + sniffStr(e.params));
+            });
+            rlog("[SNIFF] attached 14 listeners on sfs");
+         } catch (e:Error) {
+            rlog("[SNIFF] attach FAILED: " + e.message);
+         }
+      }
+
+      // Truncating JSON.stringify for the sniffer. Falls back to toString on
+      // cyclic structures so we never throw inside a listener. For SFS
+      // internal objects (User, Room, Variable, ISFSObject) JSON.stringify
+      // returns "[object X]" because they have no enumerable own props; we
+      // unwrap the common ones into plain dicts first.
+      private static function sniffStr(o:*) : String {
+         var s:String;
+         try { s = JSON.stringify(sniffUnwrap(o, 0)); }
+         catch (e:Error) {
+            try { s = String(o); } catch (e2:Error) { s = "<unserializable:" + e.message + ">"; }
+         }
+         if (s == null) return "null";
+         if (s.length > SNIFF_MAX) return s.substr(0, SNIFF_MAX) + "...(+" + (s.length - SNIFF_MAX) + ")";
+         return s;
+      }
+
+      // Convert SFS-internal types into plain objects/arrays so they survive
+      // JSON.stringify. Recognises ISFSObject (toObject), ISFSArray (toArray),
+      // User, Room, Variable, and falls through for plain primitives/objects.
+      private static function sniffUnwrap(o:*, depth:int) : * {
+         if (o == null || depth > 6) return o;
+         try {
+            if (o is String || o is Number || o is int || o is uint || o is Boolean) return o;
+            // ISFSObject / ISFSArray
+            if (o.toObject is Function) return sniffUnwrap(o.toObject(), depth + 1);
+            if (o.toArray  is Function) return sniffUnwrap(o.toArray(),  depth + 1);
+            // SFS Variable
+            if (o.getValue is Function && o.getName is Function) {
+               return { name: o.getName(), value: sniffUnwrap(o.getValue(), depth + 1) };
+            }
+            // SFS User
+            if (o.getName is Function && o.getId is Function && o.getVariables is Function) {
+               var uvars:Object = {};
+               for each (var uv:* in o.getVariables()) {
+                  try { uvars[uv.getName()] = sniffUnwrap(uv.getValue(), depth + 1); } catch (eU:Error) {}
+               }
+               return { _t: "User", id: o.getId(), name: o.getName(), vars: uvars };
+            }
+            // SFS Room
+            if (o.getName is Function && o.getId is Function && o.getGroupId is Function) {
+               var rvars:Object = {};
+               try {
+                  for each (var rv:* in o.getVariables()) {
+                     try { rvars[rv.getName()] = sniffUnwrap(rv.getValue(), depth + 1); } catch (eR:Error) {}
+                  }
+               } catch (eRV:Error) {}
+               return { _t: "Room", id: o.getId(), name: o.getName(), group: o.getGroupId(),
+                        userCount: o.userCount, capacity: o.capacity, vars: rvars };
+            }
+            // Array
+            if (o is Array) {
+               var arr:Array = [];
+               for (var i:int = 0; i < (o as Array).length; i++) arr.push(sniffUnwrap(o[i], depth + 1));
+               return arr;
+            }
+            // Plain Object — recurse over enumerable keys
+            if (typeof(o) == "object") {
+               var out:Object = {};
+               for (var k:String in o) {
+                  try { out[k] = sniffUnwrap(o[k], depth + 1); } catch (eK:Error) { out[k] = "<err>"; }
+               }
+               return out;
+            }
+         } catch (e:Error) { return "<unwrap-err:" + e.message + ">"; }
+         return o;
+      }
+
       
       public var assetModel:IAssetModel;
       
@@ -376,6 +578,12 @@ package
          Cc.infoch("CharPreviewManager",CharPreviewManager);
          serviceModel = new ServiceModel();
          serviceModel.listenExtension("initQueue",onInitQueueData);
+         // PATCH: install raw SFS event sniffer. Logs every inbound server
+         // message to rebuild.log tagged [SNIFF<-]. Attaching here (before
+         // ConnectCommand runs) guarantees we never miss the initial connect
+         // / login / room-join events. Outbound traffic is already traced by
+         // ServiceModel.requestData and lands in [adl-out].
+         attachSniffer(serviceModel.sfs);
          avatarModel = new AvatarModel();
          roomModel = new RoomModel();
          soundModel = new SoundModel();
@@ -482,11 +690,11 @@ package
       public function onVersionFileLoaded(param1:Event = null) : void
       {
          var _loc2_:PanelVO = null;
-         Dispatcher.removeEventListener("VERSION_FILE_LOADED", onVersionFileLoaded);
-         Dispatcher.dispatchEvent(new OSProgressEvent("INIT_PROGRESS", ProgressVo.INFO_FILE_READY));
+         Dispatcher.removeEventListener("VERSION_FILE_LOADED",onVersionFileLoaded);
+         Dispatcher.dispatchEvent(new OSProgressEvent("INIT_PROGRESS",ProgressVo.INFO_FILE_READY));
          controllerList[RoomController] = new RoomController(serviceModel.sfs);
-         Dispatcher.addEventListener("INITIALIZE", initialize);
-         if (Sanalika.instance.serviceModel.sfs.mySelf.privilegeId == 0 && avatarModel.guest == false)
+         Dispatcher.addEventListener("INITIALIZE",initialize);
+         if(Sanalika.instance.serviceModel.sfs.mySelf.privilegeId == 0 && avatarModel.guest == false)
          {
             Cc.info("fileServer: " + Sanalika.instance.gameModel.fileServer);
             _loc2_ = new PanelVO();
@@ -566,7 +774,7 @@ package
          var _loc2_:Date = null;
          var _loc4_:String = null;
          // PATCH: dump the full init response so we can mirror real Marhab init data.
-         try { trace("INIT_RESP: " + JSON.stringify(param1)); } catch (e:Error) { trace("INIT_RESP serialize fail: " + e.message); }
+         try { Sanalika.rlog("[PATCH] INIT_RESP: " + JSON.stringify(param1), false); } catch (e:Error) { Sanalika.rlog("[PATCH] INIT_RESP serialize fail: " + e.message, true); }
          serviceModel.removeRequestData("init",onInited);
          this.data = param1;
          ServiceErrorCode.setRoles();
@@ -720,15 +928,15 @@ package
          var vo:PanelVO;
          var e:GameEvent = param1;
          Dispatcher.removeEventListener("EXTENSIONS_LOADED",process);
-         trace("onInited");
-         trace("[PROCESS] enter checkAvatar=" + data.checkAvatar + " createAvatar=" + data.createAvatar + " guest=" + data.guest);
+         Sanalika.rlog("[PATCH] process() entered", false);
+         Sanalika.rlog("[PATCH] process() checkAvatar=" + data.checkAvatar + " createAvatar=" + data.createAvatar + " guest=" + data.guest + " gender=" + data.gender, false);
          serviceModel.removeRequestData("init",onInited);
          avatarModel.gender = data.gender;
          avatarModel.guest = data.guest;
          achievementModel.rewardCount = data.completedAchievementsCount;
          if(data.checkAvatar == 0)
          {
-            trace("[PROCESS] -> AvatarCreatePanel (BaseCloth) panelModel=" + panelModel);
+            Sanalika.rlog("[PATCH] process() -> AvatarCreatePanel BaseCloth", false);
             Dispatcher.dispatchEvent(new OSProgressEvent("INIT_PROGRESS",ProgressVo.PROGRESS_FULL));
             panelVo = new PanelVO();
             panelVo.name = "AvatarCreatePanel";
@@ -739,6 +947,7 @@ package
          avatarModel.isBaseClothSelected = true;
          if(data.createAvatar)
          {
+            Sanalika.rlog("[PATCH] process() -> AvatarCreatePanel create", false);
             Dispatcher.dispatchEvent(new OSProgressEvent("INIT_PROGRESS",ProgressVo.PROGRESS_FULL));
             vo = new PanelVO();
             vo.name = "AvatarCreatePanel";
@@ -746,20 +955,130 @@ package
             panelModel.openPanel(vo);
             return;
          }
-         roomModel.checkMap(data);
-         avatarModel.updateWallet(data.wallet);
-         clothModel.load(data.clothes.items);
+         Sanalika.rlog("[PATCH] process() -> room load path; map.len=" + (data.room && data.room.map ? data.room.map.length : -1) + " clothesItems=" + (data.clothes && data.clothes.items ? typeof(data.clothes.items) + "/" + (data.clothes.items is Array ? "len=" + data.clothes.items.length : "raw") : "<null>"), false);
+         try { roomModel.checkMap(data); Sanalika.rlog("[PATCH] roomModel.checkMap OK", false); } catch (e1:Error) { Sanalika.rlog("[PATCH] roomModel.checkMap THROW: " + e1.message, true); }
+         try { avatarModel.updateWallet(data.wallet); Sanalika.rlog("[PATCH] updateWallet OK", false); } catch (e2:Error) { Sanalika.rlog("[PATCH] updateWallet THROW: " + e2.message, true); }
+         try { clothModel.load(data.clothes.items); Sanalika.rlog("[PATCH] clothModel.load OK", false); } catch (e3:Error) { Sanalika.rlog("[PATCH] clothModel.load THROW: " + e3.message, true); }
          avatarModel.holdedItem = null;
          avatarModel.lastHoldedItem = null;
-         hudModel.init();
+         try { hudModel.init(); Sanalika.rlog("[PATCH] hudModel.init OK", false); } catch (e4:Error) { Sanalika.rlog("[PATCH] hudModel.init THROW: " + e4.message, true); }
          if(controllerList[BuddyController] != null)
          {
             controllerList[BuddyController].dispose();
          }
          controllerList[BuddyController] = new BuddyController();
-         engine.start();
+         try { engine.start(); Sanalika.rlog("[PATCH] engine.start OK", false); } catch (e5:Error) { Sanalika.rlog("[PATCH] engine.start THROW: " + e5.message, true); }
          Dispatcher.dispatchEvent(new OSProgressEvent("INIT_PROGRESS",ProgressVo.INIT_READY));
          cookieModel.startCheck();
+         Sanalika.rlog("[PATCH] process() complete", false);
+         // PATCH: hook downstream scene events so we can tell whether the
+         // SFS join-room path actually drives RoomController → engine.changeScene.
+         try {
+            Dispatcher.addEventListener("ROOM_MAP_INITIALIZED", function(_e:*):* {
+               Sanalika.rlog("[PATCH] evt ROOM_MAP_INITIALIZED", false);
+            });
+            Dispatcher.addEventListener("SCENE_LOADED", function(_e:*):* {
+               Sanalika.rlog("[PATCH] evt SCENE_LOADED", false);
+            });
+            Dispatcher.addEventListener("SCENE_DATA_LOADED", function(_e:*):* {
+               Sanalika.rlog("[PATCH] evt SCENE_DATA_LOADED", false);
+            });
+            Dispatcher.addEventListener("TRANSITION_IN", function(_e:*):* {
+               Sanalika.rlog("[PATCH] evt TRANSITION_IN", false);
+            });
+            Dispatcher.addEventListener("TRANSITION_OUT", function(_e:*):* {
+               Sanalika.rlog("[PATCH] evt TRANSITION_OUT", false);
+            });
+            // Tap SFS-level events directly so we can see if USER_ENTER_ROOM
+            // actually lands on the client. "userEnterRoom" is the SFS2X
+            // event name; firing it confirms the room-join broadcast arrived.
+            serviceModel.sfs.addEventListener("userEnterRoom", function(_e:*):* {
+               Sanalika.rlog("[PATCH] SFS userEnterRoom event arrived", false);
+            });
+            serviceModel.sfs.addEventListener("roomJoin", function(_e:*):* {
+               try {
+                  var r:* = _e.params.room;
+                  Sanalika.rlog("[PATCH] SFS roomJoin event arrived: " + (r == null ? "<null>" : r.name + " id=" + r.id), false);
+               } catch (e:Error) { Sanalika.rlog("[PATCH] SFS roomJoin tap THROW: " + e.message, true); }
+            });
+            serviceModel.sfs.addEventListener("roomJoinError", function(_e:*):* {
+               Sanalika.rlog("[PATCH] SFS roomJoinError event arrived: " + _e, false);
+            });
+            // SCENE_READY fires at the very end of processSceneData, right
+            // before requestData("roomjoincomplete"). If we see this, the bug
+            // is in the server roomjoincomplete handshake. If we don't,
+            // processSceneData is throwing mid-way.
+            Dispatcher.addEventListener("SCENE_READY", function(_e:*):* {
+               Sanalika.rlog("[PATCH] evt SCENE_READY", false);
+            });
+            Dispatcher.addEventListener("PREVIOUS_ROOM", function(_e:*):* {
+               Sanalika.rlog("[PATCH] evt PREVIOUS_ROOM (room asset load FAILED)", false);
+            });
+            Dispatcher.addEventListener("LOADING_PROGRESS", function(_e:*):* {
+               try {
+                  Sanalika.rlog("[PATCH] evt LOADING_PROGRESS " + (_e.vo == null ? "?" : _e.vo.percent) + "%", false);
+               } catch (le:Error) {}
+            });
+            // Hook UNCAUGHT_ERROR so silent throws inside scene/character init
+            // become visible.
+            try {
+               Sanalika.instance.loaderInfo.uncaughtErrorEvents.addEventListener("uncaughtError", function(_e:*):* {
+                  var trace_:String = (_e.error is Error) ? Error(_e.error).getStackTrace() : String(_e.error);
+                  // Suppress the noisy per-frame YoutubePlayer BitmapData error
+                  // (unrelated to scene render — it spams ~30 times/sec and drowns the log).
+                  if (trace_ != null && trace_.indexOf("YoutubePlayer") >= 0) return;
+                  Sanalika.rlog("[PATCH] UNCAUGHT: " + trace_, true);
+               });
+            } catch (ue:Error) { Sanalika.rlog("[PATCH] uncaughtError hook THROW: " + ue.message, true); }
+            Sanalika.rlog("[PATCH] downstream listeners registered", false);
+         } catch (lr:Error) {
+            Sanalika.rlog("[PATCH] listener register THROW: " + lr.message, true);
+         }
+         // Probe SFS-side state after 3s. Held statically so GC won't kill us.
+         _probeTimer = new Timer(3000, 1);
+         _probeTimer.addEventListener("timer", function(_e:*):* {
+            try {
+               var sfs:* = Sanalika.instance.serviceModel.sfs;
+               var room:* = sfs.lastJoinedRoom;
+               var roomTag:String = room == null ? "<null>" : (room.name + " id=" + room.id);
+               var mySelf:* = sfs.mySelf;
+               var uvKeys:String = "";
+               if (mySelf != null) {
+                  var names:Array = ["clothes","gender","position","direction","speed","status","avatarName"];
+                  for each (var n:String in names) {
+                     var uv:* = null;
+                     try { uv = mySelf.getVariable(n); } catch (ge:Error) {}
+                     uvKeys += n + "=" + (uv == null ? "<missing>" : String(uv.getValue())) + " | ";
+                  }
+               }
+               var curRoom:* = Sanalika.instance.roomModel.currentRoom;
+               var curTag:String = curRoom == null ? "<null>" : (curRoom.name + " id=" + curRoom.id);
+               Sanalika.rlog("[PATCH] probe lastJoined=" + roomTag + "  roomModel.currentRoom=" + curTag + "  mapInit=" + Sanalika.instance.roomModel.mapInitialized + "  scene=" + (Sanalika.instance.engine == null ? "<null>" : (Sanalika.instance.engine.scene == null ? "<null>" : "present")), false);
+               Sanalika.rlog("[PATCH] probe mySelf UVs: " + uvKeys, false);
+            } catch (pe:Error) {
+               Sanalika.rlog("[PATCH] probe THROW: " + pe.message, true);
+            }
+         });
+         _probeTimer.start();
+         Sanalika.rlog("[PATCH] probe Timer started", false);
+         // PATCH: tap stage-level mouse clicks so we can confirm clicks even
+         // reach the player area (vs. being eaten by HUD or panels). Also tap
+         // the scene's enable/disable transitions so we know mouseEnabled state.
+         try {
+            Sanalika.instance.stage.addEventListener("click", function(_e:*):* {
+               try {
+                  var s:* = Sanalika.instance.engine == null ? null : Sanalika.instance.engine.scene;
+                  var me:* = null;
+                  if (s != null) {
+                     var scc:* = s.getComponent(getDefinitionByName("com.oyunstudyosu.engine.scene.components::SceneCharacterComponent"));
+                     if (scc != null) me = scc.myChar;
+                  }
+                  Sanalika.rlog("[PATCH] stage click stageXY=(" + _e.stageX + "," + _e.stageY +
+                                ") scene=" + (s == null ? "<null>" : "yes mouseEnabled=" + s.mouseEnabled) +
+                                " myChar=" + (me == null ? "<null>" : "yes id=" + me.id), false);
+               } catch (ce:Error) { Sanalika.rlog("[PATCH] stage click tap THROW: " + ce.message, true); }
+            }, true); // useCapture so we see EVERY click before children eat it
+         } catch (te:Error) { Sanalika.rlog("[PATCH] stage click hook THROW: " + te.message, true); }
          data = null;
          Dispatcher.addEventListener("ACTIVE_GRID_CHANGED",function(param1:GameEvent):*
          {

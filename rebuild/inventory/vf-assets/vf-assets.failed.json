@@ -1,0 +1,110 @@
+[
+  {
+    "key": "lang_ar",
+    "prefix": "locale",
+    "assetPath": "locale/ar_AR.585",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_ca",
+    "prefix": "locale",
+    "assetPath": "locale/ca_ES.96",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_de",
+    "prefix": "locale",
+    "assetPath": "locale/de_DE_1446013152790.17",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_el",
+    "prefix": "locale",
+    "assetPath": "locale/el_GR_1434964426190",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_en",
+    "prefix": "locale",
+    "assetPath": "locale/en_UK.74",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_es",
+    "prefix": "locale",
+    "assetPath": "locale/ca_ES_1435164345541.1",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_fr",
+    "prefix": "locale",
+    "assetPath": "locale/fr_FR_1436361005470.11",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_it",
+    "prefix": "locale",
+    "assetPath": "locale/it_IT_1446013169408.12",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_pt",
+    "prefix": "locale",
+    "assetPath": "locale/pt_PT_1436361019271.31",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_ru",
+    "prefix": "locale",
+    "assetPath": "locale/ru_RU.324",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_tr",
+    "prefix": "locale",
+    "assetPath": "locale/tr_TR.969",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "Sanalika",
+    "prefix": "core",
+    "assetPath": "core/snl.716",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "test",
+    "prefix": "core",
+    "assetPath": "core/166804dyL.2",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "lang_az",
+    "prefix": "locale",
+    "assetPath": "locale/az_AZ.59",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "LiveMessagePanel",
+    "prefix": "panels",
+    "assetPath": "panels/110685096pUf",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "SanalikaJavaScript.js",
+    "prefix": "core",
+    "assetPath": "core/134112490gZe.909",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "SanalikaItemTestJavascript",
+    "prefix": "core",
+    "assetPath": "core/153463614eeU.13",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "EmailPanel",
+    "prefix": "panels",
+    "assetPath": "panels/2607587566dN.1",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  }
+]

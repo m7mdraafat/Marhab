@@ -1,0 +1,83 @@
+[
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/f_bjb4xrw8_3.swf",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\f_bjb4xrw8_3.swf",
+    "attempts": 3,
+    "elapsed_ms": 1662,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/f_ymvDDtH6_10.swf",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\f_ymvDDtH6_10.swf",
+    "attempts": 3,
+    "elapsed_ms": 1438,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/m_debm8fsy_3.swf",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\m_debm8fsy_3.swf",
+    "attempts": 3,
+    "elapsed_ms": 1431,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/m_g4BSse3E_10.1.swf",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\m_g4BSse3E_10.1.swf",
+    "attempts": 3,
+    "elapsed_ms": 1518,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/r_f_bjb4xrw8_3.png",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\r_f_bjb4xrw8_3.png",
+    "attempts": 3,
+    "elapsed_ms": 1658,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/r_f_g4BSse3E_10.1.png",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\r_f_g4BSse3E_10.1.png",
+    "attempts": 3,
+    "elapsed_ms": 1503,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/r_f_ymvDDtH6_10.png",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\r_f_ymvDDtH6_10.png",
+    "attempts": 3,
+    "elapsed_ms": 1388,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/r_m_debm8fsy_3.png",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\r_m_debm8fsy_3.png",
+    "attempts": 3,
+    "elapsed_ms": 1672,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "http://xo.newmarhab.net/global/static/items/clothes/r_m_g4BSse3E_10.1.png",
+    "status": "failed",
+    "size": 0,
+    "path": "rebuild\\inventory\\item-assets\\files\\xo.newmarhab.net\\global\\static\\items\\clothes\\r_m_g4BSse3E_10.1.png",
+    "attempts": 3,
+    "elapsed_ms": 1582,
+    "error": "HTTP Error 404: Not Found"
+  }
+]
