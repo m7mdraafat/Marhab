@@ -1,0 +1,10 @@
+{
+  "name": "SanalikaAirUI",
+  "assets": [],
+  "rootPath": "lib/SanalikaAirUI",
+  "version": 2,
+  "libraryArgs": [
+    "SanalikaAirUI.swf"
+  ],
+  "libraryType": "swf.SWFLibrary"
+}

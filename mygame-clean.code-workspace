@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "name": "mygame-clean",
+      "path": "mygame-clean"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/client/generated": true,
+      "**/client/launcher/dist": true
+    }
+  }
+}

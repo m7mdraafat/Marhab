@@ -1,0 +1,69 @@
+{
+  "name": null,
+  "assets": [
+    {
+      "size": 192156,
+      "type": "FONT",
+      "className": "__ASSET__assets_fonts_co_text_bold_ttf",
+      "id": "assets/fonts/Co Text Bold.ttf"
+    },
+    {
+      "size": 196484,
+      "type": "FONT",
+      "className": "__ASSET__assets_fonts_co_text_light_ttf",
+      "id": "assets/fonts/Co Text Light.ttf"
+    },
+    {
+      "size": 193032,
+      "type": "FONT",
+      "className": "__ASSET__assets_fonts_co_text_regular_ttf",
+      "id": "assets/fonts/Co Text Regular.ttf"
+    },
+    {
+      "size": 12946,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_flags_egypt_png",
+      "id": "assets/flags/egypt.png"
+    },
+    {
+      "size": 6279,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_flags_global_png",
+      "id": "assets/flags/global.png"
+    },
+    {
+      "size": 14611,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_flags_marhab_png",
+      "id": "assets/flags/marhab.png"
+    },
+    {
+      "size": 5029,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_flags_russia_png",
+      "id": "assets/flags/russia.png"
+    },
+    {
+      "size": 13080,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_flags_spain_png",
+      "id": "assets/flags/spain.png"
+    },
+    {
+      "size": 6007,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_flags_turkey_png",
+      "id": "assets/flags/turkey.png"
+    },
+    {
+      "size": 10340,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_flags_unknown_png",
+      "id": "assets/flags/unknown.png"
+    }
+  ],
+  "rootPath": null,
+  "version": 2,
+  "libraryArgs": [],
+  "libraryType": null
+}

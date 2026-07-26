@@ -1,0 +1,81 @@
+{
+  "name": null,
+  "assets": [
+    {
+      "size": 207633,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_background_png",
+      "id": "assets/background.png"
+    },
+    {
+      "size": 692,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_closebutton_default_png",
+      "id": "assets/components/buttons/CloseButton/default.png"
+    },
+    {
+      "size": 707,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_closebutton_down_png",
+      "id": "assets/components/buttons/CloseButton/down.png"
+    },
+    {
+      "size": 699,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_closebutton_hover_png",
+      "id": "assets/components/buttons/CloseButton/hover.png"
+    },
+    {
+      "size": 1001,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_redbutton_default_png",
+      "id": "assets/components/buttons/RedButton/default.png"
+    },
+    {
+      "size": 1020,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_redbutton_down_png",
+      "id": "assets/components/buttons/RedButton/down.png"
+    },
+    {
+      "size": 982,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_redbutton_hover_png",
+      "id": "assets/components/buttons/RedButton/hover.png"
+    },
+    {
+      "size": 969,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_yellowbutton_default_png",
+      "id": "assets/components/buttons/YellowButton/default.png"
+    },
+    {
+      "size": 918,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_yellowbutton_down_png",
+      "id": "assets/components/buttons/YellowButton/down.png"
+    },
+    {
+      "size": 995,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_components_buttons_yellowbutton_hover_png",
+      "id": "assets/components/buttons/YellowButton/hover.png"
+    },
+    {
+      "size": 1564,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_hud_redpanelheader_png",
+      "id": "assets/hud/RedPanelHeader.png"
+    },
+    {
+      "size": 1441,
+      "type": "IMAGE",
+      "className": "__ASSET__assets_hud_yellowpanelheader_png",
+      "id": "assets/hud/YellowPanelHeader.png"
+    }
+  ],
+  "rootPath": null,
+  "version": 2,
+  "libraryArgs": [],
+  "libraryType": null
+}

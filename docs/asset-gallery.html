@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyGame Exported Asset Gallery</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f1df;
+      --panel: #fffaf0;
+      --ink: #2f2a24;
+      --muted: #756b5d;
+      --line: #ded2b8;
+      --accent: #bd3f32;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top left, #fff7ca 0, transparent 30rem), var(--bg);
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 4.5rem);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    p {
+      max-width: 760px;
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    .asset {
+      display: grid;
+      grid-template-rows: 150px auto;
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 10px 22px rgba(47, 42, 36, 0.08);
+    }
+
+    .preview {
+      display: grid;
+      place-items: center;
+      padding: 12px;
+      background:
+        linear-gradient(45deg, rgba(117, 107, 93, 0.09) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(117, 107, 93, 0.09) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(117, 107, 93, 0.09) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(117, 107, 93, 0.09) 75%);
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+      background-size: 20px 20px;
+    }
+
+    .preview img {
+      max-width: 100%;
+      max-height: 126px;
+      object-fit: contain;
+      image-rendering: auto;
+    }
+
+    .meta {
+      padding: 10px 12px 12px;
+      min-width: 0;
+    }
+
+    .id {
+      color: var(--accent);
+      font: 700 0.78rem/1.2 Consolas, "Courier New", monospace;
+    }
+
+    .name {
+      margin-top: 4px;
+      overflow-wrap: anywhere;
+      font: 0.78rem/1.35 Consolas, "Courier New", monospace;
+      color: var(--muted);
+    }
+
+    .files {
+      margin-top: 28px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, 0.75);
+    }
+
+    .files h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+    }
+
+    .files ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .files li {
+      margin: 5px 0;
+      overflow-wrap: anywhere;
+      font: 0.85rem/1.35 Consolas, "Courier New", monospace;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Exported Asset Gallery</h1>
+    <p>These are the image assets referenced by symbolClass/symbols.csv and embedded by the generated ActionScript classes in scripts/_assets.</p>
+
+    <section class="grid" aria-label="Image assets">
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1007___ASSET__assets_background_png.png" alt="assets_background_png"></div><div class="meta"><div class="id">1007</div><div class="name">assets_background_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1008___ASSET__assets_components_buttons_closebutton_default_png.png" alt="closebutton_default_png"></div><div class="meta"><div class="id">1008</div><div class="name">components/buttons/closebutton_default_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1009___ASSET__assets_components_buttons_closebutton_down_png.png" alt="closebutton_down_png"></div><div class="meta"><div class="id">1009</div><div class="name">components/buttons/closebutton_down_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1010___ASSET__assets_components_buttons_closebutton_hover_png.png" alt="closebutton_hover_png"></div><div class="meta"><div class="id">1010</div><div class="name">components/buttons/closebutton_hover_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1011___ASSET__assets_components_buttons_redbutton_default_png.png" alt="redbutton_default_png"></div><div class="meta"><div class="id">1011</div><div class="name">components/buttons/redbutton_default_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1012___ASSET__assets_components_buttons_redbutton_down_png.png" alt="redbutton_down_png"></div><div class="meta"><div class="id">1012</div><div class="name">components/buttons/redbutton_down_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1013___ASSET__assets_components_buttons_redbutton_hover_png.png" alt="redbutton_hover_png"></div><div class="meta"><div class="id">1013</div><div class="name">components/buttons/redbutton_hover_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1014___ASSET__assets_components_buttons_yellowbutton_default_png.png" alt="yellowbutton_default_png"></div><div class="meta"><div class="id">1014</div><div class="name">components/buttons/yellowbutton_default_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1015___ASSET__assets_components_buttons_yellowbutton_down_png.png" alt="yellowbutton_down_png"></div><div class="meta"><div class="id">1015</div><div class="name">components/buttons/yellowbutton_down_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1016___ASSET__assets_components_buttons_yellowbutton_hover_png.png" alt="yellowbutton_hover_png"></div><div class="meta"><div class="id">1016</div><div class="name">components/buttons/yellowbutton_hover_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1017___ASSET__assets_hud_redpanelheader_png.png" alt="hud_redpanelheader_png"></div><div class="meta"><div class="id">1017</div><div class="name">hud_redpanelheader_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1018___ASSET__assets_hud_yellowpanelheader_png.png" alt="hud_yellowpanelheader_png"></div><div class="meta"><div class="id">1018</div><div class="name">hud_yellowpanelheader_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1019___ASSET__assets_flags_egypt_png.png" alt="flags_egypt_png"></div><div class="meta"><div class="id">1019</div><div class="name">flags/egypt_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1020___ASSET__assets_flags_global_png.png" alt="flags_global_png"></div><div class="meta"><div class="id">1020</div><div class="name">flags/global_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1021___ASSET__assets_flags_marhab_png.jpg" alt="flags_marhab_png"></div><div class="meta"><div class="id">1021</div><div class="name">flags/marhab_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1022___ASSET__assets_flags_russia_png.png" alt="flags_russia_png"></div><div class="meta"><div class="id">1022</div><div class="name">flags/russia_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1023___ASSET__assets_flags_spain_png.png" alt="flags_spain_png"></div><div class="meta"><div class="id">1023</div><div class="name">flags/spain_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1024___ASSET__assets_flags_turkey_png.png" alt="flags_turkey_png"></div><div class="meta"><div class="id">1024</div><div class="name">flags/turkey_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/1025___ASSET__assets_flags_unknown_png.png" alt="flags_unknown_png"></div><div class="meta"><div class="id">1025</div><div class="name">flags/unknown_png</div></div></article>
+      <article class="asset"><div class="preview"><img src="../scripts/_assets/3_stop_recording_button_png$90d74ac431f78120c11f3fa0c66bf63b1350089600.png" alt="stop_recording_button_png"></div><div class="meta"><div class="id">3</div><div class="name">stop_recording_button_png</div></div></article>
+    </section>
+
+    <section class="files" aria-label="Other exported assets">
+      <h2>Other exported files</h2>
+      <ul>
+        <li>1004___ASSET__assets_fonts_co_text_bold_ttf_Co Text Bold.ttf</li>
+        <li>1005___ASSET__assets_fonts_co_text_light_ttf_Co Text Light.ttf</li>
+        <li>1006___ASSET__assets_fonts_co_text_regular_ttf_Co Text.ttf</li>
+        <li>1026___ASSET__lib_sanalikaairui_json.bin</li>
+        <li>1027___ASSET__manifest_assets_json.bin</li>
+        <li>1028___ASSET__manifest_default_json.bin</li>
+        <li>1030 and 1032-1039 are binary template/shader files.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
