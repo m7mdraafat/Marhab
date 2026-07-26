@@ -19,9 +19,25 @@ if ($pids) { Start-Sleep -Seconds 3 } else { Write-Host "  (none running)" }
 
 if (Test-Path $Jar) {
     $dest = Join-Path $SfsHome 'extensions\HaraExtension\HaraExtension.jar'
-    New-Item -ItemType Directory -Force -Path (Split-Path $dest) | Out-Null
+    $extDir = Split-Path $dest
+    New-Item -ItemType Directory -Force -Path $extDir | Out-Null
     Copy-Item $Jar $dest -Force
     Write-Host "deployed $((Get-Item $Jar).Length) bytes -> $dest" -ForegroundColor Green
+
+    $wwwRoot = (Join-Path $PSScriptRoot 'www').Replace('\', '/')
+    $props = @(
+        'starter.room=street01',
+        'cdn.host=127.0.0.1:8081',
+        'catalog.item.file=data/ifile.1366',
+        'catalog.version.file=data/vf.403',
+        'locale.default.file=locale/ar',
+        "www.root=$wwwRoot"
+    )
+    foreach ($name in 'config.properties','extension.properties') {
+        $path = Join-Path $extDir $name
+        Set-Content -LiteralPath $path -Value $props -Encoding ASCII
+        Write-Host "wrote $path" -ForegroundColor Green
+    }
 } else {
     Write-Host "WARNING: $Jar not found; skipping deploy" -ForegroundColor Yellow
 }

@@ -5,13 +5,12 @@
 #   2. SmartFoxServer 2X installed; copy SFS2X/lib/sfs2x.jar and sfs2x-core.jar
 #      into server/lib/ before running.
 #
-# Output: server/dist/MyGameExtension.jar
+# Output: server/dist/HaraExtension.jar
 [CmdletBinding()]
 param([switch]$Clean)
 
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
-$prevLoc = $PWD
 Push-Location $here
 try {
 
@@ -29,12 +28,14 @@ New-Item -ItemType Directory -Force -Path $buildDir, $distDir | Out-Null
 # Locate SFS jars
 $sfsJars = @()
 if (Test-Path $libDir) {
-    $sfsJars = Get-ChildItem $libDir -Filter 'sfs2x*.jar' -File | ForEach-Object FullName
+    # Pick up every jar in lib/ — sfs2x*.jar are the SmartFoxServer core,
+    # the rest (slf4j-api, etc.) are runtime deps shipped alongside.
+    $sfsJars = Get-ChildItem $libDir -Filter '*.jar' -File | ForEach-Object FullName
 }
 if ($sfsJars.Count -eq 0) {
-    Write-Host "WARNING: no sfs2x*.jar under $libDir" -ForegroundColor Yellow
+    Write-Host "WARNING: no *.jar under $libDir" -ForegroundColor Yellow
     Write-Host "  Install SmartFoxServer 2X and copy SFS2X/lib/sfs2x.jar plus" -ForegroundColor Yellow
-    Write-Host "  SFS2X/lib/sfs2x-core.jar into server/lib/." -ForegroundColor Yellow
+    Write-Host "  SFS2X/lib/sfs2x-core.jar (and slf4j-api-*.jar) into server/lib/." -ForegroundColor Yellow
     Write-Host "  Skipping compile (would fail without SFS classpath)." -ForegroundColor Yellow
     exit 1
 }

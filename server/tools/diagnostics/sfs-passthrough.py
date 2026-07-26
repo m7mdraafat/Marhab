@@ -25,8 +25,12 @@ Stop with Ctrl-C; restart SFS afterwards with server/restart-sfs.ps1.
 from __future__ import annotations
 import argparse
 import asyncio
+import base64
+import json
 import sys
+import time
 import urllib.request
+from pathlib import Path
 
 try:
     import websockets
@@ -37,9 +41,33 @@ except ImportError:
     sys.exit(2)
 
 
-async def relay(src, dst, label: str) -> None:
+def write_capture(capture_path: Path | None, direction: str, msg) -> None:
+    if capture_path is None:
+        return
+
+    if isinstance(msg, str):
+        raw = msg.encode("utf-8")
+        kind = "text"
+    else:
+        raw = bytes(msg)
+        kind = "binary"
+
+    record = {
+        "ts": time.time(),
+        "direction": direction,
+        "kind": kind,
+        "bytes": len(raw),
+        "hexPreview": raw[:96].hex(),
+        "base64": base64.b64encode(raw).decode("ascii"),
+    }
+    with capture_path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, separators=(",", ":")) + "\n")
+
+
+async def relay(src, dst, label: str, capture_path: Path | None) -> None:
     try:
         async for msg in src:
+            write_capture(capture_path, label, msg)
             await dst.send(msg)
     except websockets.ConnectionClosed:
         pass
@@ -47,7 +75,7 @@ async def relay(src, dst, label: str) -> None:
         print(f"  [{label}] relay error: {type(e).__name__}: {e}")
 
 
-def make_handler(upstream_host: str, upstream_port: int):
+def make_handler(upstream_host: str, upstream_port: int, capture_path: Path | None):
     upstream_url = f"ws://{upstream_host}:{upstream_port}/BlueBox/websocket"
 
     async def handler(client_ws):
@@ -61,8 +89,8 @@ def make_handler(upstream_host: str, upstream_port: int):
                 extra_headers={"Host": f"{upstream_host}:{upstream_port}"},
             ) as up_ws:
                 await asyncio.gather(
-                    relay(client_ws, up_ws, "c->u"),
-                    relay(up_ws, client_ws, "u->c"),
+                    relay(client_ws, up_ws, "c->u", capture_path),
+                    relay(up_ws, client_ws, "u->c", capture_path),
                 )
         except Exception as e:
             print(f"  upstream connect failed: {type(e).__name__}: {e}")
@@ -76,15 +104,23 @@ async def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--upstream", default="marhab-sfs.newmarhab.net:8080")
     ap.add_argument("--listen", type=int, default=8080)
+    ap.add_argument("--capture", default="captures/sfs-live.jsonl",
+                    help="JSONL file for raw WS frames; use '' to disable")
     args = ap.parse_args()
 
     host, _, port = args.upstream.partition(":")
     port = int(port or 8080)
+    capture_path = Path(args.capture) if args.capture else None
+    if capture_path is not None:
+        capture_path.parent.mkdir(parents=True, exist_ok=True)
+        capture_path.write_text("", encoding="utf-8")
     print(f"forwarding ws://0.0.0.0:{args.listen}/BlueBox/websocket -> "
           f"ws://{host}:{port}/BlueBox/websocket")
+    if capture_path is not None:
+        print(f"capturing raw frames -> {capture_path}")
     print("(Ctrl-C to stop)")
 
-    async with ws_serve(make_handler(host, port), "0.0.0.0", args.listen,
+    async with ws_serve(make_handler(host, port, capture_path), "0.0.0.0", args.listen,
                         max_size=None) as server:
         await asyncio.Future()  # run forever
 
