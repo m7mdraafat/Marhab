@@ -1,0 +1,6914 @@
+{
+  "source": "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\mygame-clean\\server\\logs\\original-proxy\\original-proxy-2026-05-31T13-00-25-656Z.jsonl",
+  "generatedAt": "2026-05-31T13:08:02.974Z",
+  "totals": {
+    "events": 1833,
+    "frames": 1826,
+    "decoded": 1765,
+    "undecoded": 61,
+    "clientToServer": 147,
+    "serverToClient": 1679,
+    "rewrites": 2
+  },
+  "extensionByCommand": [
+    {
+      "key": "fishing.leftGame",
+      "count": 470
+    },
+    {
+      "key": "fishing.update",
+      "count": 283
+    },
+    {
+      "key": "whispernotify",
+      "count": 59
+    },
+    {
+      "key": "walkrequest",
+      "count": 55
+    },
+    {
+      "key": "walkfinalrequest",
+      "count": 42
+    },
+    {
+      "key": "roomjoincomplete",
+      "count": 34
+    },
+    {
+      "key": "fishing.list",
+      "count": 18
+    },
+    {
+      "key": "roles",
+      "count": 17
+    },
+    {
+      "key": "ping",
+      "count": 12
+    },
+    {
+      "key": "mediaevent",
+      "count": 10
+    },
+    {
+      "key": "displayAd",
+      "count": 7
+    },
+    {
+      "key": "flatlist",
+      "count": 7
+    },
+    {
+      "key": "cardlist",
+      "count": 6
+    },
+    {
+      "key": "orderlist",
+      "count": 6
+    },
+    {
+      "key": "buddyOnlineStatus",
+      "count": 5
+    },
+    {
+      "key": "handitemlist",
+      "count": 5
+    },
+    {
+      "key": "usehousedoor",
+      "count": 5
+    },
+    {
+      "key": "usehanditem",
+      "count": 4
+    },
+    {
+      "key": "musicList",
+      "count": 4
+    },
+    {
+      "key": "questlistroom",
+      "count": 3
+    },
+    {
+      "key": "universelist",
+      "count": 2
+    },
+    {
+      "key": "globalchat.leave",
+      "count": 2
+    },
+    {
+      "key": "questaccept",
+      "count": 2
+    },
+    {
+      "key": "fishing.start",
+      "count": 2
+    },
+    {
+      "key": "fishing.joinGame",
+      "count": 2
+    },
+    {
+      "key": "usechatballoon",
+      "count": 2
+    },
+    {
+      "key": "roommessage",
+      "count": 2
+    },
+    {
+      "key": "avatarlist",
+      "count": 2
+    },
+    {
+      "key": "removeavatarrestriction",
+      "count": 2
+    },
+    {
+      "key": "config",
+      "count": 1
+    },
+    {
+      "key": "ditchguestpanel",
+      "count": 1
+    },
+    {
+      "key": "externalTokenComplete",
+      "count": 1
+    },
+    {
+      "key": "init",
+      "count": 1
+    },
+    {
+      "key": "initQueue",
+      "count": 1
+    },
+    {
+      "key": "restartServer",
+      "count": 1
+    },
+    {
+      "key": "buddylist",
+      "count": 1
+    },
+    {
+      "key": "questlist",
+      "count": 1
+    },
+    {
+      "key": "profile",
+      "count": 1
+    },
+    {
+      "key": "clothlist",
+      "count": 1
+    },
+    {
+      "key": "smileylist",
+      "count": 1
+    },
+    {
+      "key": "achievementlist",
+      "count": 1
+    },
+    {
+      "key": "queststepcomplete",
+      "count": 1
+    },
+    {
+      "key": "updateInventory",
+      "count": 1
+    },
+    {
+      "key": "stickerShow",
+      "count": 1
+    },
+    {
+      "key": "loadroomdesign",
+      "count": 1
+    }
+  ],
+  "c2sCommands": [
+    {
+      "key": "walkrequest",
+      "count": 29
+    },
+    {
+      "key": "walkfinalrequest",
+      "count": 21
+    },
+    {
+      "key": "roomjoincomplete",
+      "count": 17
+    },
+    {
+      "key": "flatlist",
+      "count": 6
+    },
+    {
+      "key": "ping",
+      "count": 6
+    },
+    {
+      "key": "handitemlist",
+      "count": 5
+    },
+    {
+      "key": "cardlist",
+      "count": 3
+    },
+    {
+      "key": "usehousedoor",
+      "count": 3
+    },
+    {
+      "key": "orderlist",
+      "count": 3
+    },
+    {
+      "key": "usehanditem",
+      "count": 2
+    },
+    {
+      "key": "fishing.start",
+      "count": 2
+    },
+    {
+      "key": "musicList",
+      "count": 2
+    },
+    {
+      "key": "config",
+      "count": 1
+    },
+    {
+      "key": "ditchguestpanel",
+      "count": 1
+    },
+    {
+      "key": "init",
+      "count": 1
+    },
+    {
+      "key": "buddylist",
+      "count": 1
+    },
+    {
+      "key": "questlist",
+      "count": 1
+    },
+    {
+      "key": "profile",
+      "count": 1
+    },
+    {
+      "key": "clothlist",
+      "count": 1
+    },
+    {
+      "key": "smileylist",
+      "count": 1
+    },
+    {
+      "key": "achievementlist",
+      "count": 1
+    },
+    {
+      "key": "universelist",
+      "count": 1
+    },
+    {
+      "key": "globalchat.leave",
+      "count": 1
+    },
+    {
+      "key": "questaccept",
+      "count": 1
+    },
+    {
+      "key": "usechatballoon",
+      "count": 1
+    },
+    {
+      "key": "roommessage",
+      "count": 1
+    },
+    {
+      "key": "avatarlist",
+      "count": 1
+    },
+    {
+      "key": "removeavatarrestriction",
+      "count": 1
+    },
+    {
+      "key": "loadroomdesign",
+      "count": 1
+    }
+  ],
+  "s2cCommands": [
+    {
+      "key": "fishing.leftGame",
+      "count": 470
+    },
+    {
+      "key": "fishing.update",
+      "count": 283
+    },
+    {
+      "key": "whispernotify",
+      "count": 59
+    },
+    {
+      "key": "walkrequest",
+      "count": 26
+    },
+    {
+      "key": "walkfinalrequest",
+      "count": 21
+    },
+    {
+      "key": "fishing.list",
+      "count": 18
+    },
+    {
+      "key": "roomjoincomplete",
+      "count": 17
+    },
+    {
+      "key": "roles",
+      "count": 17
+    },
+    {
+      "key": "mediaevent",
+      "count": 10
+    },
+    {
+      "key": "displayAd",
+      "count": 7
+    },
+    {
+      "key": "ping",
+      "count": 6
+    },
+    {
+      "key": "buddyOnlineStatus",
+      "count": 5
+    },
+    {
+      "key": "questlistroom",
+      "count": 3
+    },
+    {
+      "key": "cardlist",
+      "count": 3
+    },
+    {
+      "key": "orderlist",
+      "count": 3
+    },
+    {
+      "key": "usehanditem",
+      "count": 2
+    },
+    {
+      "key": "fishing.joinGame",
+      "count": 2
+    },
+    {
+      "key": "usehousedoor",
+      "count": 2
+    },
+    {
+      "key": "musicList",
+      "count": 2
+    },
+    {
+      "key": "externalTokenComplete",
+      "count": 1
+    },
+    {
+      "key": "initQueue",
+      "count": 1
+    },
+    {
+      "key": "restartServer",
+      "count": 1
+    },
+    {
+      "key": "flatlist",
+      "count": 1
+    },
+    {
+      "key": "universelist",
+      "count": 1
+    },
+    {
+      "key": "globalchat.leave",
+      "count": 1
+    },
+    {
+      "key": "queststepcomplete",
+      "count": 1
+    },
+    {
+      "key": "questaccept",
+      "count": 1
+    },
+    {
+      "key": "updateInventory",
+      "count": 1
+    },
+    {
+      "key": "stickerShow",
+      "count": 1
+    },
+    {
+      "key": "usechatballoon",
+      "count": 1
+    },
+    {
+      "key": "roommessage",
+      "count": 1
+    },
+    {
+      "key": "avatarlist",
+      "count": 1
+    },
+    {
+      "key": "removeavatarrestriction",
+      "count": 1
+    }
+  ],
+  "actions": [
+    {
+      "key": "c=1 a=13",
+      "count": 1086
+    },
+    {
+      "key": "c=0 a=12",
+      "count": 467
+    },
+    {
+      "key": "c=0 a=1001",
+      "count": 103
+    },
+    {
+      "key": "c=0 a=1004",
+      "count": 51
+    },
+    {
+      "key": "c=0 a=1000",
+      "count": 37
+    },
+    {
+      "key": "c=0 a=7",
+      "count": 9
+    },
+    {
+      "key": "c=0 a=1002",
+      "count": 3
+    },
+    {
+      "key": "c=0 a=6",
+      "count": 3
+    },
+    {
+      "key": "c=0 a=0",
+      "count": 2
+    },
+    {
+      "key": "c=0 a=1",
+      "count": 2
+    },
+    {
+      "key": "c=0 a=2",
+      "count": 2
+    }
+  ],
+  "roomIds": [
+    {
+      "key": 51,
+      "count": 299
+    },
+    {
+      "key": -1,
+      "count": 114
+    },
+    {
+      "key": 5,
+      "count": 54
+    },
+    {
+      "key": 4,
+      "count": 42
+    },
+    {
+      "key": 0,
+      "count": 38
+    },
+    {
+      "key": 67,
+      "count": 37
+    },
+    {
+      "key": 190,
+      "count": 37
+    },
+    {
+      "key": 50,
+      "count": 36
+    },
+    {
+      "key": 59,
+      "count": 36
+    },
+    {
+      "key": 1,
+      "count": 16
+    },
+    {
+      "key": 13,
+      "count": 13
+    },
+    {
+      "key": 3849,
+      "count": 9
+    },
+    {
+      "key": 30,
+      "count": 7
+    },
+    {
+      "key": 4355,
+      "count": 7
+    },
+    {
+      "key": 60,
+      "count": 6
+    },
+    {
+      "key": 27,
+      "count": 6
+    },
+    {
+      "key": 4469,
+      "count": 5
+    },
+    {
+      "key": 38,
+      "count": 5
+    },
+    {
+      "key": 25,
+      "count": 4
+    },
+    {
+      "key": 31,
+      "count": 4
+    },
+    {
+      "key": 32,
+      "count": 4
+    },
+    {
+      "key": 33,
+      "count": 4
+    },
+    {
+      "key": 2,
+      "count": 4
+    },
+    {
+      "key": 29,
+      "count": 4
+    },
+    {
+      "key": 49,
+      "count": 3
+    },
+    {
+      "key": 4494,
+      "count": 3
+    },
+    {
+      "key": 61,
+      "count": 2
+    },
+    {
+      "key": 121,
+      "count": 2
+    },
+    {
+      "key": 72,
+      "count": 2
+    },
+    {
+      "key": 47,
+      "count": 2
+    },
+    {
+      "key": 42,
+      "count": 2
+    },
+    {
+      "key": 41,
+      "count": 2
+    },
+    {
+      "key": 19,
+      "count": 2
+    },
+    {
+      "key": 39,
+      "count": 2
+    },
+    {
+      "key": 10,
+      "count": 1
+    },
+    {
+      "key": 3,
+      "count": 1
+    },
+    {
+      "key": [
+        4469,
+        "33#16#100979214#artifika",
+        "default",
+        false,
+        false,
+        false,
+        0,
+        150,
+        []
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        4494,
+        "20#3#101002081#cafe03",
+        "default",
+        false,
+        false,
+        false,
+        0,
+        150,
+        []
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        4495,
+        "21#3#101002081#cafe04",
+        "default",
+        false,
+        false,
+        false,
+        0,
+        150,
+        []
+      ],
+      "count": 1
+    },
+    {
+      "key": 4495,
+      "count": 1
+    },
+    {
+      "key": 4106,
+      "count": 1
+    }
+  ],
+  "commandPairs": [
+    {
+      "command": "flatlist",
+      "rid": 17,
+      "requestSeq": 229,
+      "responseSeq": 233,
+      "latencyMs": 175,
+      "request": {
+        "seq": 229,
+        "time": 1780232524428,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "flatlist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {
+              "buildingID": 10
+            },
+            "sn": "flatlist",
+            "ts": 1780232524,
+            "rid": 17
+          },
+          "c": "flatlist"
+        },
+        "bytes": 119,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 233,
+        "time": 1780232524603,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "flatlist",
+        "params": {
+          "p": {
+            "yourHouses": [],
+            "youLiked": [],
+            "buddyHouses": [],
+            "rid": 17,
+            "nextRequest": 1000,
+            "others": [],
+            "ts": 1780232524
+          },
+          "c": "flatlist"
+        },
+        "bytes": 143,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "cardlist",
+      "rid": 50,
+      "requestSeq": 747,
+      "responseSeq": 751,
+      "latencyMs": 117,
+      "request": {
+        "seq": 747,
+        "time": 1780232599969,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "cardlist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "cardlist",
+            "ts": 1780232599,
+            "rid": 50
+          },
+          "c": "cardlist"
+        },
+        "bytes": 102,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 751,
+        "time": 1780232600086,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "cardlist",
+        "params": {
+          "p": {
+            "type": "CARD",
+            "rid": 50,
+            "items": [
+              {
+                "quantity": 1,
+                "color": 0,
+                "productID": 20003,
+                "roles": "AA==",
+                "active": 0,
+                "source": "PACKAGE",
+                "createdAt": "2026-05-22 23:08:16",
+                "expire": 1784664496,
+                "transferrable": false,
+                "subType": "VIP",
+                "id": 23396,
+                "lifeTime": 0,
+                "timeLeft": 4431897,
+                "clip": "CARD_DIAMOND",
+                "base": 0
+              },
+              {
+                "quantity": 1,
+                "color": 0,
+                "productID": 19999,
+                "roles": "ACA=",
+                "active": 0,
+                "source": "CLUB REQUEST",
+                "createdAt": "2026-01-18 02:39:52",
+                "expire": 1784252392,
+                "transferrable": false,
+                "subType": "VIP",
+                "id": 13852,
+                "lifeTime": 15552000,
+                "timeLeft": 4019793,
+                "clip": "CARD_DIAMOND_CLUB",
+                "base": 0
+              }
+            ],
+            "nextRequest": 1000,
+            "ts": 1780232599
+          },
+          "c": "cardlist"
+        },
+        "bytes": 601,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "universelist",
+      "rid": 57,
+      "requestSeq": 851,
+      "responseSeq": 852,
+      "latencyMs": 123,
+      "request": {
+        "seq": 851,
+        "time": 1780232612225,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "universelist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "universelist",
+            "ts": 1780232612,
+            "rid": 57
+          },
+          "c": "universelist"
+        },
+        "bytes": 110,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 852,
+        "time": 1780232612348,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "universelist",
+        "params": {
+          "p": {
+            "onlineCount": 77,
+            "universes": [
+              {
+                "fullness": 77,
+                "roles": "AA==",
+                "name": "جزيرة مرحب",
+                "roomFullness": 77,
+                "key": "w1",
+                "recommended": true,
+                "roomAvailable": true
+              }
+            ],
+            "rid": 57,
+            "nextRequest": 1000
+          },
+          "c": "universelist"
+        },
+        "bytes": 232,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "questaccept",
+      "rid": 60,
+      "requestSeq": 863,
+      "responseSeq": 865,
+      "latencyMs": 151,
+      "request": {
+        "seq": 863,
+        "time": 1780232621857,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "questaccept",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {
+              "id": "7305940"
+            },
+            "sn": "questaccept",
+            "ts": 1780232621,
+            "rid": 60
+          },
+          "c": "questaccept"
+        },
+        "bytes": 122,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 865,
+        "time": 1780232622008,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "questaccept",
+        "params": {
+          "p": {
+            "curVal": 1,
+            "id": 7305940,
+            "rid": 60,
+            "nextRequest": 1000,
+            "reqVal": 1,
+            "ts": 1780232621
+          },
+          "c": "questaccept"
+        },
+        "bytes": 126,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "cardlist",
+      "rid": 74,
+      "requestSeq": 1116,
+      "responseSeq": 1119,
+      "latencyMs": 129,
+      "request": {
+        "seq": 1116,
+        "time": 1780232644113,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "cardlist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "cardlist",
+            "ts": 1780232644,
+            "rid": 74
+          },
+          "c": "cardlist"
+        },
+        "bytes": 102,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1119,
+        "time": 1780232644242,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "cardlist",
+        "params": {
+          "p": {
+            "type": "CARD",
+            "rid": 74,
+            "items": [
+              {
+                "quantity": 1,
+                "color": 0,
+                "productID": 20003,
+                "roles": "AA==",
+                "active": 0,
+                "source": "PACKAGE",
+                "createdAt": "2026-05-22 23:08:16",
+                "expire": 1784664496,
+                "transferrable": false,
+                "subType": "VIP",
+                "id": 23396,
+                "lifeTime": 0,
+                "timeLeft": 4431853,
+                "clip": "CARD_DIAMOND",
+                "base": 0
+              },
+              {
+                "quantity": 1,
+                "color": 0,
+                "productID": 19999,
+                "roles": "ACA=",
+                "active": 0,
+                "source": "CLUB REQUEST",
+                "createdAt": "2026-01-18 02:39:52",
+                "expire": 1784252392,
+                "transferrable": false,
+                "subType": "VIP",
+                "id": 13852,
+                "lifeTime": 15552000,
+                "timeLeft": 4019749,
+                "clip": "CARD_DIAMOND_CLUB",
+                "base": 0
+              }
+            ],
+            "nextRequest": 1000,
+            "ts": 1780232643
+          },
+          "c": "cardlist"
+        },
+        "bytes": 601,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "usehanditem",
+      "rid": 78,
+      "requestSeq": 1134,
+      "responseSeq": 1138,
+      "latencyMs": 178,
+      "request": {
+        "seq": 1134,
+        "time": 1780232648321,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "usehanditem",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {
+              "id": 4055317
+            },
+            "sn": "usehanditem",
+            "ts": 1780232648,
+            "rid": 78
+          },
+          "c": "usehanditem"
+        },
+        "bytes": 117,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1138,
+        "time": 1780232648499,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "usehanditem",
+        "params": {
+          "p": {
+            "message": "Hand item equipped successfully.",
+            "rid": 78,
+            "status": "success",
+            "ts": 1780232647
+          },
+          "c": "usehanditem"
+        },
+        "bytes": 135,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "usehousedoor",
+      "rid": 91,
+      "requestSeq": 1699,
+      "responseSeq": 1706,
+      "latencyMs": 313,
+      "request": {
+        "seq": 1699,
+        "time": 1780232740302,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "usehousedoor",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {
+              "avatarID": "101002081",
+              "flatID": "1000824",
+              "password": "[REDACTED]"
+            },
+            "sn": "usehousedoor",
+            "ts": 1780232740,
+            "rid": 91
+          },
+          "c": "usehousedoor"
+        },
+        "bytes": 163,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1706,
+        "time": 1780232740615,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "usehousedoor",
+        "params": {
+          "p": {
+            "rid": 91,
+            "nextRequest": 1000,
+            "room": {
+              "dv": 0,
+              "pv": 0,
+              "doorKey": "d1",
+              "map": "PG1hcCB4T3JpZ2luPSc0MjYnIHlPcmlnaW49JzU2Myc+PGNoYWlyIGludGVyYWN0aXZlPSdmYWxzZScgZGVmPSdkNnU5aVhXS181JyBleHQ9JzEnIHY9JzAnIGlkPScyNjgxOTM3MicgZGlyPSc1JyB4PScxNicgeT0nMCcgej0nMjQnIHc9JzEnIGg9JzAuNScgZD0nMScgc3R1ZmZUeXBlPScxJyBzPScwJyBmPScwJyBmeD0nMCcgbGM9JzAnIHN0PScwJyBzdj0nMCc+PC9jaGFpcj4gPC9tYXA+",
+              "roomName": "Cafe of M7MED",
+              "roomType": "cafe01",
+              "key": "cafe01",
+              "buildingID": 3
+            },
+            "ts": 1780232740
+          },
+          "c": "usehousedoor"
+        },
+        "bytes": 513,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "orderlist",
+      "rid": 93,
+      "requestSeq": 1711,
+      "responseSeq": 1712,
+      "latencyMs": 97,
+      "request": {
+        "seq": 1711,
+        "time": 1780232741342,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "orderlist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "orderlist",
+            "ts": 1780232741,
+            "rid": 93
+          },
+          "c": "orderlist"
+        },
+        "bytes": 104,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1712,
+        "time": 1780232741439,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "orderlist",
+        "params": {
+          "p": {
+            "orders": [],
+            "rid": 93,
+            "nextRequest": 1000,
+            "ts": 1780232741
+          },
+          "c": "orderlist"
+        },
+        "bytes": 100,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "musicList",
+      "rid": 97,
+      "requestSeq": 1745,
+      "responseSeq": 1746,
+      "latencyMs": 317,
+      "request": {
+        "seq": 1745,
+        "time": 1780232760059,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "musicList",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "musicList",
+            "ts": 1780232760,
+            "rid": 97
+          },
+          "c": "musicList"
+        },
+        "bytes": 104,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1746,
+        "time": 1780232760376,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "musicList",
+        "params": {
+          "p": {
+            "songs": [],
+            "rid": 97,
+            "ts": 1780232760
+          },
+          "c": "musicList"
+        },
+        "bytes": 81,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "musicList",
+      "rid": 98,
+      "requestSeq": 1747,
+      "responseSeq": 1748,
+      "latencyMs": 323,
+      "request": {
+        "seq": 1747,
+        "time": 1780232761277,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "musicList",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "musicList",
+            "ts": 1780232761,
+            "rid": 98
+          },
+          "c": "musicList"
+        },
+        "bytes": 104,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1748,
+        "time": 1780232761600,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "musicList",
+        "params": {
+          "p": {
+            "songs": [],
+            "rid": 98,
+            "ts": 1780232761
+          },
+          "c": "musicList"
+        },
+        "bytes": 81,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "cardlist",
+      "rid": 102,
+      "requestSeq": 1756,
+      "responseSeq": 1758,
+      "latencyMs": 108,
+      "request": {
+        "seq": 1756,
+        "time": 1780232793906,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "cardlist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "cardlist",
+            "ts": 1780232793,
+            "rid": 102
+          },
+          "c": "cardlist"
+        },
+        "bytes": 102,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1758,
+        "time": 1780232794014,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "cardlist",
+        "params": {
+          "p": {
+            "type": "CARD",
+            "rid": 102,
+            "items": [
+              {
+                "quantity": 1,
+                "color": 0,
+                "productID": 20003,
+                "roles": "AA==",
+                "active": 0,
+                "source": "PACKAGE",
+                "createdAt": "2026-05-22 23:08:16",
+                "expire": 1784664496,
+                "transferrable": false,
+                "subType": "VIP",
+                "id": 23396,
+                "lifeTime": 0,
+                "timeLeft": 4431703,
+                "clip": "CARD_DIAMOND",
+                "base": 0
+              },
+              {
+                "quantity": 1,
+                "color": 0,
+                "productID": 19999,
+                "roles": "ACA=",
+                "active": 0,
+                "source": "CLUB REQUEST",
+                "createdAt": "2026-01-18 02:39:52",
+                "expire": 1784252392,
+                "transferrable": false,
+                "subType": "VIP",
+                "id": 13852,
+                "lifeTime": 15552000,
+                "timeLeft": 4019599,
+                "clip": "CARD_DIAMOND_CLUB",
+                "base": 0
+              }
+            ],
+            "nextRequest": 1000,
+            "ts": 1780232793
+          },
+          "c": "cardlist"
+        },
+        "bytes": 601,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "usehanditem",
+      "rid": 104,
+      "requestSeq": 1760,
+      "responseSeq": 1763,
+      "latencyMs": 146,
+      "request": {
+        "seq": 1760,
+        "time": 1780232795260,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "usehanditem",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {
+              "id": 0
+            },
+            "sn": "usehanditem",
+            "ts": 1780232795,
+            "rid": 104
+          },
+          "c": "usehanditem"
+        },
+        "bytes": 117,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1763,
+        "time": 1780232795406,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "usehanditem",
+        "params": {
+          "p": {
+            "message": "Hand item removed, speed reset to 1.0.",
+            "rid": 104,
+            "status": "success",
+            "ts": 1780232794
+          },
+          "c": "usehanditem"
+        },
+        "bytes": 141,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "usehousedoor",
+      "rid": 107,
+      "requestSeq": 1776,
+      "responseSeq": 1783,
+      "latencyMs": 152,
+      "request": {
+        "seq": 1776,
+        "time": 1780232802187,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "usehousedoor",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {
+              "avatarID": "101002081",
+              "flatID": "1003409",
+              "password": "[REDACTED]"
+            },
+            "sn": "usehousedoor",
+            "ts": 1780232802,
+            "rid": 107
+          },
+          "c": "usehousedoor"
+        },
+        "bytes": 163,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1783,
+        "time": 1780232802339,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "usehousedoor",
+        "params": {
+          "p": {
+            "rid": 107,
+            "nextRequest": 1000,
+            "room": {
+              "dv": 0,
+              "pv": 0,
+              "doorKey": "d1",
+              "map": "PG1hcCB4T3JpZ2luPSczOTAnIHlPcmlnaW49JzU0Mic+IDwvbWFwPg==",
+              "roomName": "Cafe of M7MED",
+              "roomType": "cafe01",
+              "key": "cafe03",
+              "buildingID": 3
+            },
+            "ts": 1780232801
+          },
+          "c": "usehousedoor"
+        },
+        "bytes": 273,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "orderlist",
+      "rid": 109,
+      "requestSeq": 1787,
+      "responseSeq": 1788,
+      "latencyMs": 97,
+      "request": {
+        "seq": 1787,
+        "time": 1780232803055,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "orderlist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "orderlist",
+            "ts": 1780232803,
+            "rid": 109
+          },
+          "c": "orderlist"
+        },
+        "bytes": 104,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1788,
+        "time": 1780232803152,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "orderlist",
+        "params": {
+          "p": {
+            "orders": [],
+            "rid": 109,
+            "nextRequest": 1000,
+            "ts": 1780232803
+          },
+          "c": "orderlist"
+        },
+        "bytes": 100,
+        "rewrite": null
+      }
+    },
+    {
+      "command": "orderlist",
+      "rid": 113,
+      "requestSeq": 1805,
+      "responseSeq": 1806,
+      "latencyMs": 104,
+      "request": {
+        "seq": 1805,
+        "time": 1780232815387,
+        "direction": "client->server",
+        "controller": 1,
+        "action": 13,
+        "command": "orderlist",
+        "roomId": -1,
+        "params": {
+          "r": -1,
+          "p": {
+            "data": {},
+            "sn": "orderlist",
+            "ts": 1780232815,
+            "rid": 113
+          },
+          "c": "orderlist"
+        },
+        "bytes": 104,
+        "rewrite": null
+      },
+      "response": {
+        "seq": 1806,
+        "time": 1780232815491,
+        "direction": "server->client",
+        "controller": 1,
+        "action": 13,
+        "command": "orderlist",
+        "params": {
+          "p": {
+            "orders": [],
+            "rid": 113,
+            "nextRequest": 1000,
+            "ts": 1780232815
+          },
+          "c": "orderlist"
+        },
+        "bytes": 100,
+        "rewrite": null
+      }
+    }
+  ],
+  "commandPairCount": 15,
+  "commandSamples": {
+    "config": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 11,
+          "time": 1780232473773,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "config",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "config",
+              "ts": 0,
+              "rid": 0
+            },
+            "c": "config"
+          },
+          "bytes": 98,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 11,
+          "time": 1780232473773,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "config",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "config",
+              "ts": 0,
+              "rid": 0
+            },
+            "c": "config"
+          },
+          "bytes": 98,
+          "rewrite": null
+        }
+      ]
+    },
+    "ditchguestpanel": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 20,
+          "time": 1780232500811,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "ditchguestpanel",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "ditchguestpanel",
+              "ts": 0,
+              "rid": 1
+            },
+            "c": "ditchguestpanel"
+          },
+          "bytes": 116,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 20,
+          "time": 1780232500811,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "ditchguestpanel",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "ditchguestpanel",
+              "ts": 0,
+              "rid": 1
+            },
+            "c": "ditchguestpanel"
+          },
+          "bytes": 116,
+          "rewrite": null
+        }
+      ]
+    },
+    "externalTokenComplete": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 21,
+          "time": 1780232501091,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "externalTokenComplete",
+          "params": {
+            "p": {
+              "avatarID": "101002081",
+              "token": "[REDACTED]"
+            },
+            "c": "externalTokenComplete"
+          },
+          "bytes": 124,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 21,
+          "time": 1780232501091,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "externalTokenComplete",
+          "params": {
+            "p": {
+              "avatarID": "101002081",
+              "token": "[REDACTED]"
+            },
+            "c": "externalTokenComplete"
+          },
+          "bytes": 124,
+          "rewrite": null
+        }
+      ]
+    },
+    "init": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 27,
+          "time": 1780232501367,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "init",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "init",
+              "ts": 0,
+              "rid": 2
+            },
+            "c": "init"
+          },
+          "bytes": 94,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 27,
+          "time": 1780232501367,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "init",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "init",
+              "ts": 0,
+              "rid": 2
+            },
+            "c": "init"
+          },
+          "bytes": 94,
+          "rewrite": null
+        }
+      ]
+    },
+    "initQueue": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 30,
+          "time": 1780232501519,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "initQueue",
+          "params": {
+            "p": {
+              "p": 1,
+              "ts": 1780232501
+            },
+            "c": "initQueue"
+          },
+          "bytes": 65,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 30,
+          "time": 1780232501519,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "initQueue",
+          "params": {
+            "p": {
+              "p": 1,
+              "ts": 1780232501
+            },
+            "c": "initQueue"
+          },
+          "bytes": 65,
+          "rewrite": null
+        }
+      ]
+    },
+    "roomjoincomplete": {
+      "count": 34,
+      "first": [
+        {
+          "seq": 42,
+          "time": 1780232504124,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "roomjoincomplete",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "roomjoincomplete",
+              "ts": 1780232504,
+              "rid": 4
+            },
+            "c": "roomjoincomplete"
+          },
+          "bytes": 118,
+          "rewrite": null
+        },
+        {
+          "seq": 43,
+          "time": 1780232504213,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roomjoincomplete",
+          "params": {
+            "p": {},
+            "c": "roomjoincomplete"
+          },
+          "bytes": 51,
+          "rewrite": null
+        },
+        {
+          "seq": 62,
+          "time": 1780232509025,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "roomjoincomplete",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "roomjoincomplete",
+              "ts": 1780232509,
+              "rid": 8
+            },
+            "c": "roomjoincomplete"
+          },
+          "bytes": 118,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1785,
+          "time": 1780232802931,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roomjoincomplete",
+          "params": {
+            "p": {},
+            "c": "roomjoincomplete"
+          },
+          "bytes": 51,
+          "rewrite": null
+        },
+        {
+          "seq": 1802,
+          "time": 1780232815159,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "roomjoincomplete",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "roomjoincomplete",
+              "ts": 1780232815,
+              "rid": 112
+            },
+            "c": "roomjoincomplete"
+          },
+          "bytes": 118,
+          "rewrite": null
+        },
+        {
+          "seq": 1803,
+          "time": 1780232815249,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roomjoincomplete",
+          "params": {
+            "p": {},
+            "c": "roomjoincomplete"
+          },
+          "bytes": 51,
+          "rewrite": null
+        }
+      ]
+    },
+    "walkrequest": {
+      "count": 55,
+      "first": [
+        {
+          "seq": 50,
+          "time": 1780232507731,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "walkrequest",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "y": 0,
+                "door": true,
+                "x": 4
+              },
+              "sn": "walkrequest",
+              "ts": 1780232507,
+              "rid": 6
+            },
+            "c": "walkrequest"
+          },
+          "bytes": 132,
+          "rewrite": null
+        },
+        {
+          "seq": 52,
+          "time": 1780232507845,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "walkrequest",
+          "params": {
+            "p": {
+              "delay": 120,
+              "isDoor": true,
+              "doorY": 0,
+              "doorX": 4
+            },
+            "c": "walkrequest"
+          },
+          "bytes": 92,
+          "rewrite": null
+        },
+        {
+          "seq": 80,
+          "time": 1780232511504,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "walkrequest",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "y": 18,
+                "door": false,
+                "x": 36
+              },
+              "sn": "walkrequest",
+              "ts": 1780232511,
+              "rid": 9
+            },
+            "c": "walkrequest"
+          },
+          "bytes": 132,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1631,
+          "time": 1780232733144,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "walkrequest",
+          "params": {
+            "p": {
+              "delay": 5640,
+              "isDoor": true,
+              "doorY": 23,
+              "doorX": 37
+            },
+            "c": "walkrequest"
+          },
+          "bytes": 92,
+          "rewrite": null
+        },
+        {
+          "seq": 1713,
+          "time": 1780232742434,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "walkrequest",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "y": 31,
+                "door": false,
+                "x": 18
+              },
+              "sn": "walkrequest",
+              "ts": 1780232742,
+              "rid": 94
+            },
+            "c": "walkrequest"
+          },
+          "bytes": 132,
+          "rewrite": null
+        },
+        {
+          "seq": 1715,
+          "time": 1780232742575,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "walkrequest",
+          "params": {
+            "p": {
+              "delay": 1560
+            },
+            "c": "walkrequest"
+          },
+          "bytes": 58,
+          "rewrite": null
+        }
+      ]
+    },
+    "walkfinalrequest": {
+      "count": 42,
+      "first": [
+        {
+          "seq": 53,
+          "time": 1780232507988,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "walkfinalrequest",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "walkfinalrequest",
+              "ts": 1780232507,
+              "rid": 7
+            },
+            "c": "walkfinalrequest"
+          },
+          "bytes": 118,
+          "rewrite": null
+        },
+        {
+          "seq": 56,
+          "time": 1780232508076,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "walkfinalrequest",
+          "params": {
+            "p": {
+              "rid": 6,
+              "nextRequest": 100
+            },
+            "c": "walkfinalrequest"
+          },
+          "bytes": 79,
+          "rewrite": null
+        },
+        {
+          "seq": 123,
+          "time": 1780232515673,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "walkfinalrequest",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "walkfinalrequest",
+              "ts": 1780232515,
+              "rid": 11
+            },
+            "c": "walkfinalrequest"
+          },
+          "bytes": 118,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1678,
+          "time": 1780232739187,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "walkfinalrequest",
+          "params": {
+            "p": {
+              "rid": 6,
+              "nextRequest": 100
+            },
+            "c": "walkfinalrequest"
+          },
+          "bytes": 79,
+          "rewrite": null
+        },
+        {
+          "seq": 1716,
+          "time": 1780232744156,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "walkfinalrequest",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "walkfinalrequest",
+              "ts": 1780232744,
+              "rid": 95
+            },
+            "c": "walkfinalrequest"
+          },
+          "bytes": 118,
+          "rewrite": null
+        },
+        {
+          "seq": 1719,
+          "time": 1780232744263,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "walkfinalrequest",
+          "params": {
+            "p": {
+              "rid": 6,
+              "nextRequest": 100
+            },
+            "c": "walkfinalrequest"
+          },
+          "bytes": 79,
+          "rewrite": null
+        }
+      ]
+    },
+    "questlist": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 45,
+          "time": 1780232504259,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "questlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "showDetail": false
+              },
+              "sn": "questlist",
+              "ts": 1780232504,
+              "rid": 5
+            },
+            "c": "questlist"
+          },
+          "bytes": 118,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 45,
+          "time": 1780232504259,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "questlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "showDetail": false
+              },
+              "sn": "questlist",
+              "ts": 1780232504,
+              "rid": 5
+            },
+            "c": "questlist"
+          },
+          "bytes": 118,
+          "rewrite": null
+        }
+      ]
+    },
+    "flatlist": {
+      "count": 7,
+      "first": [
+        {
+          "seq": 161,
+          "time": 1780232518151,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "flatlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "buildingID": 3
+              },
+              "sn": "flatlist",
+              "ts": 1780232518,
+              "rid": 14
+            },
+            "c": "flatlist"
+          },
+          "bytes": 119,
+          "rewrite": null
+        },
+        {
+          "seq": 229,
+          "time": 1780232524428,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "flatlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "buildingID": 10
+              },
+              "sn": "flatlist",
+              "ts": 1780232524,
+              "rid": 17
+            },
+            "c": "flatlist"
+          },
+          "bytes": 119,
+          "rewrite": null
+        },
+        {
+          "seq": 233,
+          "time": 1780232524603,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "flatlist",
+          "params": {
+            "p": {
+              "yourHouses": [],
+              "youLiked": [],
+              "buddyHouses": [],
+              "rid": 17,
+              "nextRequest": 1000,
+              "others": [],
+              "ts": 1780232524
+            },
+            "c": "flatlist"
+          },
+          "bytes": 143,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1652,
+          "time": 1780232738271,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "flatlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "buildingID": 3
+              },
+              "sn": "flatlist",
+              "ts": 1780232738,
+              "rid": 88
+            },
+            "c": "flatlist"
+          },
+          "bytes": 119,
+          "rewrite": null
+        },
+        {
+          "seq": 1771,
+          "time": 1780232798308,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "flatlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "buildingID": 3
+              },
+              "sn": "flatlist",
+              "ts": 1780232798,
+              "rid": 105
+            },
+            "c": "flatlist"
+          },
+          "bytes": 119,
+          "rewrite": null
+        },
+        {
+          "seq": 1790,
+          "time": 1780232804503,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "flatlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "buildingID": 3
+              },
+              "sn": "flatlist",
+              "ts": 1780232804,
+              "rid": 110
+            },
+            "c": "flatlist"
+          },
+          "bytes": 119,
+          "rewrite": null
+        }
+      ]
+    },
+    "displayAd": {
+      "count": 7,
+      "first": [
+        {
+          "seq": 64,
+          "time": 1780232509123,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "displayAd",
+          "params": {
+            "p": {
+              "ads": [
+                {
+                  "clickUrl": "https://www.facebook.com/marhabonline",
+                  "impUrl": "",
+                  "repeat": 0,
+                  "length": 0,
+                  "alias": "billboard_BFreklam",
+                  "id": 2,
+                  "type": "BILLBOARD",
+                  "skipSecond": 0,
+                  "assetUrl": "adsmarhab2.png"
+                }
+              ]
+            },
+            "c": "displayAd"
+          },
+          "bytes": 241,
+          "rewrite": null
+        },
+        {
+          "seq": 344,
+          "time": 1780232547373,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "displayAd",
+          "params": {
+            "p": {
+              "ads": [
+                {
+                  "clickUrl": "https://www.facebook.com/marhabonline",
+                  "impUrl": "",
+                  "repeat": 0,
+                  "length": 0,
+                  "alias": "billboard_BFreklam",
+                  "id": 2,
+                  "type": "BILLBOARD",
+                  "skipSecond": 0,
+                  "assetUrl": "adsmarhab2.png"
+                }
+              ]
+            },
+            "c": "displayAd"
+          },
+          "bytes": 241,
+          "rewrite": null
+        },
+        {
+          "seq": 441,
+          "time": 1780232564298,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "displayAd",
+          "params": {
+            "p": {
+              "ads": [
+                {
+                  "clickUrl": "https://www.facebook.com/marhabonline",
+                  "impUrl": "",
+                  "repeat": 0,
+                  "length": 0,
+                  "alias": "billboard_BFreklam",
+                  "id": 2,
+                  "type": "BILLBOARD",
+                  "skipSecond": 0,
+                  "assetUrl": "adsmarhab2.png"
+                }
+              ]
+            },
+            "c": "displayAd"
+          },
+          "bytes": 241,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 648,
+          "time": 1780232593731,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "displayAd",
+          "params": {
+            "p": {
+              "ads": [
+                {
+                  "clickUrl": "https://www.facebook.com/marhabonline",
+                  "impUrl": "",
+                  "repeat": 0,
+                  "length": 0,
+                  "alias": "billboard_BFreklam",
+                  "id": 2,
+                  "type": "BILLBOARD",
+                  "skipSecond": 0,
+                  "assetUrl": "adsmarhab2.png"
+                }
+              ]
+            },
+            "c": "displayAd"
+          },
+          "bytes": 241,
+          "rewrite": null
+        },
+        {
+          "seq": 885,
+          "time": 1780232624384,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "displayAd",
+          "params": {
+            "p": {
+              "ads": [
+                {
+                  "clickUrl": "https://www.facebook.com/marhabonline",
+                  "impUrl": "",
+                  "repeat": 0,
+                  "length": 0,
+                  "alias": "billboard_BFreklam",
+                  "id": 2,
+                  "type": "BILLBOARD",
+                  "skipSecond": 0,
+                  "assetUrl": "adsmarhab2.png"
+                }
+              ]
+            },
+            "c": "displayAd"
+          },
+          "bytes": 241,
+          "rewrite": null
+        },
+        {
+          "seq": 1075,
+          "time": 1780232640201,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "displayAd",
+          "params": {
+            "p": {
+              "ads": [
+                {
+                  "clickUrl": "https://www.facebook.com/marhabonline",
+                  "impUrl": "",
+                  "repeat": 0,
+                  "length": 0,
+                  "alias": "billboard_BFreklam",
+                  "id": 2,
+                  "type": "BILLBOARD",
+                  "skipSecond": 0,
+                  "assetUrl": "adsmarhab2.png"
+                }
+              ]
+            },
+            "c": "displayAd"
+          },
+          "bytes": 241,
+          "rewrite": null
+        }
+      ]
+    },
+    "profile": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 310,
+          "time": 1780232536720,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "profile",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "avatarID": "100999377"
+              },
+              "sn": "profile",
+              "ts": 1780232536,
+              "rid": 22
+            },
+            "c": "profile"
+          },
+          "bytes": 122,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 310,
+          "time": 1780232536720,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "profile",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "avatarID": "100999377"
+              },
+              "sn": "profile",
+              "ts": 1780232536,
+              "rid": 22
+            },
+            "c": "profile"
+          },
+          "bytes": 122,
+          "rewrite": null
+        }
+      ]
+    },
+    "buddylist": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 40,
+          "time": 1780232503437,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "buddylist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "buddylist",
+              "ts": 1780232503,
+              "rid": 3
+            },
+            "c": "buddylist"
+          },
+          "bytes": 104,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 40,
+          "time": 1780232503437,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "buddylist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "buddylist",
+              "ts": 1780232503,
+              "rid": 3
+            },
+            "c": "buddylist"
+          },
+          "bytes": 104,
+          "rewrite": null
+        }
+      ]
+    },
+    "buddyOnlineStatus": {
+      "count": 5,
+      "first": [
+        {
+          "seq": 277,
+          "time": 1780232532775,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "buddyOnlineStatus",
+          "params": {
+            "p": {
+              "avatarName": "BlaCk",
+              "avatarID": "100979432",
+              "gender": "m",
+              "myRating": 1,
+              "buddyRating": 1,
+              "isOnline": false
+            },
+            "c": "buddyOnlineStatus"
+          },
+          "bytes": 151,
+          "rewrite": null
+        },
+        {
+          "seq": 278,
+          "time": 1780232532810,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "buddyOnlineStatus",
+          "roomId": 5,
+          "params": {
+            "p": {
+              "avatarName": "BlaCk",
+              "avatarID": "100979432",
+              "gender": "m",
+              "myRating": 1,
+              "buddyRating": 1,
+              "isOnline": false
+            },
+            "r": 5,
+            "c": "buddyOnlineStatus"
+          },
+          "bytes": 159,
+          "rewrite": null
+        },
+        {
+          "seq": 853,
+          "time": 1780232615893,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "buddyOnlineStatus",
+          "params": {
+            "p": {
+              "avatarName": "آيريم",
+              "avatarID": "100979628",
+              "gender": "f",
+              "myRating": 1,
+              "buddyRating": 1,
+              "isOnline": true
+            },
+            "c": "buddyOnlineStatus"
+          },
+          "bytes": 156,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 853,
+          "time": 1780232615893,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "buddyOnlineStatus",
+          "params": {
+            "p": {
+              "avatarName": "آيريم",
+              "avatarID": "100979628",
+              "gender": "f",
+              "myRating": 1,
+              "buddyRating": 1,
+              "isOnline": true
+            },
+            "c": "buddyOnlineStatus"
+          },
+          "bytes": 156,
+          "rewrite": null
+        },
+        {
+          "seq": 1817,
+          "time": 1780232833736,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "buddyOnlineStatus",
+          "params": {
+            "p": {
+              "avatarName": "آيريم",
+              "avatarID": "100979628",
+              "gender": "f",
+              "myRating": 1,
+              "buddyRating": 1,
+              "isOnline": false
+            },
+            "c": "buddyOnlineStatus"
+          },
+          "bytes": 156,
+          "rewrite": null
+        },
+        {
+          "seq": 1818,
+          "time": 1780232833771,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "buddyOnlineStatus",
+          "roomId": 51,
+          "params": {
+            "p": {
+              "avatarName": "آيريم",
+              "avatarID": "100979628",
+              "gender": "f",
+              "myRating": 1,
+              "buddyRating": 1,
+              "isOnline": false
+            },
+            "r": 51,
+            "c": "buddyOnlineStatus"
+          },
+          "bytes": 164,
+          "rewrite": null
+        }
+      ]
+    },
+    "fishing.list": {
+      "count": 18,
+      "first": [
+        {
+          "seq": 67,
+          "time": 1780232509142,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.list",
+          "params": {
+            "p": {
+              "fishers": []
+            },
+            "c": "fishing.list"
+          },
+          "bytes": 59,
+          "rewrite": null
+        },
+        {
+          "seq": 68,
+          "time": 1780232509146,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.list",
+          "roomId": 51,
+          "params": {
+            "p": {
+              "fishers": [
+                {
+                  "avatarID": "101010321",
+                  "rodX": 21,
+                  "rodY": 2
+                }
+              ]
+            },
+            "r": 51,
+            "c": "fishing.list"
+          },
+          "bytes": 114,
+          "rewrite": null
+        },
+        {
+          "seq": 347,
+          "time": 1780232547400,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.list",
+          "params": {
+            "p": {
+              "fishers": []
+            },
+            "c": "fishing.list"
+          },
+          "bytes": 59,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 991,
+          "time": 1780232634814,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.list",
+          "roomId": 5,
+          "params": {
+            "p": {
+              "fishers": [
+                {
+                  "avatarID": "101009463",
+                  "rodX": 25,
+                  "rodY": 5
+                },
+                {
+                  "avatarID": "100992183",
+                  "rodX": 20,
+                  "rodY": 2
+                }
+              ]
+            },
+            "r": 5,
+            "c": "fishing.list"
+          },
+          "bytes": 161,
+          "rewrite": null
+        },
+        {
+          "seq": 1078,
+          "time": 1780232640281,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.list",
+          "params": {
+            "p": {
+              "fishers": []
+            },
+            "c": "fishing.list"
+          },
+          "bytes": 59,
+          "rewrite": null
+        },
+        {
+          "seq": 1079,
+          "time": 1780232640302,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.list",
+          "roomId": 51,
+          "params": {
+            "p": {
+              "fishers": []
+            },
+            "r": 51,
+            "c": "fishing.list"
+          },
+          "bytes": 67,
+          "rewrite": null
+        }
+      ]
+    },
+    "fishing.update": {
+      "count": 283,
+      "first": [
+        {
+          "seq": 69,
+          "time": 1780232509156,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.update",
+          "roomId": 67,
+          "params": {
+            "p": {
+              "states": []
+            },
+            "r": 67,
+            "c": "fishing.update"
+          },
+          "bytes": 68,
+          "rewrite": null
+        },
+        {
+          "seq": 70,
+          "time": 1780232509338,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.update",
+          "params": {
+            "p": {
+              "states": []
+            },
+            "c": "fishing.update"
+          },
+          "bytes": 60,
+          "rewrite": null
+        },
+        {
+          "seq": 81,
+          "time": 1780232511537,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.update",
+          "roomId": 190,
+          "params": {
+            "p": {
+              "states": []
+            },
+            "r": 190,
+            "c": "fishing.update"
+          },
+          "bytes": 68,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1674,
+          "time": 1780232739033,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.update",
+          "roomId": 59,
+          "params": {
+            "p": {
+              "states": []
+            },
+            "r": 59,
+            "c": "fishing.update"
+          },
+          "bytes": 68,
+          "rewrite": null
+        },
+        {
+          "seq": 1677,
+          "time": 1780232739179,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.update",
+          "roomId": 67,
+          "params": {
+            "p": {
+              "states": []
+            },
+            "r": 67,
+            "c": "fishing.update"
+          },
+          "bytes": 68,
+          "rewrite": null
+        },
+        {
+          "seq": 1682,
+          "time": 1780232739346,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.update",
+          "params": {
+            "p": {
+              "states": []
+            },
+            "c": "fishing.update"
+          },
+          "bytes": 60,
+          "rewrite": null
+        }
+      ]
+    },
+    "fishing.leftGame": {
+      "count": 470,
+      "first": [
+        {
+          "seq": 74,
+          "time": 1780232510420,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.leftGame",
+          "params": {
+            "p": {
+              "avatarID": "101005165"
+            },
+            "c": "fishing.leftGame"
+          },
+          "bytes": 73,
+          "rewrite": null
+        },
+        {
+          "seq": 75,
+          "time": 1780232510423,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.leftGame",
+          "roomId": 51,
+          "params": {
+            "p": {
+              "avatarID": "101005165"
+            },
+            "r": 51,
+            "c": "fishing.leftGame"
+          },
+          "bytes": 81,
+          "rewrite": null
+        },
+        {
+          "seq": 77,
+          "time": 1780232510831,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.leftGame",
+          "params": {
+            "p": {
+              "avatarID": "100998559"
+            },
+            "c": "fishing.leftGame"
+          },
+          "bytes": 73,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1697,
+          "time": 1780232740095,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.leftGame",
+          "params": {
+            "p": {
+              "avatarID": "101003292"
+            },
+            "c": "fishing.leftGame"
+          },
+          "bytes": 73,
+          "rewrite": null
+        },
+        {
+          "seq": 1698,
+          "time": 1780232740116,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.leftGame",
+          "roomId": 51,
+          "params": {
+            "p": {
+              "avatarID": "101003292"
+            },
+            "r": 51,
+            "c": "fishing.leftGame"
+          },
+          "bytes": 81,
+          "rewrite": null
+        },
+        {
+          "seq": 1702,
+          "time": 1780232740555,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "fishing.leftGame",
+          "params": {
+            "p": {
+              "avatarID": "101002081"
+            },
+            "c": "fishing.leftGame"
+          },
+          "bytes": 73,
+          "rewrite": null
+        }
+      ]
+    },
+    "roles": {
+      "count": 17,
+      "first": [
+        {
+          "seq": 44,
+          "time": 1780232504239,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roles",
+          "params": {
+            "p": {
+              "roles": "AA=="
+            },
+            "c": "roles"
+          },
+          "bytes": 54,
+          "rewrite": null
+        },
+        {
+          "seq": 65,
+          "time": 1780232509134,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roles",
+          "params": {
+            "p": {
+              "roles": "AA=="
+            },
+            "c": "roles"
+          },
+          "bytes": 54,
+          "rewrite": null
+        },
+        {
+          "seq": 306,
+          "time": 1780232535299,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roles",
+          "params": {
+            "p": {
+              "roles": "AA=="
+            },
+            "c": "roles"
+          },
+          "bytes": 54,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1710,
+          "time": 1780232741213,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roles",
+          "params": {
+            "p": {
+              "roles": "AA=="
+            },
+            "c": "roles"
+          },
+          "bytes": 54,
+          "rewrite": null
+        },
+        {
+          "seq": 1786,
+          "time": 1780232802959,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roles",
+          "params": {
+            "p": {
+              "roles": "AA=="
+            },
+            "c": "roles"
+          },
+          "bytes": 54,
+          "rewrite": null
+        },
+        {
+          "seq": 1804,
+          "time": 1780232815270,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "roles",
+          "params": {
+            "p": {
+              "roles": "AA=="
+            },
+            "c": "roles"
+          },
+          "bytes": 54,
+          "rewrite": null
+        }
+      ]
+    },
+    "whispernotify": {
+      "count": 59,
+      "first": [
+        {
+          "seq": 79,
+          "time": 1780232510878,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "whispernotify",
+          "params": {
+            "p": {
+              "receiver": "101003292",
+              "sender": "100998559",
+              "rid": 313,
+              "ts": 1780232510
+            },
+            "c": "whispernotify"
+          },
+          "bytes": 117,
+          "rewrite": null
+        },
+        {
+          "seq": 102,
+          "time": 1780232513156,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "whispernotify",
+          "params": {
+            "p": {
+              "receiver": "101003292",
+              "sender": "100998559",
+              "rid": 314,
+              "ts": 1780232512
+            },
+            "c": "whispernotify"
+          },
+          "bytes": 117,
+          "rewrite": null
+        },
+        {
+          "seq": 106,
+          "time": 1780232513317,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "whispernotify",
+          "params": {
+            "p": {
+              "receiver": "101010318",
+              "sender": "101005165",
+              "rid": 21,
+              "ts": 1780232512
+            },
+            "c": "whispernotify"
+          },
+          "bytes": 117,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1639,
+          "time": 1780232734047,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "whispernotify",
+          "params": {
+            "p": {
+              "receiver": "101006761",
+              "sender": "100979628",
+              "rid": 16,
+              "ts": 1780232733
+            },
+            "c": "whispernotify"
+          },
+          "bytes": 117,
+          "rewrite": null
+        },
+        {
+          "seq": 1675,
+          "time": 1780232739045,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "whispernotify",
+          "params": {
+            "p": {
+              "receiver": "101006761",
+              "sender": "100979628",
+              "rid": 18,
+              "ts": 1780232738
+            },
+            "c": "whispernotify"
+          },
+          "bytes": 117,
+          "rewrite": null
+        },
+        {
+          "seq": 1688,
+          "time": 1780232739551,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "whispernotify",
+          "params": {
+            "p": {
+              "receiver": "100998559",
+              "sender": "101003292",
+              "rid": 974,
+              "ts": 1780232739
+            },
+            "c": "whispernotify"
+          },
+          "bytes": 117,
+          "rewrite": null
+        }
+      ]
+    },
+    "smileylist": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 847,
+          "time": 1780232609055,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "smileylist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "smileylist",
+              "ts": 1780232609,
+              "rid": 55
+            },
+            "c": "smileylist"
+          },
+          "bytes": 106,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 847,
+          "time": 1780232609055,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "smileylist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "smileylist",
+              "ts": 1780232609,
+              "rid": 55
+            },
+            "c": "smileylist"
+          },
+          "bytes": 106,
+          "rewrite": null
+        }
+      ]
+    },
+    "handitemlist": {
+      "count": 5,
+      "first": [
+        {
+          "seq": 748,
+          "time": 1780232599979,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "handitemlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "sort": "created_desc",
+                "search": "",
+                "page": 1
+              },
+              "sn": "handitemlist",
+              "ts": 1780232599,
+              "rid": 51
+            },
+            "c": "handitemlist"
+          },
+          "bytes": 153,
+          "rewrite": null
+        },
+        {
+          "seq": 1117,
+          "time": 1780232644129,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "handitemlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "sort": "created_desc",
+                "search": "",
+                "page": 1
+              },
+              "sn": "handitemlist",
+              "ts": 1780232644,
+              "rid": 75
+            },
+            "c": "handitemlist"
+          },
+          "bytes": 153,
+          "rewrite": null
+        },
+        {
+          "seq": 1122,
+          "time": 1780232645613,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "handitemlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "sort": "created_desc",
+                "search": "",
+                "page": 2
+              },
+              "sn": "handitemlist",
+              "ts": 1780232645,
+              "rid": 76
+            },
+            "c": "handitemlist"
+          },
+          "bytes": 153,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1122,
+          "time": 1780232645613,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "handitemlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "sort": "created_desc",
+                "search": "",
+                "page": 2
+              },
+              "sn": "handitemlist",
+              "ts": 1780232645,
+              "rid": 76
+            },
+            "c": "handitemlist"
+          },
+          "bytes": 153,
+          "rewrite": null
+        },
+        {
+          "seq": 1124,
+          "time": 1780232646404,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "handitemlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "sort": "created_desc",
+                "search": "",
+                "page": 3
+              },
+              "sn": "handitemlist",
+              "ts": 1780232646,
+              "rid": 77
+            },
+            "c": "handitemlist"
+          },
+          "bytes": 153,
+          "rewrite": null
+        },
+        {
+          "seq": 1757,
+          "time": 1780232793915,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "handitemlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {
+                "sort": "created_desc",
+                "search": "",
+                "page": 1
+              },
+              "sn": "handitemlist",
+              "ts": 1780232793,
+              "rid": 103
+            },
+            "c": "handitemlist"
+          },
+          "bytes": 153,
+          "rewrite": null
+        }
+      ]
+    },
+    "clothlist": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 759,
+          "time": 1780232601647,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "clothlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "clothlist",
+              "ts": 1780232601,
+              "rid": 52
+            },
+            "c": "clothlist"
+          },
+          "bytes": 104,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 759,
+          "time": 1780232601647,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "clothlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "clothlist",
+              "ts": 1780232601,
+              "rid": 52
+            },
+            "c": "clothlist"
+          },
+          "bytes": 104,
+          "rewrite": null
+        }
+      ]
+    },
+    "cardlist": {
+      "count": 6,
+      "first": [
+        {
+          "seq": 747,
+          "time": 1780232599969,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "cardlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "cardlist",
+              "ts": 1780232599,
+              "rid": 50
+            },
+            "c": "cardlist"
+          },
+          "bytes": 102,
+          "rewrite": null
+        },
+        {
+          "seq": 751,
+          "time": 1780232600086,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "cardlist",
+          "params": {
+            "p": {
+              "type": "CARD",
+              "rid": 50,
+              "items": [
+                {
+                  "quantity": 1,
+                  "color": 0,
+                  "productID": 20003,
+                  "roles": "AA==",
+                  "active": 0,
+                  "source": "PACKAGE",
+                  "createdAt": "2026-05-22 23:08:16",
+                  "expire": 1784664496,
+                  "transferrable": false,
+                  "subType": "VIP",
+                  "id": 23396,
+                  "lifeTime": 0,
+                  "timeLeft": 4431897,
+                  "clip": "CARD_DIAMOND",
+                  "base": 0
+                },
+                {
+                  "quantity": 1,
+                  "color": 0,
+                  "productID": 19999,
+                  "roles": "ACA=",
+                  "active": 0,
+                  "source": "CLUB REQUEST",
+                  "createdAt": "2026-01-18 02:39:52",
+                  "expire": 1784252392,
+                  "transferrable": false,
+                  "subType": "VIP",
+                  "id": 13852,
+                  "lifeTime": 15552000,
+                  "timeLeft": 4019793,
+                  "clip": "CARD_DIAMOND_CLUB",
+                  "base": 0
+                }
+              ],
+              "nextRequest": 1000,
+              "ts": 1780232599
+            },
+            "c": "cardlist"
+          },
+          "bytes": 601,
+          "rewrite": null
+        },
+        {
+          "seq": 1116,
+          "time": 1780232644113,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "cardlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "cardlist",
+              "ts": 1780232644,
+              "rid": 74
+            },
+            "c": "cardlist"
+          },
+          "bytes": 102,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1119,
+          "time": 1780232644242,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "cardlist",
+          "params": {
+            "p": {
+              "type": "CARD",
+              "rid": 74,
+              "items": [
+                {
+                  "quantity": 1,
+                  "color": 0,
+                  "productID": 20003,
+                  "roles": "AA==",
+                  "active": 0,
+                  "source": "PACKAGE",
+                  "createdAt": "2026-05-22 23:08:16",
+                  "expire": 1784664496,
+                  "transferrable": false,
+                  "subType": "VIP",
+                  "id": 23396,
+                  "lifeTime": 0,
+                  "timeLeft": 4431853,
+                  "clip": "CARD_DIAMOND",
+                  "base": 0
+                },
+                {
+                  "quantity": 1,
+                  "color": 0,
+                  "productID": 19999,
+                  "roles": "ACA=",
+                  "active": 0,
+                  "source": "CLUB REQUEST",
+                  "createdAt": "2026-01-18 02:39:52",
+                  "expire": 1784252392,
+                  "transferrable": false,
+                  "subType": "VIP",
+                  "id": 13852,
+                  "lifeTime": 15552000,
+                  "timeLeft": 4019749,
+                  "clip": "CARD_DIAMOND_CLUB",
+                  "base": 0
+                }
+              ],
+              "nextRequest": 1000,
+              "ts": 1780232643
+            },
+            "c": "cardlist"
+          },
+          "bytes": 601,
+          "rewrite": null
+        },
+        {
+          "seq": 1756,
+          "time": 1780232793906,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "cardlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "cardlist",
+              "ts": 1780232793,
+              "rid": 102
+            },
+            "c": "cardlist"
+          },
+          "bytes": 102,
+          "rewrite": null
+        },
+        {
+          "seq": 1758,
+          "time": 1780232794014,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "cardlist",
+          "params": {
+            "p": {
+              "type": "CARD",
+              "rid": 102,
+              "items": [
+                {
+                  "quantity": 1,
+                  "color": 0,
+                  "productID": 20003,
+                  "roles": "AA==",
+                  "active": 0,
+                  "source": "PACKAGE",
+                  "createdAt": "2026-05-22 23:08:16",
+                  "expire": 1784664496,
+                  "transferrable": false,
+                  "subType": "VIP",
+                  "id": 23396,
+                  "lifeTime": 0,
+                  "timeLeft": 4431703,
+                  "clip": "CARD_DIAMOND",
+                  "base": 0
+                },
+                {
+                  "quantity": 1,
+                  "color": 0,
+                  "productID": 19999,
+                  "roles": "ACA=",
+                  "active": 0,
+                  "source": "CLUB REQUEST",
+                  "createdAt": "2026-01-18 02:39:52",
+                  "expire": 1784252392,
+                  "transferrable": false,
+                  "subType": "VIP",
+                  "id": 13852,
+                  "lifeTime": 15552000,
+                  "timeLeft": 4019599,
+                  "clip": "CARD_DIAMOND_CLUB",
+                  "base": 0
+                }
+              ],
+              "nextRequest": 1000,
+              "ts": 1780232793
+            },
+            "c": "cardlist"
+          },
+          "bytes": 601,
+          "rewrite": null
+        }
+      ]
+    },
+    "achievementlist": {
+      "count": 1,
+      "first": [
+        {
+          "seq": 849,
+          "time": 1780232610429,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "achievementlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "achievementlist",
+              "ts": 1780232610,
+              "rid": 56
+            },
+            "c": "achievementlist"
+          },
+          "bytes": 116,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 849,
+          "time": 1780232610429,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "achievementlist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "achievementlist",
+              "ts": 1780232610,
+              "rid": 56
+            },
+            "c": "achievementlist"
+          },
+          "bytes": 116,
+          "rewrite": null
+        }
+      ]
+    },
+    "universelist": {
+      "count": 2,
+      "first": [
+        {
+          "seq": 851,
+          "time": 1780232612225,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "universelist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "universelist",
+              "ts": 1780232612,
+              "rid": 57
+            },
+            "c": "universelist"
+          },
+          "bytes": 110,
+          "rewrite": null
+        },
+        {
+          "seq": 852,
+          "time": 1780232612348,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "universelist",
+          "params": {
+            "p": {
+              "onlineCount": 77,
+              "universes": [
+                {
+                  "fullness": 77,
+                  "roles": "AA==",
+                  "name": "جزيرة مرحب",
+                  "roomFullness": 77,
+                  "key": "w1",
+                  "recommended": true,
+                  "roomAvailable": true
+                }
+              ],
+              "rid": 57,
+              "nextRequest": 1000
+            },
+            "c": "universelist"
+          },
+          "bytes": 232,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 851,
+          "time": 1780232612225,
+          "direction": "client->server",
+          "controller": 1,
+          "action": 13,
+          "command": "universelist",
+          "roomId": -1,
+          "params": {
+            "r": -1,
+            "p": {
+              "data": {},
+              "sn": "universelist",
+              "ts": 1780232612,
+              "rid": 57
+            },
+            "c": "universelist"
+          },
+          "bytes": 110,
+          "rewrite": null
+        },
+        {
+          "seq": 852,
+          "time": 1780232612348,
+          "direction": "server->client",
+          "controller": 1,
+          "action": 13,
+          "command": "universelist",
+          "params": {
+            "p": {
+              "onlineCount": 77,
+              "universes": [
+                {
+                  "fullness": 77,
+                  "roles": "AA==",
+                  "name": "جزيرة مرحب",
+                  "roomFullness": 77,
+                  "key": "w1",
+                  "recommended": true,
+                  "roomAvailable": true
+                }
+              ],
+              "rid": 57,
+              "nextRequest": 1000
+            },
+            "c": "universelist"
+          },
+          "bytes": 232,
+          "rewrite": null
+        }
+      ]
+    }
+  },
+  "systemSamples": {
+    "a0": {
+      "count": 2,
+      "first": [
+        {
+          "seq": 5,
+          "time": 1780232473250,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 0,
+          "params": {
+            "api": "1.7.9",
+            "cl": "Flash"
+          },
+          "bytes": 48,
+          "rewrite": null
+        },
+        {
+          "seq": 7,
+          "time": 1780232473440,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 0,
+          "params": {
+            "ct": 1024,
+            "ms": 500000,
+            "tk": "48eed8c3606561f3ba9e6b93b8a3b3a9"
+          },
+          "bytes": 80,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 5,
+          "time": 1780232473250,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 0,
+          "params": {
+            "api": "1.7.9",
+            "cl": "Flash"
+          },
+          "bytes": 48,
+          "rewrite": null
+        },
+        {
+          "seq": 7,
+          "time": 1780232473440,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 0,
+          "params": {
+            "ct": 1024,
+            "ms": 500000,
+            "tk": "48eed8c3606561f3ba9e6b93b8a3b3a9"
+          },
+          "bytes": 80,
+          "rewrite": null
+        }
+      ]
+    },
+    "a1": {
+      "count": 2,
+      "first": [
+        {
+          "seq": 9,
+          "time": 1780232473574,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 1,
+          "params": {
+            "pw": "[REDACTED]",
+            "zn": "marhab",
+            "p": {
+              "clientKey": "MARHAB_V2_SSAAASCVVVAAA",
+              "deviceId": "d52d1cb7c2c21116e4f23a00aefcde2d",
+              "location": "",
+              "agent": "",
+              "client": "debugger",
+              "token": "[REDACTED]",
+              "fbToken": "[REDACTED]",
+              "platform": "app"
+            },
+            "un": ""
+          },
+          "bytes": 253,
+          "rewrite": {
+            "kind": "login-zone",
+            "from": "local",
+            "to": "marhab",
+            "originalBytes": 253,
+            "rewrittenBytes": 254
+          }
+        },
+        {
+          "seq": 25,
+          "time": 1780232501210,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 1,
+          "params": {
+            "pw": "[REDACTED]",
+            "zn": "marhab",
+            "p": {
+              "clientKey": "MARHAB_V2_SSAAASCVVVAAA",
+              "deviceId": "d52d1cb7c2c21116e4f23a00aefcde2d",
+              "location": "",
+              "agent": "",
+              "client": "debugger",
+              "token": "[REDACTED]",
+              "fbToken": "[REDACTED]",
+              "platform": "app"
+            },
+            "un": ""
+          },
+          "bytes": 253,
+          "rewrite": {
+            "kind": "login-zone",
+            "from": "local",
+            "to": "marhab",
+            "originalBytes": 253,
+            "rewrittenBytes": 254
+          }
+        }
+      ],
+      "last": [
+        {
+          "seq": 9,
+          "time": 1780232473574,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 1,
+          "params": {
+            "pw": "[REDACTED]",
+            "zn": "marhab",
+            "p": {
+              "clientKey": "MARHAB_V2_SSAAASCVVVAAA",
+              "deviceId": "d52d1cb7c2c21116e4f23a00aefcde2d",
+              "location": "",
+              "agent": "",
+              "client": "debugger",
+              "token": "[REDACTED]",
+              "fbToken": "[REDACTED]",
+              "platform": "app"
+            },
+            "un": ""
+          },
+          "bytes": 253,
+          "rewrite": {
+            "kind": "login-zone",
+            "from": "local",
+            "to": "marhab",
+            "originalBytes": 253,
+            "rewrittenBytes": 254
+          }
+        },
+        {
+          "seq": 25,
+          "time": 1780232501210,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 1,
+          "params": {
+            "pw": "[REDACTED]",
+            "zn": "marhab",
+            "p": {
+              "clientKey": "MARHAB_V2_SSAAASCVVVAAA",
+              "deviceId": "d52d1cb7c2c21116e4f23a00aefcde2d",
+              "location": "",
+              "agent": "",
+              "client": "debugger",
+              "token": "[REDACTED]",
+              "fbToken": "[REDACTED]",
+              "platform": "app"
+            },
+            "un": ""
+          },
+          "bytes": 253,
+          "rewrite": {
+            "kind": "login-zone",
+            "from": "local",
+            "to": "marhab",
+            "originalBytes": 253,
+            "rewrittenBytes": 254
+          }
+        }
+      ]
+    },
+    "a2": {
+      "count": 2,
+      "first": [
+        {
+          "seq": 22,
+          "time": 1780232501108,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 2,
+          "params": {},
+          "bytes": 23,
+          "rewrite": null
+        },
+        {
+          "seq": 23,
+          "time": 1780232501192,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 2,
+          "params": {
+            "zn": "marhab"
+          },
+          "bytes": 36,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 22,
+          "time": 1780232501108,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 2,
+          "params": {},
+          "bytes": 23,
+          "rewrite": null
+        },
+        {
+          "seq": 23,
+          "time": 1780232501192,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 2,
+          "params": {
+            "zn": "marhab"
+          },
+          "bytes": 36,
+          "rewrite": null
+        }
+      ]
+    },
+    "a6": {
+      "count": 3,
+      "first": [
+        {
+          "seq": 1108,
+          "time": 1780232643589,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 6,
+          "roomId": [
+            4469,
+            "33#16#100979214#artifika",
+            "default",
+            false,
+            false,
+            false,
+            0,
+            150,
+            []
+          ],
+          "params": {
+            "r": [
+              4469,
+              "33#16#100979214#artifika",
+              "default",
+              false,
+              false,
+              false,
+              0,
+              150,
+              []
+            ]
+          },
+          "bytes": 86,
+          "rewrite": null
+        },
+        {
+          "seq": 1777,
+          "time": 1780232802296,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 6,
+          "roomId": [
+            4494,
+            "20#3#101002081#cafe03",
+            "default",
+            false,
+            false,
+            false,
+            0,
+            150,
+            []
+          ],
+          "params": {
+            "r": [
+              4494,
+              "20#3#101002081#cafe03",
+              "default",
+              false,
+              false,
+              false,
+              0,
+              150,
+              []
+            ]
+          },
+          "bytes": 83,
+          "rewrite": null
+        },
+        {
+          "seq": 1794,
+          "time": 1780232805873,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 6,
+          "roomId": [
+            4495,
+            "21#3#101002081#cafe04",
+            "default",
+            false,
+            false,
+            false,
+            0,
+            150,
+            []
+          ],
+          "params": {
+            "r": [
+              4495,
+              "21#3#101002081#cafe04",
+              "default",
+              false,
+              false,
+              false,
+              0,
+              150,
+              []
+            ]
+          },
+          "bytes": 83,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1108,
+          "time": 1780232643589,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 6,
+          "roomId": [
+            4469,
+            "33#16#100979214#artifika",
+            "default",
+            false,
+            false,
+            false,
+            0,
+            150,
+            []
+          ],
+          "params": {
+            "r": [
+              4469,
+              "33#16#100979214#artifika",
+              "default",
+              false,
+              false,
+              false,
+              0,
+              150,
+              []
+            ]
+          },
+          "bytes": 86,
+          "rewrite": null
+        },
+        {
+          "seq": 1777,
+          "time": 1780232802296,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 6,
+          "roomId": [
+            4494,
+            "20#3#101002081#cafe03",
+            "default",
+            false,
+            false,
+            false,
+            0,
+            150,
+            []
+          ],
+          "params": {
+            "r": [
+              4494,
+              "20#3#101002081#cafe03",
+              "default",
+              false,
+              false,
+              false,
+              0,
+              150,
+              []
+            ]
+          },
+          "bytes": 83,
+          "rewrite": null
+        },
+        {
+          "seq": 1794,
+          "time": 1780232805873,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 6,
+          "roomId": [
+            4495,
+            "21#3#101002081#cafe04",
+            "default",
+            false,
+            false,
+            false,
+            0,
+            150,
+            []
+          ],
+          "params": {
+            "r": [
+              4495,
+              "21#3#101002081#cafe04",
+              "default",
+              false,
+              false,
+              false,
+              0,
+              150,
+              []
+            ]
+          },
+          "bytes": 83,
+          "rewrite": null
+        }
+      ]
+    },
+    "a7": {
+      "count": 9,
+      "first": [
+        {
+          "seq": 984,
+          "time": 1780232634422,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 7,
+          "roomId": 2,
+          "params": {
+            "p": {
+              "ts": 1780232634
+            },
+            "r": 2,
+            "t": 0,
+            "u": 2565,
+            "m": "البنات البتخش ب اكونت صاحبهم"
+          },
+          "bytes": 121,
+          "rewrite": null
+        },
+        {
+          "seq": 1022,
+          "time": 1780232636701,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 7,
+          "roomId": 2,
+          "params": {
+            "p": {
+              "ts": 1780232636
+            },
+            "r": 2,
+            "t": 0,
+            "u": 2565,
+            "m": "من قلب اكونته :"
+          },
+          "bytes": 95,
+          "rewrite": null
+        },
+        {
+          "seq": 1258,
+          "time": 1780232662903,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 7,
+          "roomId": 0,
+          "params": {
+            "p": {
+              "ts": 1780232662
+            },
+            "r": 0,
+            "t": 0,
+            "u": 2900,
+            "m": "نورك حبيبتي"
+          },
+          "bytes": 90,
+          "rewrite": null
+        },
+        {
+          "seq": 1726,
+          "time": 1780232747564,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 7,
+          "roomId": 3849,
+          "params": {
+            "t": 0,
+            "r": 3849,
+            "u": 2881,
+            "m": "hello",
+            "p": {
+              "ts": 1780232747
+            }
+          },
+          "bytes": 74,
+          "rewrite": null
+        },
+        {
+          "seq": 1728,
+          "time": 1780232747757,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 7,
+          "roomId": 3849,
+          "params": {
+            "p": {
+              "ts": 1780232747
+            },
+            "r": 3849,
+            "t": 0,
+            "u": 2881,
+            "m": "hello"
+          },
+          "bytes": 74,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1728,
+          "time": 1780232747757,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 7,
+          "roomId": 3849,
+          "params": {
+            "p": {
+              "ts": 1780232747
+            },
+            "r": 3849,
+            "t": 0,
+            "u": 2881,
+            "m": "hello"
+          },
+          "bytes": 74,
+          "rewrite": null
+        },
+        {
+          "seq": 1736,
+          "time": 1780232755046,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 7,
+          "roomId": 3849,
+          "params": {
+            "t": 0,
+            "r": 3849,
+            "u": 2881,
+            "m": "hi",
+            "p": {
+              "ts": 1780232755
+            }
+          },
+          "bytes": 71,
+          "rewrite": null
+        },
+        {
+          "seq": 1738,
+          "time": 1780232755233,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 7,
+          "roomId": 3849,
+          "params": {
+            "p": {
+              "ts": 1780232755
+            },
+            "r": 3849,
+            "t": 0,
+            "u": 2881,
+            "m": "hi"
+          },
+          "bytes": 71,
+          "rewrite": null
+        },
+        {
+          "seq": 1742,
+          "time": 1780232757962,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 7,
+          "roomId": 3849,
+          "params": {
+            "t": 0,
+            "r": 3849,
+            "u": 2881,
+            "m": "I'm here",
+            "p": {
+              "ts": 1780232757
+            }
+          },
+          "bytes": 77,
+          "rewrite": null
+        },
+        {
+          "seq": 1744,
+          "time": 1780232758148,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 7,
+          "roomId": 3849,
+          "params": {
+            "p": {
+              "ts": 1780232757
+            },
+            "r": 3849,
+            "t": 0,
+            "u": 2881,
+            "m": "I'm here"
+          },
+          "bytes": 77,
+          "rewrite": null
+        }
+      ]
+    },
+    "a12": {
+      "count": 467,
+      "first": [
+        {
+          "seq": 28,
+          "time": 1780232501466,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "avatarName",
+                4,
+                "M7MED",
+                false
+              ],
+              [
+                "gender",
+                4,
+                "m",
+                false
+              ]
+            ]
+          },
+          "bytes": 86,
+          "rewrite": null
+        },
+        {
+          "seq": 29,
+          "time": 1780232501495,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "gender",
+                4,
+                "m",
+                false
+              ],
+              [
+                "playerID",
+                2,
+                1111111,
+                false
+              ],
+              [
+                "avatarName",
+                4,
+                "M7MED",
+                false
+              ],
+              [
+                "universeKey",
+                4,
+                "w1",
+                false
+              ],
+              [
+                "imgPath",
+                2,
+                1728065974,
+                false
+              ],
+              [
+                "mood",
+                2,
+                0,
+                false
+              ],
+              [
+                "platform",
+                4,
+                "browser",
+                false
+              ],
+              [
+                "statusMessage",
+                4,
+                "Sanalika",
+                false
+              ],
+              [
+                "avatarSize",
+                3,
+                1,
+                false
+              ],
+              [
+                "chatBalloon",
+                4,
+                "1",
+                false
+              ],
+              [
+                "tp",
+                2,
+                1,
+                false
+              ],
+              [
+                "clothes",
+                4,
+                "[\"A_2\",\"B_2\",\"C_2\",\"HTuzKoEs_7\",\"f4ddDcs3_10\",\"roRTN78_3\",\"n8MPy6Cv_2\",\"2b42umx_2\"]",
+                false
+              ],
+              [
+                "optimizedAssetKey",
+                2,
+                1759204398,
+                false
+              ]
+            ]
+          },
+          "bytes": 444,
+          "rewrite": null
+        },
+        {
+          "seq": 31,
+          "time": 1780232501546,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "gender",
+                4,
+                "m",
+                false
+              ],
+              [
+                "playerID",
+                2,
+                1111111,
+                false
+              ],
+              [
+                "avatarName",
+                4,
+                "M7MED",
+                false
+              ],
+              [
+                "universeKey",
+                4,
+                "w1",
+                false
+              ],
+              [
+                "imgPath",
+                2,
+                1728065974,
+                false
+              ],
+              [
+                "mood",
+                2,
+                0,
+                false
+              ],
+              [
+                "platform",
+                4,
+                "browser",
+                false
+              ],
+              [
+                "statusMessage",
+                4,
+                "Sanalika",
+                false
+              ],
+              [
+                "avatarSize",
+                3,
+                1,
+                false
+              ],
+              [
+                "chatBalloon",
+                4,
+                "1",
+                false
+              ],
+              [
+                "tp",
+                2,
+                1,
+                false
+              ],
+              [
+                "clothes",
+                4,
+                "[\"A_2\",\"B_2\",\"C_2\",\"HTuzKoEs_7\",\"f4ddDcs3_10\",\"roRTN78_3\",\"n8MPy6Cv_2\",\"2b42umx_2\"]",
+                false
+              ],
+              [
+                "optimizedAssetKey",
+                2,
+                1759204398,
+                false
+              ]
+            ]
+          },
+          "bytes": 444,
+          "rewrite": null
+        },
+        {
+          "seq": 33,
+          "time": 1780232501557,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "roles",
+                4,
+                "ACA=",
+                false
+              ]
+            ]
+          },
+          "bytes": 60,
+          "rewrite": null
+        },
+        {
+          "seq": 35,
+          "time": 1780232501579,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "status",
+                4,
+                "i",
+                false
+              ],
+              [
+                "position",
+                4,
+                "4,0",
+                false
+              ],
+              [
+                "direction",
+                2,
+                7,
+                false
+              ]
+            ]
+          },
+          "bytes": 106,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1768,
+          "time": 1780232796562,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "direction",
+                2,
+                3,
+                false
+              ]
+            ]
+          },
+          "bytes": 62,
+          "rewrite": null
+        },
+        {
+          "seq": 1769,
+          "time": 1780232796842,
+          "direction": "client->server",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "vl": [
+              [
+                "status",
+                4,
+                "i",
+                false
+              ]
+            ]
+          },
+          "bytes": 50,
+          "rewrite": null
+        },
+        {
+          "seq": 1770,
+          "time": 1780232796951,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "status",
+                4,
+                "i",
+                false
+              ]
+            ]
+          },
+          "bytes": 58,
+          "rewrite": null
+        },
+        {
+          "seq": 1778,
+          "time": 1780232802301,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "position",
+                4,
+                "13,0",
+                false
+              ],
+              [
+                "direction",
+                2,
+                7,
+                false
+              ]
+            ]
+          },
+          "bytes": 87,
+          "rewrite": null
+        },
+        {
+          "seq": 1795,
+          "time": 1780232805893,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 12,
+          "params": {
+            "u": 2881,
+            "vl": [
+              [
+                "position",
+                4,
+                "35,63",
+                false
+              ],
+              [
+                "direction",
+                2,
+                1,
+                false
+              ]
+            ]
+          },
+          "bytes": 88,
+          "rewrite": null
+        }
+      ]
+    },
+    "a1000": {
+      "count": 37,
+      "first": [
+        {
+          "seq": 115,
+          "time": 1780232514855,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": [
+              2876,
+              "100979409",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  4,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "f",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  290936655,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "ACA=",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"C_2\",\"B_2\",\"A_2\",\"0579_3\",\"y6VVbzwc_3\",\"g79MnzKP_9\",\"0723_10\",\"it5Tr3Ed_10\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "No`ur",
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "5,19",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  1,
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 579,
+          "rewrite": null
+        },
+        {
+          "seq": 173,
+          "time": 1780232519242,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": [
+              2876,
+              "100979409",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  4,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "f",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  290936655,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "ACA=",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"C_2\",\"B_2\",\"A_2\",\"0579_3\",\"y6VVbzwc_3\",\"g79MnzKP_9\",\"0723_10\",\"it5Tr3Ed_10\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "No`ur",
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "5,19",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  1,
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 579,
+          "rewrite": null
+        },
+        {
+          "seq": 213,
+          "time": 1780232523131,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": [
+              2880,
+              "101010395",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  0,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "f",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  113030158,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "AA==",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"C_2\",\"B_2\",\"A_2\",\"7_10\",\"1_6\",\"13_9\",\"11_6\",\"m6lYK8VV_9\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "\"froo7\"",
+                  false
+                ],
+                [
+                  "forceSmiley",
+                  1,
+                  true,
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "5,19",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "smiley",
+                  4,
+                  "visitor",
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  1,
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 611,
+          "rewrite": null
+        },
+        {
+          "seq": 237,
+          "time": 1780232526553,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": [
+              2880,
+              "101010395",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  0,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "f",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  113030158,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "AA==",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"C_2\",\"B_2\",\"A_2\",\"7_10\",\"1_6\",\"13_9\",\"11_6\",\"m6lYK8VV_9\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "\"froo7\"",
+                  false
+                ],
+                [
+                  "forceSmiley",
+                  1,
+                  true,
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "5,19",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "smiley",
+                  4,
+                  "visitor",
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  1,
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 611,
+          "rewrite": null
+        },
+        {
+          "seq": 337,
+          "time": 1780232546601,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": [
+              2887,
+              "101005189",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  4,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "f",
+                  false
+                ],
+                [
+                  "nameColor",
+                  4,
+                  "DC143C",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  1303506872,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "ACA=",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"C_2\",\"B_2\",\"A_2\",\"mq4f6zzb_9\",\"68s37r72_10\",\"pfvetd5y_10\",\"EUO1FFGP_3\",\"qWd4fv5f_10\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  ".MERO",
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "5,19",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  1,
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 616,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1614,
+          "time": 1780232730886,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": [
+              2880,
+              "101010395",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  0,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "f",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  776470604,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "AA==",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"m6lYK8VV_9\",\"fj187sm0_9\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  3.5,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "\"froo7\"",
+                  false
+                ],
+                [
+                  "forceSmiley",
+                  1,
+                  true,
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "37,23",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "smiley",
+                  4,
+                  "visitor",
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "d",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  3,
+                  false
+                ],
+                [
+                  "hand",
+                  4,
+                  "0",
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 598,
+          "rewrite": null
+        },
+        {
+          "seq": 1641,
+          "time": 1780232734290,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": [
+              2880,
+              "101010395",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  0,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "f",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  776470604,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "AA==",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"m6lYK8VV_9\",\"fj187sm0_9\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  3.5,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "\"froo7\"",
+                  false
+                ],
+                [
+                  "forceSmiley",
+                  1,
+                  true,
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "37,23",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "smiley",
+                  4,
+                  "visitor",
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "d",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  3,
+                  false
+                ],
+                [
+                  "hand",
+                  4,
+                  "0",
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 598,
+          "rewrite": null
+        },
+        {
+          "seq": 1649,
+          "time": 1780232736889,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": [
+              2859,
+              "101006892",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  5,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "m",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  722083675,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "AA==",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"m6lYK8VV_9\",\"fj187sm0_9\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  3.5,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "'brhoom'",
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "37,23",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  0,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  3,
+                  false
+                ],
+                [
+                  "hand",
+                  4,
+                  "0",
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 550,
+          "rewrite": null
+        },
+        {
+          "seq": 1668,
+          "time": 1780232738851,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": [
+              2778,
+              "100998561",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  5,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "m",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  1897122306,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "ACA=",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"A_2\",\"B_2\",\"C_2\",\"33_9\",\"2dxudquw_7\",\"kuarq67j_7\",\"ykbj593v_8\",\"7e4z76ca_7\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "Shekø",
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "45,18",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  5,
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 581,
+          "rewrite": null
+        },
+        {
+          "seq": 1687,
+          "time": 1780232739531,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1000,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": [
+              2778,
+              "100998561",
+              1,
+              0,
+              [
+                [
+                  "mood",
+                  2,
+                  5,
+                  false
+                ],
+                [
+                  "gender",
+                  4,
+                  "m",
+                  false
+                ],
+                [
+                  "optimizedAssetKey",
+                  2,
+                  1897122306,
+                  false
+                ],
+                [
+                  "roles",
+                  4,
+                  "ACA=",
+                  false
+                ],
+                [
+                  "universeKey",
+                  4,
+                  "w1",
+                  false
+                ],
+                [
+                  "avatarSize",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "platform",
+                  4,
+                  "browser",
+                  false
+                ],
+                [
+                  "statusMessage",
+                  4,
+                  "Sanalika",
+                  false
+                ],
+                [
+                  "clothes",
+                  4,
+                  "[\"A_2\",\"B_2\",\"C_2\",\"33_9\",\"2dxudquw_7\",\"kuarq67j_7\",\"ykbj593v_8\",\"7e4z76ca_7\"]",
+                  false
+                ],
+                [
+                  "speed",
+                  3,
+                  1,
+                  false
+                ],
+                [
+                  "avatarName",
+                  4,
+                  "Shekø",
+                  false
+                ],
+                [
+                  "chatBalloon",
+                  4,
+                  "1",
+                  false
+                ],
+                [
+                  "imgPath",
+                  2,
+                  1728065974,
+                  false
+                ],
+                [
+                  "position",
+                  4,
+                  "45,18",
+                  false
+                ],
+                [
+                  "tp",
+                  2,
+                  1,
+                  false
+                ],
+                [
+                  "playerID",
+                  2,
+                  1111111,
+                  false
+                ],
+                [
+                  "status",
+                  4,
+                  "i",
+                  false
+                ],
+                [
+                  "direction",
+                  2,
+                  5,
+                  false
+                ]
+              ]
+            ]
+          },
+          "bytes": 581,
+          "rewrite": null
+        }
+      ]
+    },
+    "a1001": {
+      "count": 103,
+      "first": [
+        {
+          "seq": 13,
+          "time": 1780232481533,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 1,
+          "params": {
+            "r": 1,
+            "uc": 1
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 14,
+          "time": 1780232483291,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 25,
+          "params": {
+            "r": 25,
+            "uc": 0
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 15,
+          "time": 1780232488120,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 30,
+          "params": {
+            "r": 30,
+            "uc": 0
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 16,
+          "time": 1780232489159,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 30,
+          "params": {
+            "r": 30,
+            "uc": 1
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 17,
+          "time": 1780232496132,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 60,
+          "params": {
+            "r": 60,
+            "uc": 0
+          },
+          "bytes": 38,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1829,
+          "time": 1780232865182,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 38,
+          "params": {
+            "r": 38,
+            "uc": 1
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 1830,
+          "time": 1780232867645,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 38,
+          "params": {
+            "r": 38,
+            "uc": 0
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 1831,
+          "time": 1780232870158,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 4469,
+          "params": {
+            "r": 4469,
+            "uc": 1
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 1832,
+          "time": 1780232876614,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 38,
+          "params": {
+            "r": 38,
+            "uc": 1
+          },
+          "bytes": 38,
+          "rewrite": null
+        },
+        {
+          "seq": 1833,
+          "time": 1780232881330,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1001,
+          "roomId": 4106,
+          "params": {
+            "r": 4106,
+            "uc": 1
+          },
+          "bytes": 38,
+          "rewrite": null
+        }
+      ]
+    },
+    "a1002": {
+      "count": 3,
+      "first": [
+        {
+          "seq": 179,
+          "time": 1780232519845,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1002,
+          "params": {
+            "u": 2745
+          },
+          "bytes": 31,
+          "rewrite": null
+        },
+        {
+          "seq": 247,
+          "time": 1780232529894,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1002,
+          "params": {
+            "u": 2872
+          },
+          "bytes": 31,
+          "rewrite": null
+        },
+        {
+          "seq": 1609,
+          "time": 1780232730622,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1002,
+          "params": {
+            "u": 2562
+          },
+          "bytes": 31,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 179,
+          "time": 1780232519845,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1002,
+          "params": {
+            "u": 2745
+          },
+          "bytes": 31,
+          "rewrite": null
+        },
+        {
+          "seq": 247,
+          "time": 1780232529894,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1002,
+          "params": {
+            "u": 2872
+          },
+          "bytes": 31,
+          "rewrite": null
+        },
+        {
+          "seq": 1609,
+          "time": 1780232730622,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1002,
+          "params": {
+            "u": 2562
+          },
+          "bytes": 31,
+          "rewrite": null
+        }
+      ]
+    },
+    "a1004": {
+      "count": 51,
+      "first": [
+        {
+          "seq": 58,
+          "time": 1780232508492,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 49,
+          "params": {
+            "r": 49,
+            "u": 2881
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 199,
+          "time": 1780232522434,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": 2562
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 202,
+          "time": 1780232522452,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": 2562
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 267,
+          "time": 1780232530071,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": 2873
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 270,
+          "time": 1780232530082,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": 2873
+          },
+          "bytes": 39,
+          "rewrite": null
+        }
+      ],
+      "last": [
+        {
+          "seq": 1582,
+          "time": 1780232725162,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": 2705
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 1701,
+          "time": 1780232740542,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 0,
+          "params": {
+            "r": 0,
+            "u": 2881
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 1703,
+          "time": 1780232740568,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 51,
+          "params": {
+            "r": 51,
+            "u": 2881
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 1779,
+          "time": 1780232802314,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 3849,
+          "params": {
+            "r": 3849,
+            "u": 2881
+          },
+          "bytes": 39,
+          "rewrite": null
+        },
+        {
+          "seq": 1796,
+          "time": 1780232805902,
+          "direction": "server->client",
+          "controller": 0,
+          "action": 1004,
+          "roomId": 4494,
+          "params": {
+            "r": 4494,
+            "u": 2881
+          },
+          "bytes": 39,
+          "rewrite": null
+        }
+      ]
+    }
+  },
+  "undecodedSamples": [
+    {
+      "seq": 10,
+      "time": 1780232473706,
+      "direction": "server->client",
+      "bytes": 2495,
+      "rewrite": null
+    },
+    {
+      "seq": 12,
+      "time": 1780232473933,
+      "direction": "server->client",
+      "bytes": 1362,
+      "rewrite": null
+    },
+    {
+      "seq": 26,
+      "time": 1780232501340,
+      "direction": "server->client",
+      "bytes": 2488,
+      "rewrite": null
+    },
+    {
+      "seq": 37,
+      "time": 1780232501695,
+      "direction": "server->client",
+      "bytes": 1348,
+      "rewrite": null
+    },
+    {
+      "seq": 38,
+      "time": 1780232501711,
+      "direction": "server->client",
+      "bytes": 1368,
+      "rewrite": null
+    },
+    {
+      "seq": 41,
+      "time": 1780232503893,
+      "direction": "server->client",
+      "bytes": 910,
+      "rewrite": null
+    },
+    {
+      "seq": 46,
+      "time": 1780232504372,
+      "direction": "server->client",
+      "bytes": 1226,
+      "rewrite": null
+    },
+    {
+      "seq": 60,
+      "time": 1780232508543,
+      "direction": "server->client",
+      "bytes": 3619,
+      "rewrite": null
+    },
+    {
+      "seq": 61,
+      "time": 1780232508551,
+      "direction": "server->client",
+      "bytes": 1222,
+      "rewrite": null
+    },
+    {
+      "seq": 66,
+      "time": 1780232509138,
+      "direction": "server->client",
+      "bytes": 2209,
+      "rewrite": null
+    },
+    {
+      "seq": 165,
+      "time": 1780232518363,
+      "direction": "server->client",
+      "bytes": 4097,
+      "rewrite": null
+    },
+    {
+      "seq": 300,
+      "time": 1780232534649,
+      "direction": "server->client",
+      "bytes": 1481,
+      "rewrite": null
+    },
+    {
+      "seq": 302,
+      "time": 1780232534661,
+      "direction": "server->client",
+      "bytes": 1420,
+      "rewrite": null
+    },
+    {
+      "seq": 311,
+      "time": 1780232537099,
+      "direction": "server->client",
+      "bytes": 1086,
+      "rewrite": null
+    },
+    {
+      "seq": 318,
+      "time": 1780232539014,
+      "direction": "server->client",
+      "bytes": 2000,
+      "rewrite": null
+    },
+    {
+      "seq": 331,
+      "time": 1780232546571,
+      "direction": "server->client",
+      "bytes": 3198,
+      "rewrite": null
+    },
+    {
+      "seq": 332,
+      "time": 1780232546576,
+      "direction": "server->client",
+      "bytes": 1222,
+      "rewrite": null
+    },
+    {
+      "seq": 346,
+      "time": 1780232547395,
+      "direction": "server->client",
+      "bytes": 1967,
+      "rewrite": null
+    },
+    {
+      "seq": 418,
+      "time": 1780232555687,
+      "direction": "server->client",
+      "bytes": 1441,
+      "rewrite": null
+    },
+    {
+      "seq": 420,
+      "time": 1780232555697,
+      "direction": "server->client",
+      "bytes": 1164,
+      "rewrite": null
+    }
+  ],
+  "rewrites": [
+    {
+      "seq": 8,
+      "time": 1780232473570,
+      "kind": "proxy.sfs.rewrite",
+      "payload": {
+        "connectionId": "1780232473102-152461e64451c",
+        "direction": "client->server",
+        "kind": "login-zone",
+        "from": "local",
+        "to": "marhab",
+        "originalBytes": 253,
+        "rewrittenBytes": 254
+      }
+    },
+    {
+      "seq": 24,
+      "time": 1780232501207,
+      "kind": "proxy.sfs.rewrite",
+      "payload": {
+        "connectionId": "1780232473102-152461e64451c",
+        "direction": "client->server",
+        "kind": "login-zone",
+        "from": "local",
+        "to": "marhab",
+        "originalBytes": 253,
+        "rewrittenBytes": 254
+      }
+    }
+  ]
+}

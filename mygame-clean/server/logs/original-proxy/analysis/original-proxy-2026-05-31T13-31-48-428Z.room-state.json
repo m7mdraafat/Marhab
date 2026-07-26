@@ -1,0 +1,2929 @@
+{
+  "source": "C:\\Users\\t-malgharib\\OneDrive - Microsoft\\Desktop\\MyGame\\mygame-clean\\server\\logs\\original-proxy\\original-proxy-2026-05-31T13-31-48-428Z.jsonl",
+  "generatedAt": "2026-05-31T13:39:31.245Z",
+  "totals": {
+    "events": 1321,
+    "frames": 1274,
+    "decoded": 1235,
+    "undecoded": 39,
+    "clientToServer": 66,
+    "serverToClient": 1208,
+    "compressedDecoded": 0,
+    "encryptedStillUndecoded": 39
+  },
+  "commands": [
+    {
+      "name": "fishing.leftGame",
+      "count": 426
+    },
+    {
+      "name": "fishing.update",
+      "count": 203
+    },
+    {
+      "name": "whispernotify",
+      "count": 61
+    },
+    {
+      "name": "walkrequest",
+      "count": 33
+    },
+    {
+      "name": "walkfinalrequest",
+      "count": 26
+    },
+    {
+      "name": "roomjoincomplete",
+      "count": 22
+    },
+    {
+      "name": "fishing.list",
+      "count": 16
+    },
+    {
+      "name": "mediaevent",
+      "count": 15
+    },
+    {
+      "name": "roles",
+      "count": 11
+    },
+    {
+      "name": "displayAd",
+      "count": 6
+    },
+    {
+      "name": "ping",
+      "count": 4
+    },
+    {
+      "name": "shopproductlist",
+      "count": 4
+    },
+    {
+      "name": "flatlist",
+      "count": 3
+    },
+    {
+      "name": "questlistroom",
+      "count": 3
+    },
+    {
+      "name": "cardlist",
+      "count": 2
+    },
+    {
+      "name": "buddylist",
+      "count": 1
+    },
+    {
+      "name": "config",
+      "count": 1
+    },
+    {
+      "name": "ditchguestpanel",
+      "count": 1
+    },
+    {
+      "name": "externalTokenComplete",
+      "count": 1
+    },
+    {
+      "name": "handitemlist",
+      "count": 1
+    },
+    {
+      "name": "init",
+      "count": 1
+    },
+    {
+      "name": "initQueue",
+      "count": 1
+    },
+    {
+      "name": "questlist",
+      "count": 1
+    },
+    {
+      "name": "restartServer",
+      "count": 1
+    }
+  ],
+  "actions": [
+    {
+      "name": "c=1 a=13",
+      "count": 844
+    },
+    {
+      "name": "c=0 a=12",
+      "count": 305
+    },
+    {
+      "name": "c=0 a=1004",
+      "count": 31
+    },
+    {
+      "name": "c=0 a=1001",
+      "count": 25
+    },
+    {
+      "name": "c=0 a=1000",
+      "count": 22
+    },
+    {
+      "name": "c=0 a=0",
+      "count": 2
+    },
+    {
+      "name": "c=0 a=1",
+      "count": 2
+    },
+    {
+      "name": "c=0 a=2",
+      "count": 2
+    },
+    {
+      "name": "c=0 a=7",
+      "count": 2
+    }
+  ],
+  "roomIds": [
+    {
+      "roomId": "51",
+      "count": 249
+    },
+    {
+      "roomId": "-1",
+      "count": 55
+    },
+    {
+      "roomId": "4",
+      "count": 39
+    },
+    {
+      "roomId": "5",
+      "count": 39
+    },
+    {
+      "roomId": "50",
+      "count": 28
+    },
+    {
+      "roomId": "59",
+      "count": 27
+    },
+    {
+      "roomId": "67",
+      "count": 27
+    },
+    {
+      "roomId": "190",
+      "count": 25
+    },
+    {
+      "roomId": "0",
+      "count": 22
+    },
+    {
+      "roomId": "1",
+      "count": 5
+    },
+    {
+      "roomId": "2",
+      "count": 4
+    },
+    {
+      "roomId": "27",
+      "count": 3
+    },
+    {
+      "roomId": "49",
+      "count": 3
+    },
+    {
+      "roomId": "118",
+      "count": 2
+    },
+    {
+      "roomId": "13",
+      "count": 2
+    },
+    {
+      "roomId": "38",
+      "count": 2
+    },
+    {
+      "roomId": "39",
+      "count": 2
+    },
+    {
+      "roomId": "40",
+      "count": 2
+    },
+    {
+      "roomId": "4355",
+      "count": 2
+    },
+    {
+      "roomId": "10",
+      "count": 1
+    },
+    {
+      "roomId": "26",
+      "count": 1
+    },
+    {
+      "roomId": "3",
+      "count": 1
+    },
+    {
+      "roomId": "37",
+      "count": 1
+    },
+    {
+      "roomId": "4106",
+      "count": 1
+    },
+    {
+      "roomId": "72",
+      "count": 1
+    }
+  ],
+  "userVariableSchema": [
+    {
+      "name": "tp",
+      "count": 191,
+      "typeIds": [
+        2
+      ],
+      "examples": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "name": "position",
+      "count": 66,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "5,19",
+        "37,23",
+        "23,19",
+        "29,5",
+        "34,26"
+      ]
+    },
+    {
+      "name": "direction",
+      "count": 66,
+      "typeIds": [
+        2
+      ],
+      "examples": [
+        "1",
+        "3",
+        "2",
+        "8",
+        "7"
+      ]
+    },
+    {
+      "name": "target",
+      "count": 60,
+      "typeIds": [
+        4,
+        0
+      ],
+      "examples": [
+        "29,5",
+        "23,19",
+        "null",
+        "37,23",
+        "34,26"
+      ]
+    },
+    {
+      "name": "avatarName",
+      "count": 25,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "M7MED",
+        "Dory",
+        "Møstafa",
+        "°•جـوديـا•°",
+        "Dylan ^o^"
+      ]
+    },
+    {
+      "name": "gender",
+      "count": 25,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "m",
+        "f"
+      ]
+    },
+    {
+      "name": "playerID",
+      "count": 24,
+      "typeIds": [
+        2
+      ],
+      "examples": [
+        "1111111"
+      ]
+    },
+    {
+      "name": "universeKey",
+      "count": 24,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "w1"
+      ]
+    },
+    {
+      "name": "imgPath",
+      "count": 24,
+      "typeIds": [
+        2
+      ],
+      "examples": [
+        "1728065974"
+      ]
+    },
+    {
+      "name": "mood",
+      "count": 24,
+      "typeIds": [
+        2
+      ],
+      "examples": [
+        "0",
+        "5",
+        "23",
+        "17",
+        "2"
+      ]
+    },
+    {
+      "name": "platform",
+      "count": 24,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "browser"
+      ]
+    },
+    {
+      "name": "statusMessage",
+      "count": 24,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "Sanalika"
+      ]
+    },
+    {
+      "name": "avatarSize",
+      "count": 24,
+      "typeIds": [
+        3
+      ],
+      "examples": [
+        "1"
+      ]
+    },
+    {
+      "name": "chatBalloon",
+      "count": 24,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "name": "clothes",
+      "count": 24,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "[\"A_2\",\"B_2\",\"C_2\",\"HTuzKoEs_7\",\"f4ddDcs3_10\",\"roRTN78_3\",\"n8MPy6Cv_2\",\"2b42umx_2\"]",
+        "[\"C_2\",\"B_2\",\"A_2\",\"7_10\",\"ymZZ6Znw_4\",\"ycxtva7j_1\",\"mYOaIJl2_8\",\"df6GGh26_1\"]",
+        "[\"A_2\",\"B_2\",\"C_2\",\"1454_5\",\"mgd5f4c1_9\",\"wYrWt7kD_9\",\"ykbj593v_9\",\"m6lYK8VV_9\",\"vwJEyrVN_9\",\"tym8qkh4_9\"]",
+        "[\"C_2\",\"B_2\",\"A_2\",\"ef1uwedw_9\",\"Or74as2s_3\",\"mRXH6ywS_9\",\"Fm6FLc5v_2\",\"mr8a69sd_8\"]",
+        "[\"C_2\",\"B_2\",\"A_2\",\"f4HY4tp3_7\",\"fdvDF4Ew_7\",\"dF40Trfd_10\",\"0796_9\",\"FDS34w78_7\"]"
+      ]
+    },
+    {
+      "name": "optimizedAssetKey",
+      "count": 24,
+      "typeIds": [
+        2
+      ],
+      "examples": [
+        "1759204398",
+        "124245892",
+        "199614357",
+        "386698987",
+        "1720017917"
+      ]
+    },
+    {
+      "name": "speed",
+      "count": 24,
+      "typeIds": [
+        3
+      ],
+      "examples": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "name": "roles",
+      "count": 23,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "ACA="
+      ]
+    },
+    {
+      "name": "status",
+      "count": 23,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "i"
+      ]
+    },
+    {
+      "name": "nameColor",
+      "count": 13,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "FF69B4",
+        "000080",
+        "FF0000"
+      ]
+    },
+    {
+      "name": "hand",
+      "count": 12,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "ibi3uzcd",
+        "gingerg",
+        "Add20se9",
+        "r1",
+        "0"
+      ]
+    },
+    {
+      "name": "smiley",
+      "count": 1,
+      "typeIds": [
+        4
+      ],
+      "examples": [
+        "guide3"
+      ]
+    }
+  ],
+  "userEnterSamples": [
+    {
+      "seq": 119,
+      "time": 1780234377873,
+      "dir": "server->client",
+      "roomId": 0,
+      "params": {
+        "r": 0,
+        "u": [
+          3094,
+          "101003735",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              0,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "f",
+              false
+            ],
+            [
+              "nameColor",
+              4,
+              "FF69B4",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              124245892,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"C_2\",\"B_2\",\"A_2\",\"7_10\",\"ymZZ6Znw_4\",\"ycxtva7j_1\",\"mYOaIJl2_8\",\"df6GGh26_1\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              1,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Dory",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "1",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "37,23",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              3,
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 607,
+      "compressed": false
+    },
+    {
+      "seq": 140,
+      "time": 1780234380161,
+      "dir": "server->client",
+      "roomId": 51,
+      "params": {
+        "r": 51,
+        "u": [
+          3094,
+          "101003735",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              0,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "f",
+              false
+            ],
+            [
+              "nameColor",
+              4,
+              "FF69B4",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              124245892,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"C_2\",\"B_2\",\"A_2\",\"7_10\",\"ymZZ6Znw_4\",\"ycxtva7j_1\",\"mYOaIJl2_8\",\"df6GGh26_1\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              1,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Dory",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "1",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "37,23",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              3,
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 607,
+      "compressed": false
+    },
+    {
+      "seq": 355,
+      "time": 1780234401693,
+      "dir": "server->client",
+      "roomId": 0,
+      "params": {
+        "r": 0,
+        "u": [
+          3096,
+          "101003280",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              5,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "m",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              199614357,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"A_2\",\"B_2\",\"C_2\",\"1454_5\",\"mgd5f4c1_9\",\"wYrWt7kD_9\",\"ykbj593v_9\",\"m6lYK8VV_9\",\"vwJEyrVN_9\",\"tym8qkh4_9\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              4,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Møstafa",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "4",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "5,19",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              1,
+              false
+            ],
+            [
+              "hand",
+              4,
+              "ibi3uzcd",
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 635,
+      "compressed": false
+    },
+    {
+      "seq": 364,
+      "time": 1780234402194,
+      "dir": "server->client",
+      "roomId": 51,
+      "params": {
+        "r": 51,
+        "u": [
+          3096,
+          "101003280",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              5,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "m",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              199614357,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"A_2\",\"B_2\",\"C_2\",\"1454_5\",\"mgd5f4c1_9\",\"wYrWt7kD_9\",\"ykbj593v_9\",\"m6lYK8VV_9\",\"vwJEyrVN_9\",\"tym8qkh4_9\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              4,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Møstafa",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "4",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "5,19",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              1,
+              false
+            ],
+            [
+              "hand",
+              4,
+              "ibi3uzcd",
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 635,
+      "compressed": false
+    },
+    {
+      "seq": 546,
+      "time": 1780234425941,
+      "dir": "server->client",
+      "roomId": 0,
+      "params": {
+        "r": 0,
+        "u": [
+          3119,
+          "100999606",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              0,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "f",
+              false
+            ],
+            [
+              "nameColor",
+              4,
+              "FF69B4",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              386698987,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"C_2\",\"B_2\",\"A_2\",\"ef1uwedw_9\",\"Or74as2s_3\",\"mRXH6ywS_9\",\"Fm6FLc5v_2\",\"mr8a69sd_8\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              1,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "°•جـوديـا•°",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "1",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "5,19",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              1,
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 632,
+      "compressed": false
+    },
+    {
+      "seq": 605,
+      "time": 1780234429109,
+      "dir": "server->client",
+      "roomId": 2,
+      "params": {
+        "r": 2,
+        "u": [
+          3096,
+          "101003280",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              5,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "m",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              199614357,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"A_2\",\"B_2\",\"C_2\",\"1454_5\",\"mgd5f4c1_9\",\"wYrWt7kD_9\",\"ykbj593v_9\",\"m6lYK8VV_9\",\"vwJEyrVN_9\",\"tym8qkh4_9\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              4,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Møstafa",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "4",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "20,27",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              3,
+              false
+            ],
+            [
+              "hand",
+              4,
+              "ibi3uzcd",
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 636,
+      "compressed": false
+    },
+    {
+      "seq": 627,
+      "time": 1780234431830,
+      "dir": "server->client",
+      "roomId": 51,
+      "params": {
+        "r": 51,
+        "u": [
+          3119,
+          "100999606",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              0,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "f",
+              false
+            ],
+            [
+              "nameColor",
+              4,
+              "FF69B4",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              386698987,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"C_2\",\"B_2\",\"A_2\",\"ef1uwedw_9\",\"Or74as2s_3\",\"mRXH6ywS_9\",\"Fm6FLc5v_2\",\"mr8a69sd_8\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              1,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "°•جـوديـا•°",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "1",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "5,19",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              1,
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 632,
+      "compressed": false
+    },
+    {
+      "seq": 648,
+      "time": 1780234435976,
+      "dir": "server->client",
+      "roomId": 51,
+      "params": {
+        "r": 51,
+        "u": [
+          3094,
+          "101003735",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              0,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "f",
+              false
+            ],
+            [
+              "nameColor",
+              4,
+              "FF69B4",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              124245892,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"C_2\",\"B_2\",\"A_2\",\"7_10\",\"ymZZ6Znw_4\",\"ycxtva7j_1\",\"mYOaIJl2_8\",\"df6GGh26_1\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              1,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Dory",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "1",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "5,19",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              1,
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 606,
+      "compressed": false
+    },
+    {
+      "seq": 833,
+      "time": 1780234458812,
+      "dir": "server->client",
+      "roomId": 0,
+      "params": {
+        "r": 0,
+        "u": [
+          3124,
+          "100979214",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              0,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "f",
+              false
+            ],
+            [
+              "nameColor",
+              4,
+              "000080",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              1720017917,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"C_2\",\"B_2\",\"A_2\",\"f4HY4tp3_7\",\"fdvDF4Ew_7\",\"dF40Trfd_10\",\"0796_9\",\"FDS34w78_7\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              4,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Dylan ^o^",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "1",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "5,19",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              1,
+              false
+            ],
+            [
+              "hand",
+              4,
+              "Add20se9",
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 639,
+      "compressed": false
+    },
+    {
+      "seq": 848,
+      "time": 1780234461713,
+      "dir": "server->client",
+      "roomId": 51,
+      "params": {
+        "r": 51,
+        "u": [
+          3124,
+          "100979214",
+          1,
+          0,
+          [
+            [
+              "mood",
+              2,
+              0,
+              false
+            ],
+            [
+              "gender",
+              4,
+              "f",
+              false
+            ],
+            [
+              "nameColor",
+              4,
+              "000080",
+              false
+            ],
+            [
+              "optimizedAssetKey",
+              2,
+              1720017917,
+              false
+            ],
+            [
+              "roles",
+              4,
+              "ACA=",
+              false
+            ],
+            [
+              "universeKey",
+              4,
+              "w1",
+              false
+            ],
+            [
+              "avatarSize",
+              3,
+              1,
+              false
+            ],
+            [
+              "platform",
+              4,
+              "browser",
+              false
+            ],
+            [
+              "statusMessage",
+              4,
+              "Sanalika",
+              false
+            ],
+            [
+              "clothes",
+              4,
+              "[\"C_2\",\"B_2\",\"A_2\",\"f4HY4tp3_7\",\"fdvDF4Ew_7\",\"dF40Trfd_10\",\"0796_9\",\"FDS34w78_7\"]",
+              false
+            ],
+            [
+              "speed",
+              3,
+              4,
+              false
+            ],
+            [
+              "avatarName",
+              4,
+              "Dylan ^o^",
+              false
+            ],
+            [
+              "chatBalloon",
+              4,
+              "1",
+              false
+            ],
+            [
+              "imgPath",
+              2,
+              1728065974,
+              false
+            ],
+            [
+              "position",
+              4,
+              "5,19",
+              false
+            ],
+            [
+              "tp",
+              2,
+              1,
+              false
+            ],
+            [
+              "playerID",
+              2,
+              1111111,
+              false
+            ],
+            [
+              "status",
+              4,
+              "i",
+              false
+            ],
+            [
+              "direction",
+              2,
+              1,
+              false
+            ],
+            [
+              "hand",
+              4,
+              "Add20se9",
+              false
+            ]
+          ]
+        ]
+      },
+      "bytes": 639,
+      "compressed": false
+    }
+  ],
+  "roomAddSamples": [],
+  "roomCountSamples": [
+    {
+      "seq": 14,
+      "time": 1780234356081,
+      "dir": "server->client",
+      "roomId": 37,
+      "params": {
+        "r": 37,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 17,
+      "time": 1780234357958,
+      "dir": "server->client",
+      "roomId": 26,
+      "params": {
+        "r": 26,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 35,
+      "time": 1780234368506,
+      "dir": "server->client",
+      "roomId": 4355,
+      "params": {
+        "r": 4355,
+        "uc": 5
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 117,
+      "time": 1780234377820,
+      "dir": "server->client",
+      "roomId": 4355,
+      "params": {
+        "r": 4355,
+        "uc": 4
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 452,
+      "time": 1780234410767,
+      "dir": "server->client",
+      "roomId": 49,
+      "params": {
+        "r": 49,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 460,
+      "time": 1780234414731,
+      "dir": "server->client",
+      "roomId": 13,
+      "params": {
+        "r": 13,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 476,
+      "time": 1780234420990,
+      "dir": "server->client",
+      "roomId": 49,
+      "params": {
+        "r": 49,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 481,
+      "time": 1780234421281,
+      "dir": "server->client",
+      "roomId": 13,
+      "params": {
+        "r": 13,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 513,
+      "time": 1780234424525,
+      "dir": "server->client",
+      "roomId": 27,
+      "params": {
+        "r": 27,
+        "uc": 2
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 604,
+      "time": 1780234428987,
+      "dir": "server->client",
+      "roomId": 27,
+      "params": {
+        "r": 27,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 633,
+      "time": 1780234433247,
+      "dir": "server->client",
+      "roomId": 39,
+      "params": {
+        "r": 39,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 649,
+      "time": 1780234436347,
+      "dir": "server->client",
+      "roomId": 39,
+      "params": {
+        "r": 39,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 742,
+      "time": 1780234443630,
+      "dir": "server->client",
+      "roomId": 1,
+      "params": {
+        "r": 1,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 745,
+      "time": 1780234444636,
+      "dir": "server->client",
+      "roomId": 38,
+      "params": {
+        "r": 38,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 758,
+      "time": 1780234448113,
+      "dir": "server->client",
+      "roomId": 1,
+      "params": {
+        "r": 1,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 767,
+      "time": 1780234451137,
+      "dir": "server->client",
+      "roomId": 38,
+      "params": {
+        "r": 38,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 777,
+      "time": 1780234452307,
+      "dir": "server->client",
+      "roomId": 40,
+      "params": {
+        "r": 40,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 826,
+      "time": 1780234458199,
+      "dir": "server->client",
+      "roomId": 4106,
+      "params": {
+        "r": 4106,
+        "uc": 3
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 829,
+      "time": 1780234458214,
+      "dir": "server->client",
+      "roomId": 40,
+      "params": {
+        "r": 40,
+        "uc": 0
+      },
+      "bytes": 38,
+      "compressed": false
+    },
+    {
+      "seq": 880,
+      "time": 1780234466377,
+      "dir": "server->client",
+      "roomId": 118,
+      "params": {
+        "r": 118,
+        "uc": 1
+      },
+      "bytes": 38,
+      "compressed": false
+    }
+  ],
+  "userVariableSamples": [
+    {
+      "seq": 27,
+      "time": 1780234368147,
+      "dir": "server->client",
+      "params": {
+        "u": 3116,
+        "vl": [
+          [
+            "avatarName",
+            4,
+            "M7MED",
+            false
+          ],
+          [
+            "gender",
+            4,
+            "m",
+            false
+          ]
+        ]
+      },
+      "bytes": 86,
+      "compressed": false
+    },
+    {
+      "seq": 28,
+      "time": 1780234368369,
+      "dir": "server->client",
+      "params": {
+        "u": 3116,
+        "vl": [
+          [
+            "gender",
+            4,
+            "m",
+            false
+          ],
+          [
+            "playerID",
+            2,
+            1111111,
+            false
+          ],
+          [
+            "avatarName",
+            4,
+            "M7MED",
+            false
+          ],
+          [
+            "universeKey",
+            4,
+            "w1",
+            false
+          ],
+          [
+            "imgPath",
+            2,
+            1728065974,
+            false
+          ],
+          [
+            "mood",
+            2,
+            0,
+            false
+          ],
+          [
+            "platform",
+            4,
+            "browser",
+            false
+          ],
+          [
+            "statusMessage",
+            4,
+            "Sanalika",
+            false
+          ],
+          [
+            "avatarSize",
+            3,
+            1,
+            false
+          ],
+          [
+            "chatBalloon",
+            4,
+            "1",
+            false
+          ],
+          [
+            "tp",
+            2,
+            1,
+            false
+          ],
+          [
+            "clothes",
+            4,
+            "[\"A_2\",\"B_2\",\"C_2\",\"HTuzKoEs_7\",\"f4ddDcs3_10\",\"roRTN78_3\",\"n8MPy6Cv_2\",\"2b42umx_2\"]",
+            false
+          ],
+          [
+            "optimizedAssetKey",
+            2,
+            1759204398,
+            false
+          ]
+        ]
+      },
+      "bytes": 444,
+      "compressed": false
+    },
+    {
+      "seq": 30,
+      "time": 1780234368417,
+      "dir": "server->client",
+      "params": {
+        "u": 3116,
+        "vl": [
+          [
+            "gender",
+            4,
+            "m",
+            false
+          ],
+          [
+            "playerID",
+            2,
+            1111111,
+            false
+          ],
+          [
+            "avatarName",
+            4,
+            "M7MED",
+            false
+          ],
+          [
+            "universeKey",
+            4,
+            "w1",
+            false
+          ],
+          [
+            "imgPath",
+            2,
+            1728065974,
+            false
+          ],
+          [
+            "mood",
+            2,
+            0,
+            false
+          ],
+          [
+            "platform",
+            4,
+            "browser",
+            false
+          ],
+          [
+            "statusMessage",
+            4,
+            "Sanalika",
+            false
+          ],
+          [
+            "avatarSize",
+            3,
+            1,
+            false
+          ],
+          [
+            "chatBalloon",
+            4,
+            "1",
+            false
+          ],
+          [
+            "tp",
+            2,
+            1,
+            false
+          ],
+          [
+            "clothes",
+            4,
+            "[\"A_2\",\"B_2\",\"C_2\",\"HTuzKoEs_7\",\"f4ddDcs3_10\",\"roRTN78_3\",\"n8MPy6Cv_2\",\"2b42umx_2\"]",
+            false
+          ],
+          [
+            "optimizedAssetKey",
+            2,
+            1759204398,
+            false
+          ]
+        ]
+      },
+      "bytes": 444,
+      "compressed": false
+    },
+    {
+      "seq": 32,
+      "time": 1780234368428,
+      "dir": "server->client",
+      "params": {
+        "u": 3116,
+        "vl": [
+          [
+            "roles",
+            4,
+            "ACA=",
+            false
+          ]
+        ]
+      },
+      "bytes": 60,
+      "compressed": false
+    },
+    {
+      "seq": 33,
+      "time": 1780234368442,
+      "dir": "server->client",
+      "params": {
+        "u": 3116,
+        "vl": [
+          [
+            "status",
+            4,
+            "i",
+            false
+          ],
+          [
+            "position",
+            4,
+            "5,19",
+            false
+          ],
+          [
+            "direction",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 107,
+      "compressed": false
+    },
+    {
+      "seq": 34,
+      "time": 1780234368447,
+      "dir": "server->client",
+      "params": {
+        "u": 3116,
+        "vl": [
+          [
+            "speed",
+            3,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 62,
+      "compressed": false
+    },
+    {
+      "seq": 40,
+      "time": 1780234368754,
+      "dir": "server->client",
+      "params": {
+        "u": 2231,
+        "vl": [
+          [
+            "tp",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 44,
+      "time": 1780234369550,
+      "dir": "server->client",
+      "params": {
+        "u": 2193,
+        "vl": [
+          [
+            "tp",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 56,
+      "time": 1780234370783,
+      "dir": "server->client",
+      "params": {
+        "u": 3072,
+        "vl": [
+          [
+            "tp",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 60,
+      "time": 1780234371717,
+      "dir": "server->client",
+      "params": {
+        "u": 2193,
+        "vl": [
+          [
+            "tp",
+            2,
+            0,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 64,
+      "time": 1780234371828,
+      "dir": "server->client",
+      "params": {
+        "u": 3072,
+        "vl": [
+          [
+            "tp",
+            2,
+            0,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 68,
+      "time": 1780234372214,
+      "dir": "server->client",
+      "params": {
+        "u": 2193,
+        "vl": [
+          [
+            "tp",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 71,
+      "time": 1780234372305,
+      "dir": "server->client",
+      "params": {
+        "u": 2193,
+        "vl": [
+          [
+            "tp",
+            2,
+            0,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 74,
+      "time": 1780234372370,
+      "dir": "server->client",
+      "params": {
+        "u": 2193,
+        "vl": [
+          [
+            "tp",
+            2,
+            0,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 75,
+      "time": 1780234372375,
+      "dir": "server->client",
+      "params": {
+        "u": 2193,
+        "vl": [
+          [
+            "tp",
+            2,
+            0,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 81,
+      "time": 1780234373220,
+      "dir": "server->client",
+      "params": {
+        "u": 3072,
+        "vl": [
+          [
+            "tp",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 85,
+      "time": 1780234373404,
+      "dir": "server->client",
+      "params": {
+        "u": 3057,
+        "vl": [
+          [
+            "tp",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 88,
+      "time": 1780234373751,
+      "dir": "server->client",
+      "params": {
+        "u": 2231,
+        "vl": [
+          [
+            "tp",
+            2,
+            0,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 92,
+      "time": 1780234374037,
+      "dir": "server->client",
+      "params": {
+        "u": 2231,
+        "vl": [
+          [
+            "tp",
+            2,
+            1,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    },
+    {
+      "seq": 98,
+      "time": 1780234375072,
+      "dir": "server->client",
+      "params": {
+        "u": 3057,
+        "vl": [
+          [
+            "tp",
+            2,
+            0,
+            false
+          ]
+        ]
+      },
+      "bytes": 55,
+      "compressed": false
+    }
+  ],
+  "roomJoinCompleteSamples": [
+    {
+      "seq": 45,
+      "time": 1780234369708,
+      "dir": "client->server",
+      "roomId": -1,
+      "params": {
+        "r": -1,
+        "p": {
+          "data": {},
+          "sn": "roomjoincomplete",
+          "ts": 1780234369,
+          "rid": 4
+        },
+        "c": "roomjoincomplete"
+      },
+      "bytes": 118,
+      "compressed": false
+    },
+    {
+      "seq": 46,
+      "time": 1780234369787,
+      "dir": "server->client",
+      "params": {
+        "p": {},
+        "c": "roomjoincomplete"
+      },
+      "bytes": 51,
+      "compressed": false
+    },
+    {
+      "seq": 455,
+      "time": 1780234411136,
+      "dir": "client->server",
+      "roomId": -1,
+      "params": {
+        "r": -1,
+        "p": {
+          "data": {},
+          "sn": "roomjoincomplete",
+          "ts": 1780234411,
+          "rid": 22
+        },
+        "c": "roomjoincomplete"
+      },
+      "bytes": 118,
+      "compressed": false
+    },
+    {
+      "seq": 456,
+      "time": 1780234411237,
+      "dir": "server->client",
+      "params": {
+        "p": {},
+        "c": "roomjoincomplete"
+      },
+      "bytes": 51,
+      "compressed": false
+    },
+    {
+      "seq": 483,
+      "time": 1780234421464,
+      "dir": "client->server",
+      "roomId": -1,
+      "params": {
+        "r": -1,
+        "p": {
+          "data": {},
+          "sn": "roomjoincomplete",
+          "ts": 1780234421,
+          "rid": 28
+        },
+        "c": "roomjoincomplete"
+      },
+      "bytes": 118,
+      "compressed": false
+    },
+    {
+      "seq": 484,
+      "time": 1780234421547,
+      "dir": "server->client",
+      "params": {
+        "p": {},
+        "c": "roomjoincomplete"
+      },
+      "bytes": 51,
+      "compressed": false
+    },
+    {
+      "seq": 559,
+      "time": 1780234426920,
+      "dir": "client->server",
+      "roomId": -1,
+      "params": {
+        "r": -1,
+        "p": {
+          "data": {},
+          "sn": "roomjoincomplete",
+          "ts": 1780234426,
+          "rid": 32
+        },
+        "c": "roomjoincomplete"
+      },
+      "bytes": 118,
+      "compressed": false
+    },
+    {
+      "seq": 561,
+      "time": 1780234427002,
+      "dir": "server->client",
+      "params": {
+        "p": {},
+        "c": "roomjoincomplete"
+      },
+      "bytes": 51,
+      "compressed": false
+    },
+    {
+      "seq": 615,
+      "time": 1780234429893,
+      "dir": "client->server",
+      "roomId": -1,
+      "params": {
+        "r": -1,
+        "p": {
+          "data": {},
+          "sn": "roomjoincomplete",
+          "ts": 1780234429,
+          "rid": 35
+        },
+        "c": "roomjoincomplete"
+      },
+      "bytes": 118,
+      "compressed": false
+    },
+    {
+      "seq": 616,
+      "time": 1780234429974,
+      "dir": "server->client",
+      "params": {
+        "p": {},
+        "c": "roomjoincomplete"
+      },
+      "bytes": 51,
+      "compressed": false
+    }
+  ],
+  "useHouseDoorSamples": [],
+  "questRoomSamples": [
+    {
+      "seq": 739,
+      "time": 1780234443587,
+      "dir": "server->client",
+      "params": {
+        "p": {
+          "quests": [
+            {
+              "currentStep": 1,
+              "isInCurrentRoom": true,
+              "totalStep": 4,
+              "metaKey": "batteryGathering",
+              "step": {
+                "curVal": 0,
+                "botKey": "tarkan",
+                "cn": "BotQuestProperty",
+                "reqVal": 1
+              },
+              "id": 6626485,
+              "roomKey": "pier",
+              "rewardMultiplier": 1,
+              "rewards": [
+                {
+                  "data": {
+                    "amount": 250
+                  },
+                  "type": "SANIL"
+                }
+              ],
+              "status": "NEW"
+            }
+          ]
+        },
+        "c": "questlistroom"
+      },
+      "bytes": 331,
+      "compressed": false
+    },
+    {
+      "seq": 872,
+      "time": 1780234464310,
+      "dir": "server->client",
+      "params": {
+        "p": {
+          "quests": [
+            {
+              "currentStep": 1,
+              "isInCurrentRoom": true,
+              "totalStep": 6,
+              "metaKey": "flower",
+              "step": {
+                "curVal": 0,
+                "botKey": "florist01",
+                "cn": "BotQuestProperty",
+                "items": [
+                  {
+                    "quantity": -1,
+                    "countDownType": "NOW",
+                    "lifeTime": -1,
+                    "clip": "0"
+                  }
+                ],
+                "reqVal": 1
+              },
+              "id": 5163238,
+              "roomKey": "street05",
+              "rewardMultiplier": 1,
+              "rewards": [
+                {
+                  "data": {
+                    "amount": 250
+                  },
+                  "type": "SANIL"
+                }
+              ],
+              "status": "NEW"
+            },
+            {
+              "currentStep": 1,
+              "isInCurrentRoom": true,
+              "totalStep": 3,
+              "metaKey": "recycle",
+              "step": {
+                "curVal": 0,
+                "botKey": "eylul",
+                "cn": "BotQuestProperty",
+                "reqVal": 1
+              },
+              "id": 4632997,
+              "roomKey": "street05",
+              "rewardMultiplier": 1,
+              "rewards": [
+                {
+                  "data": {
+                    "amount": 5
+                  },
+                  "type": "DIAMOND"
+                }
+              ],
+              "status": "NEW"
+            }
+          ]
+        },
+        "c": "questlistroom"
+      },
+      "bytes": 670,
+      "compressed": false
+    },
+    {
+      "seq": 1009,
+      "time": 1780234482928,
+      "dir": "server->client",
+      "params": {
+        "p": {
+          "quests": [
+            {
+              "currentStep": 1,
+              "isInCurrentRoom": true,
+              "totalStep": 7,
+              "metaKey": "sapling_task",
+              "step": {
+                "curVal": 0,
+                "botKey": "uluBilge",
+                "cn": "BotQuestProperty",
+                "items": [
+                  {
+                    "quantity": 1,
+                    "countDownType": "NOW",
+                    "lifeTime": -1,
+                    "clip": "0"
+                  }
+                ],
+                "reqVal": 1
+              },
+              "id": 7987728,
+              "roomKey": "street03",
+              "rewardMultiplier": 1,
+              "rewards": [
+                {
+                  "data": {
+                    "amount": 250
+                  },
+                  "type": "SANIL"
+                }
+              ],
+              "status": "NEW"
+            }
+          ]
+        },
+        "c": "questlistroom"
+      },
+      "bytes": 407,
+      "compressed": false
+    }
+  ],
+  "compressedSamples": []
+}

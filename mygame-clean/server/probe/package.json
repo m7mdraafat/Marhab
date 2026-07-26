@@ -1,0 +1,13 @@
+{
+  "name": "mygame-protocol-probe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local protocol probe for the recovered MyGame client.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

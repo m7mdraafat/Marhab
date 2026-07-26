@@ -1,0 +1,14 @@
+client/launcher/dist/
+client/generated/
+assets/reports/
+assets/cdn/**
+!assets/cdn/.gitkeep
+*.log
+*.tmp
+*.bak
+*.swf.cache
+__pycache__/
+.vscode/
+
+server/logs/*.log
+assets/reports/*.log
